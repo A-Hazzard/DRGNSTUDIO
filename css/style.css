@@ -1,3 +1,66 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: beige;
+}
+
+#logo{
+    width: 7%;
+}
+
+header{
+    background-color: #0059B7;
+    height: 80px;
+    position: relative;
+    top:-50%;
+    color: white;
+}
+
+h1{
+    display: inline;
+    border: 1px solid black;
+    position: relative;
+    top: -30%;
+    
+}
+h4{
+    font-size: 50px;
+    
+}
+nav{
+    border: 1px solid black;
+    position: relative;
+    left: 35%;
+    top: -70%;
+    width: 60%;
+    
+    
+   
+}
+ul{
+    list-style-type: none;   
+}
+
+ul a{
+    text-decoration: none; 
+    color: white;
+    padding-left: 3%;
+    font-size: 24px;
+    position: relative;
+    
+}
+
+li{
+    display: inline;
+   
+}
+
+#front-image{
+   
+     width: 100%;
+     height: 650px;
+
 }
