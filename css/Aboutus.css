@@ -1,0 +1,41 @@
+header{
+    background-color: #0059B7;
+    height: 80px;
+    position: relative;
+    top:-50%;
+    color: white;
+}
+#front-image-header{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #EFEFF3;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+nav{
+ 
+    position: relative;
+    left: 35%;
+    top: -70%;
+    width: 60%;                                 
+}
+
+ul{
+    list-style-type: none;   
+}
+
+ul a{
+    text-decoration: none; 
+    color: white;
+    padding-left: 3%;
+    font-size: 25px;
+    position: relative;
+    font-family: 'Oleo Script', cursive;
+}
+
+li{
+    display: inline;
+   
+}
