@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    width: 7%;
+}
+
 header{
     background-color: #0059B7;
     height: 80px;
@@ -5,21 +13,22 @@ header{
     top:-50%;
     color: white;
 }
-#front-image-header{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    color: #EFEFF3;
-    font-size: 50px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
+
+h1{
+    display: inline;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    top: -30%;
+    
 }
+
+
 nav{
  
     position: relative;
     left: 35%;
     top: -70%;
-    width: 60%;                                 
+    width: 100%;   
 }
 
 ul{
@@ -29,8 +38,8 @@ ul{
 ul a{
     text-decoration: none; 
     color: white;
-    padding-left: 3%;
-    font-size: 25px;
+    padding-left: 1.5%;
+    font-size: 20px;
     position: relative;
     font-family: 'Oleo Script', cursive;
 }
