@@ -24,6 +24,11 @@ header{
     color: white;
 }
 
+.title {
+    color: grey;
+    font-size: 18px;
+  }
+
 h1{
     display: inline;
     font-family: 'Varela Round', sans-serif;
@@ -82,6 +87,15 @@ ul a{
     font-family: 'Oleo Script', cursive;
 }
 
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
 li{
     display: inline;
    
@@ -94,13 +108,13 @@ li{
     filter: brightness(60%);
 }
 
-.limited-Offers{
+#limited-Offers{
     height: 300px;
     display: flex;
     background-color: rgb(240, 241, 247);
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.card{
+    box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
     width: 450px;
     margin: auto;
     text-align: center;
@@ -108,33 +122,61 @@ li{
     display: flex;
   }
 
-  .card2 .flex-image{
-      flex-wrap: wrap ;
-  }
-  
-  
-
-  .flex-image img{
-      height: 250px;
-      width: 400px;
+  .card img{
+      height: 220px;
   }
 
-  
-  
-  .title {
-    color: grey;
-    font-size: 18px;
-  }
+.card2 .flex-content{
+    flex: 1;
+}
+.card2 .flex-image{
+    flex: 1;
+}
 
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
+.card3 .flex-content{
+    flex: 1.5;
+}
+
+.card3 .flex-image{
+    flex: 1;
+}
   
-  a:hover {
-    opacity: 0.7;
+#banner{
+    height: 150px;
+    background-color: #0059B7;
+}
+
+#banner-container{
+ 
+    height: 150px;
+    display: flex;
+    
+
+}
+
+.items{
+    position: relative;
+    margin: auto;
+    height: 135px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
+}
+ 
+.items:hover {
+    box-shadow: inset 200px 0 0 0 #54b3d6;
+    
+  }
+#banner a {
+    position: relative;
+    top: 35%;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: white;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  #banner a:hover {
+    box-shadow: inset 200px 0 0 0 #54b3d6;
   }
 
  
-
