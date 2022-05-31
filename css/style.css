@@ -147,11 +147,8 @@ li{
 }
 
 #banner-container{
- 
     height: 150px;
     display: flex;
-    
-
 }
 
 .items{
@@ -176,33 +173,25 @@ li{
   }
 
 
-
-
-
-
-
- 
-  @media screen and (max-width: 769px) {
+@media screen and (max-width: 769px) {
    
     
-    header{
-        background-color: #0059B7;
-        height: 100px;
-        position: relative;
-        top:-50%;
-        color: white;
-        width: 100%;
-    }
+header{
+    background-color: #0059B7;
+    height: 100px;
+    position: relative;
+    top:-50%;
+    color: white;
+    width: 100%;
+}
 
     #logo{
         width: 15%;
     }
     
-#front-image{
-    
+#front-image{  
     width: 100%;
     height: 100%;
-   
     filter: brightness(60%);
 }
 
@@ -255,7 +244,6 @@ li{
         left: 0%;
         top: -20%;
         width: auto; 
-        border: 1px solid black;  
     }
     
     ul{
@@ -327,6 +315,40 @@ li{
     .card3 .flex-image{
         flex: 1;
     }
+
+    
+#banner{
+    height: 150px;
+    margin-top: 70%;
+    background-color: #0059B7;
+}
+
+#banner-container{
+    height: 150px;
+    display: flex;
+}
+
+.items{
+    position: relative;
+    margin: auto;
+    height: 135px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
+}
+ 
+.items:hover {
+    box-shadow: inset 200px 0 0 0 #54b3d6;
+    
+  }
+#banner a{
+    position: relative;
+    top: 35%;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: white;
+}
+
 
   }/*end of media*/
 
