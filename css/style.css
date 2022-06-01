@@ -10,6 +10,9 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(240, 241, 247);
+}
 #logo{
     width: 7%;
 }
@@ -52,6 +55,7 @@ h3{
     font-family: 'Varela Round', sans-serif;
   
 }
+
 
 #front-image-header{
     position: absolute;
@@ -211,6 +215,7 @@ nav{
         margin-bottom: 5%;
     }
 #news-container{
+    background-color: rgb(240, 241, 247);;
     display: flex;
 }
     #news-content{
@@ -218,7 +223,7 @@ nav{
         text-align: center;
         flex: 1;
     }
-#news-content h4{
+h4{
     font-size: 24px;
     font-family: 'Varela Round', sans-serif;
     
@@ -259,18 +264,65 @@ nav{
 }
 
 .icon{
-    color: white;
+    color: rgb(240, 241, 247);;
     background-color: #0059B7;
     font-size: 35px;
     outline: none;
     border: none;
     padding: 0px 10px;
-    height: 575px;
+    height: 576.2px;
+
+}
+
+#news-letter-container{
+    display: flex;
+    background-color: rgb(240, 241, 247);
+    height: 300px;
 
 }
 
 
+h5{
+    font-size: 28px;
+    display: block;
+    font-family: 'Varela Round', sans-serif;
+   
+}
 
+#news-letter-content{
+   
+    padding: 5%;
+    font-size: 20px;
+    color: black;
+    font-family: 'Questrial', sans-serif;
+}
+
+#news-letter-image img{
+    height: 300px;
+    width: 320px
+}
+
+#subcribe-btn {
+    margin-top: 10%;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: #017CA3;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  #subcribe-btn:hover {
+      background-color: #808cd8; 
+    color: white;
+}
+  
+  #subcribe-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
   }/*end of media*/
 
