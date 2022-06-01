@@ -4,7 +4,325 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oleo+Script&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Oleo+Script&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 
+body{
+    background-color: rgb(240, 241, 247);
+}
+
+header{
+    background-color: #0159B6;
+    height: 80px;
+    position: relative;
+    top:-50%;
+    color: white;
+}
+
+.title {
+    color: grey;
+    
+  }
+
+h1{
+    display: inline;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    
+    
+}
+h2{
+    font-family: 'Oleo Script', cursive;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #EFEFF3;
+    font-size: 25px;
+}
+
+h3{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    color: #EFEFF3;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+  
+}
+
+
+#front-image-header{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #EFEFF3;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+
+
+nav{
+ 
+    position: relative;
+    left: 35%;
+    top: -70%;
+    width: 65%;   
+}
+
+ul{
+    list-style-type: none;   
+}
+
+ul a{
+    text-decoration: none; 
+    color: white;
+    padding-left: 3%;
+    font-size: 20px;
+    position: relative;
+    font-family: 'Oleo Script', cursive;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+li{
+    display: inline;
+   
+}
+
+#front-image{
+    position: relative;
+     width: 100%;
+     height: 650px;
+    filter: brightness(60%);
+}
+
+#limited-Offers{
+    height: 300px;
+    display: flex;
+    background-color: rgb(240, 241, 247);
+}
+.card{
+   
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    display: flex;
+  }
+
+  .card img{
+      height: 220px;
+  }
+
+.card2 .flex-content{
+    flex: 1;
+}
+.card2 .flex-image{
+    flex: 1;
+}
+
+.card3 .flex-content{
+    flex: 1.5;
+}
+
+.card3 .flex-image{
+    flex: 1;
+}
+  
+#banner{
+    height: 150px;
+    background-color: #00B2F0;
+}
+
+#banner-container{
+    height: 150px;
+    display: flex;
+    font-family: 'Questrial', sans-serif;
+}
+
+.items{
+    position: relative;
+    margin: auto;
+    height: 135px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
+}
+ 
+.items:hover {
+    box-shadow: inset 200px 0 0 0 #54b3d6;
+    
+  }
+#banner a {
+    position: relative;
+    top: 35%;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: white;
+  }
+
+
+  #news-container{
+    background-color: rgb(240, 241, 247);;
+    display: flex;
+}
+    #news-content{
+        margin: 1%;
+        padding: 5%;
+        text-align: center;
+        height: 130px;
+    }
+h4{
+    font-size: 24px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#news-content p{
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+
+#news-video iframe{
+
+    width: 100%;
+    height: 400px;
+    }
+
+#main-scroll-div{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+#image-wrapper{
+    
+    width: 100%;
+   
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+  
+}
+
+#image-wrapper::-webkit-scrollbar{
+    -webkit-appearance: none ;
+}
+
+.icon{
+    color: rgb(240, 241, 247);;
+    background-color: unset;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+    height: 576.2px;
+
+}
+
+#health span{
+    font-family:'Nothing You Could Do', cursive;
+}
+
+#health p{
+    font-size: 22px;
+}
+
+#news-letter-container{
+    display: flex;
+    background-color: rgb(240, 241, 247);
+    height: 300px;
+
+}
+
+
+h5{
+    font-size: 28px;
+    display: block;
+    font-family: 'Varela Round', sans-serif;
+   
+}
+
+#news-letter-content{
+   
+    padding: 5%;
+    font-size: 20px;
+    color: black;
+    font-family: 'Questrial', sans-serif;
+}
+
+#news-letter-image img{
+    margin-top: -3%;
+    height: 300px;
+    width: 320px
+}
+
+#subcribe-btn {
+    margin-top: 10%;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: #017CA3;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  #subcribe-btn:hover {
+      background-color: #00B2F0; 
+    color: white;
+}
+  
+  #subcribe-btn:active {
+    background-color: #8aa1d3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+footer, footer a{
+    background-color: #00B2F0;
+    text-align: center;
+    color:rgb(240, 241, 247);
+}
+
+footer li{
+    font-size: 50px;
+    padding: 2%;
+}
+
+#footer-header{
+    font-size: 25px;
+}
+
+#footer-contact{
+    font-size: 20px;
+    padding: 1.5%;
+}
+
+#footer-header span{
+    color:#2cecfa
+}
+
+footer p:last-of-type{
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:1440){
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +336,7 @@ body{
 }
 
 header{
-    background-color: #0059B7;
+    
     height: 80px;
     position: relative;
     top:-50%;
@@ -145,7 +463,7 @@ li{
   
 #banner{
     height: 150px;
-    background-color: #0059B7;
+    background-color: #00B2F0;
 }
 
 #banner-container{
@@ -174,156 +492,394 @@ li{
     box-shadow: inset 0 0 0 0 #54b3d6;
     color: white;
   }
+}/*End of media(/
 
 
-@media screen and (max-width: 769px) {
-   
+/*Small Laptop view*/
+@media screen and (max-width: 1025px){
+    header{
+        height: 100px;
+        position: relative;
+        top:-50%;
+        color: white;
+    }
     
-header{
-    height: 100px;
-}
-
-#logo{
-        width: 15%;
+    #logo{
+        width: 13%;
     }
 
-h3{
-    top: 100%;    
+    h1{
+        top: -45%;
+        left: -2%;
     }
-  
-nav{   
-        left: 0%;
-        top: -20%;
-        width: auto; 
-    }  
 
-    ul a{
-        font-size: 17px;
+    h3{
+        top: 110%;
     }
-  
+    nav{
+        width: 90%;
+        left: 12%;
+        top: -40%;
+    }
+    
     #limited-Offers{
-        flex-direction: column;
+        flex-wrap: wrap;
         height: auto;
     }
 
     .card{
         box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
-       
+        flex-direction: column ;
         margin-top: 5%;
+        height: 300px;
+        padding: 3%;
       }
     .card3{
         margin-bottom: 5%;
     }
-#news-container{
-    background-color: rgb(240, 241, 247);;
-    display: flex;
-}
-    #news-content{
-        margin: 1%;
-        text-align: center;
-        flex: 1;
+
+    #news-container{
+        background-color: #00B2F0;
+        display: flex;
+        color: aliceblue;
+        flex-direction: column-reverse;
     }
-h4{
-    font-size: 24px;
-    font-family: 'Varela Round', sans-serif;
+   
+    #news-content p{
+        font-size: 20px;
+        font-family: 'Questrial', sans-serif;
+    }
     
- 
-}
+    #news-video iframe{
 
-#news-content p{
-    font-size: 20px;
-    font-family: 'Questrial', sans-serif;
-}
+        width: 100%;
+        height: 400px;
+        }
+    
+    #main-scroll-div{
+        display: flex;
+        justify-content: center;
+        height: auto;
+       
+    }
+    
+    #image-wrapper{ 
+        width: 70%;    
+        height: auto;
+    }
+    
+    #image-wrapper::-webkit-scrollbar{
+        -webkit-appearance: none ;
+    }
+    
+    .icon{
+        color: #00B2F0;
+        background-color: unset;
+        font-size: 35px;
+        padding: unset;
 
-#news-video iframe{
-    flex: 1;
-    width: 400px;
+         
+    }
+    
+    #health{
+        background-color: #00B2F0;
+        color: aliceblue;
+        height: 150px;
+        padding: 3%;
     }
 
-#main-scroll-div{
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-}
+    #health span{
+      font-family:'Nothing You Could Do', cursive;
+      font-size: 40px;
+      margin: 0 15% auto;
+      }
 
-#image-wrapper{
-    
-    width: 100%;
-   
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    overflow: auto;
-    position: relative;
-    scroll-behavior: smooth;
-  
-}
+      #health p{
+          font-family: 'Questrial', sans-serif;
+          text-align: center;
 
-#image-wrapper::-webkit-scrollbar{
-    -webkit-appearance: none ;
-}
+      }
+    #news-letter-container{
+        height: unset;
+        flex: wrap;
+    }
 
-.icon{
-    color: rgb(240, 241, 247);;
-    background-color: #0059B7;
-    font-size: 35px;
-    outline: none;
-    border: none;
-    padding: 0px 10px;
-    height: 576.2px;
-
-}
-
-#news-letter-container{
-    display: flex;
-    background-color: rgb(240, 241, 247);
-    height: 300px;
-
-}
-
-
-h5{
-    font-size: 28px;
-    display: block;
-    font-family: 'Varela Round', sans-serif;
-   
-}
-
-#news-letter-content{
-   
-    padding: 5%;
-    font-size: 20px;
-    color: black;
-    font-family: 'Questrial', sans-serif;
-}
 
 #news-letter-image img{
-    height: 300px;
-    width: 320px
+    margin-top: -3%;
+    height: unset;
+    width: unset;
+    margin-left: 1px ;
 }
+    
+    #subcribe-btn {
+        margin-top: 10%;
+        padding: 15px 25px;
+        font-size: 20px;
+        color: #017CA3;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      #subcribe-btn:hover {
+          background-color: #00B2F0; 
+        color: white;
+    }
+      
+      #subcribe-btn:active {
+        background-color: #8aa1d3;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    
+    footer, footer a{
+        background-color: #00B2F0;
+        text-align: center;
+        color:rgb(240, 241, 247);
+    }
+    
+    footer li{
+        font-size: 50px;
+        padding: 2%;
+    }
+    
+    #footer-header{
+        font-size: 25px;
+    }
+    
+    #footer-contact{
+        font-size: 20px;
+        padding: 1.5%;
+    }
+    
+    #footer-header span{
+        color:#2cecfa
+    }
+    
+    footer p:last-of-type{
+        font-size: 18px;
+    }
+    
+}/*End of media*/
 
-#subcribe-btn {
-    margin-top: 10%;
-    padding: 15px 25px;
-    font-size: 20px;
-    color: #017CA3;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  #subcribe-btn:hover {
-      background-color: #808cd8; 
-    color: white;
-}
-  
-  #subcribe-btn:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
 
-  }/*end of media*/
+/*Tablet view*/
+@media screen and (max-width: 769px) {
+   
+    
+    header{
+        height: 110px;
+    }
+    
+    #logo{
+            width: 15%;
+        }
+    
+    h1{
+        top: -30%;
+        font-size: 25;
+    }
+    
+    h3{
+        top: 100%;    
+        }
+      
+    nav{   
+            left: 3%;
+            top: -10%;
+            width: 95%; 
+        
+        }  
+    
+        ul a{
+            font-size: 17px;
+        }
+      
+        #limited-Offers{
+            flex-direction: column;
+            height: auto;
+        }
+    
+        .card{
+            box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+           
+            margin-top: 5%;
+          }
+        .card3{
+            margin-bottom: 5%;
+        }
+    #news-container{
+        background-color: #00B2F0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+        #news-content{
+            color: aliceblue;
+            margin: 1%;
+            text-align: center;
+            flex: 1;
+        }
+    h4{
+        font-size: 24px;
+        font-family: 'Varela Round', sans-serif;
+        
+     
+    }
+    
+    #news-content p{
+        font-size: 20px;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    #news-video iframe{
+       
+        flex: 1;
+        width: 100%;
+        }
+    
+    #main-scroll-div{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+    
+    #image-wrapper{
+        
+        width: 100%;
+       
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        overflow: auto;
+        position: relative;
+        scroll-behavior: smooth;
+      
+    }
+    
+    #image-wrapper::-webkit-scrollbar{
+        -webkit-appearance: none ;
+    }
+    
+    .icon{
+        color: #00B2F0;
+        background-color: unset;
+        font-size: 35px;
+        outline: none;
+        border: none;
+        padding: 0px 10px;
+        height: 576.2px;
+    
+    }
+    
+    #health{
+        background-color: #00B2F0;
+        color: aliceblue;
+        height: 150px;
+        padding: 3%;
+    }
 
- 
+    #health span{
+      font-family:'Nothing You Could Do', cursive;
+      font-size: 40px;
+      
+      margin: 0 5% auto;
+      }
+
+      #health p{
+          font-family: 'Questrial', sans-serif;
+          text-align: center;
+
+      }
+
+
+    #news-letter-container{
+        display: flex;
+        background-color: rgb(240, 241, 247);
+        height: 300px;
+    
+    }
+    
+    
+    h5{
+        font-size: 28px;
+        display: block;
+        font-family: 'Varela Round', sans-serif;
+       
+    }
+    
+    #news-letter-content{
+       
+        padding: 5%;
+        font-size: 20px;
+        color: black;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    #news-letter-image img{
+        margin-top: -3%;
+        height: 300px;
+        width: 420px
+    }
+    
+    #subcribe-btn {
+        margin-top: 10%;
+        padding: 15px 25px;
+        font-size: 20px;
+        color: #017CA3;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      #subcribe-btn:hover {
+          background-color: #00B2F0; 
+        color: white;
+    }
+      
+      #subcribe-btn:active {
+        background-color: #8aa1d3;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
+     
+    
+
+
+
+
+
+
+    footer, footer a{
+        background-color: #00B2F0;
+        text-align: center;
+        color:rgb(240, 241, 247);
+    }
+    
+    footer li{
+        font-size: 50px;
+        padding: 2%;
+    }
+    
+    #footer-header{
+        font-size: 25px;
+    }
+    
+    #footer-contact{
+        font-size: 20px;
+        padding: 1.5%;
+    }
+    
+    #footer-header span{
+        color:#2cecfa
+    }
+    
+    footer p:last-of-type{
+        font-size: 18px;
+    }
+    
+      }/*end of media*/
+    
