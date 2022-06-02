@@ -271,7 +271,7 @@ h5{
     width: 320px
 }
 
-#subcribe-btn {
+#subscribe-btn {
     margin-top: 10%;
     padding: 15px 25px;
     font-size: 20px;
@@ -282,12 +282,12 @@ h5{
     box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
   }
   
-  #subcribe-btn:hover {
+  #subscribe-btn:hover {
       background-color: #00B2F0; 
     color: white;
 }
   
-  #subcribe-btn:active {
+  #subscribe-btn:active {
     background-color: #8aa1d3;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -320,353 +320,8 @@ footer li{
 footer p:last-of-type{
     font-size: 18px;
 }
-
-
-@media screen and (max-width:1440){
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    background-color: rgb(240, 241, 247);
-}
-#logo{
-    width: 7%;
-}
-
-header{
-    
-    height: 80px;
-    position: relative;
-    top:-50%;
-    color: white;
-}
-
-.title {
-    color: grey;
-    font-size: 18px;
-  }
-
-h1{
-    display: inline;
-    font-family: 'Varela Round', sans-serif;
-    position: relative;
-    top: -30%;
-    
-}
-h2{
-    font-family: 'Oleo Script', cursive;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    color: #EFEFF3;
-    font-size: 25px;
-}
-
-h3{
-    position: absolute;
-    top: 90%;
-    left: 10%;
-    color: #EFEFF3;
-    font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
-  
-}
-
-
-#front-image-header{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    color: #EFEFF3;
-    font-size: 50px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-}
-
-
-nav{
- 
-    position: relative;
-    left: 35%;
-    top: -70%;
-    width: 65%;   
-}
-
-ul{
-    list-style-type: none;   
-}
-
-ul a{
-    text-decoration: none; 
-    color: white;
-    padding-left: 3%;
-    font-size: 20px;
-    position: relative;
-    font-family: 'Oleo Script', cursive;
-}
-
-a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
-  
-  a:hover {
-    opacity: 0.7;
-  }
-li{
-    display: inline;
-   
-}
-
-#front-image{
-    position: relative;
-     width: 100%;
-     height: 650px;
-    filter: brightness(60%);
-}
-
-#limited-Offers{
-    height: 300px;
-    display: flex;
-    background-color: rgb(240, 241, 247);
-}
-.card{
-   
-    width: 450px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    display: flex;
-  }
-
-  .card img{
-      height: 220px;
-  }
-
-.card2 .flex-content{
-    flex: 1;
-}
-.card2 .flex-image{
-    flex: 1;
-}
-
-.card3 .flex-content{
-    flex: 1.5;
-}
-
-.card3 .flex-image{
-    flex: 1;
-}
-  
-#banner{
-    height: 150px;
-    background-color: #00B2F0;
-}
-
-#banner-container{
-    height: 150px;
-    display: flex;
-    font-family: 'Questrial', sans-serif;
-}
-
-.items{
-    position: relative;
-    margin: auto;
-    height: 135px;
-    width: 150px;
-    text-align: center;
-    color: white;
-    transition: color .4s ease-in-out, box-shadow .5s ease-in-out;
-}
- 
-.items:hover {
-    box-shadow: inset 200px 0 0 0 #54b3d6;
-    
-  }
-#banner a {
-    position: relative;
-    top: 35%;
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    color: white;
-  }
-}/*End of media(/
-
-
-/*Small Laptop view*/
-@media screen and (max-width: 1025px){
-    header{
-        height: 100px;
-        position: relative;
-        top:-50%;
-        color: white;
-    }
-    
-    #logo{
-        width: 13%;
-    }
-
-    h1{
-        top: -45%;
-        left: -2%;
-    }
-
-    h3{
-        top: 110%;
-    }
-    nav{
-        width: 90%;
-        left: 12%;
-        top: -40%;
-    }
-    
-    #limited-Offers{
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .card{
-        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
-        flex-direction: column ;
-        margin-top: 5%;
-        height: 300px;
-        padding: 3%;
-      }
-    .card3{
-        margin-bottom: 5%;
-    }
-
-    #news-container{
-        background-color: #00B2F0;
-        display: flex;
-        color: aliceblue;
-        flex-direction: column-reverse;
-    }
-   
-    #news-content p{
-        font-size: 20px;
-        font-family: 'Questrial', sans-serif;
-    }
-    
-    #news-video iframe{
-
-        width: 100%;
-        height: 400px;
-        }
-    
-    #main-scroll-div{
-        display: flex;
-        justify-content: center;
-        height: auto;
-       
-    }
-    
-    #image-wrapper{ 
-        width: 70%;    
-        height: auto;
-    }
-    
-    #image-wrapper::-webkit-scrollbar{
-        -webkit-appearance: none ;
-    }
-    
-    .icon{
-        color: #00B2F0;
-        background-color: unset;
-        font-size: 35px;
-        padding: unset;
-
-         
-    }
-    
-    #health{
-        background-color: #00B2F0;
-        color: aliceblue;
-        height: 150px;
-        padding: 3%;
-    }
-
-    #health span{
-      font-family:'Nothing You Could Do', cursive;
-      font-size: 40px;
-      margin: 0 15% auto;
-      }
-
-      #health p{
-          font-family: 'Questrial', sans-serif;
-          text-align: center;
-
-      }
-    #news-letter-container{
-        height: unset;
-        flex: wrap;
-    }
-
-
-#news-letter-image img{
-    margin-top: -3%;
-    height: unset;
-    width: unset;
-    margin-left: 1px ;
-}
-    
-    #subcribe-btn {
-        margin-top: 10%;
-        padding: 15px 25px;
-        font-size: 20px;
-        color: #017CA3;
-        background-color: white;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
-      }
-      
-      #subcribe-btn:hover {
-          background-color: #00B2F0; 
-        color: white;
-    }
-      
-      #subcribe-btn:active {
-        background-color: #8aa1d3;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-      }
-    
-    footer, footer a{
-        background-color: #00B2F0;
-        text-align: center;
-        color:rgb(240, 241, 247);
-    }
-    
-    footer li{
-        font-size: 50px;
-        padding: 2%;
-    }
-    
-    #footer-header{
-        font-size: 25px;
-    }
-    
-    #footer-contact{
-        font-size: 20px;
-        padding: 1.5%;
-    }
-    
-    #footer-header span{
-        color:#2cecfa
-    }
-    
-    footer p:last-of-type{
-        font-size: 18px;
-    }
-    
-}/*End of media*/
-
-
 /*Tablet view*/
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 767px) {
    
     
     header{
@@ -678,7 +333,7 @@ li{
         }
     
     h1{
-        top: -30%;
+        top: -45%;
         font-size: 25;
     }
     
@@ -687,8 +342,8 @@ li{
         }
       
     nav{   
-            left: 3%;
-            top: -10%;
+            left: 20%;
+            top: -40%;
             width: 95%; 
         
         }  
@@ -704,7 +359,7 @@ li{
     
         .card{
             box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
-           
+           height: auto;
             margin-top: 5%;
           }
         .card3{
@@ -823,7 +478,7 @@ li{
         width: 420px
     }
     
-    #subcribe-btn {
+    #subscribe-btn {
         margin-top: 10%;
         padding: 15px 25px;
         font-size: 20px;
@@ -834,12 +489,12 @@ li{
         box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
       }
       
-      #subcribe-btn:hover {
+      #subscribe-btn:hover {
           background-color: #00B2F0; 
         color: white;
     }
       
-      #subcribe-btn:active {
+      #subscribe-btn:active {
         background-color: #8aa1d3;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
@@ -882,4 +537,458 @@ li{
     }
     
       }/*end of media*/
+
+
+/*Small Laptop view*/
+@media screen and (min-width: 1023px){
+    header{
+        height: 100px;
+        position: relative;
+        top:-50%;
+        color: white;
+    }
     
+    #logo{
+        width: 13%;
+    }
+
+    h1{
+        top: -45%;
+        left: -2%;
+    }
+
+    h3{
+        top: 110%;
+    }
+    nav{
+        width: 70%;
+        left: 28%;
+        top: -40%;
+        border: 1px solid black;
+    }
+    
+    #limited-Offers{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .card{
+        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+        flex-direction: column ;
+        margin-top: 5%;
+        height: auto;
+        padding: 3%;
+      }
+    .card3{
+        margin-bottom: 5%;
+    }
+
+    #news-container{
+        background-color: #00B2F0;
+        display: flex;
+        color: aliceblue;
+        flex-direction: column-reverse;
+    }
+   
+    #news-content p{
+        font-size: 20px;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    #news-video iframe{
+
+        width: 100%;
+        height: 400px;
+        }
+    
+    #main-scroll-div{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    
+    }
+    
+    #image-wrapper{ 
+        width: 90%;    
+        height: auto;
+      
+    }
+
+    #image-wrapper img{
+        width: 950px;
+    }
+    
+    #image-wrapper::-webkit-scrollbar{
+        -webkit-appearance: none ;
+    }
+    
+    .icon{
+        color: #00B2F0;
+        background-color: unset;
+        font-size: 35px;
+        padding: unset;
+
+         
+    }
+    
+    #health{
+        background-color: #00B2F0;
+        color: aliceblue;
+        height: 150px;
+        padding: 3%;
+    }
+
+    #health span{
+      font-family:'Nothing You Could Do', cursive;
+      font-size: 40px;
+      margin: 0 15% auto;
+      }
+
+      #health p{
+          font-family: 'Questrial', sans-serif;
+          text-align: center;
+
+      }
+    #news-letter-container{
+        height: unset;
+        flex: wrap;
+    }
+
+
+#news-letter-image img{
+    margin-top: -3%;
+    height: unset;
+    width: unset;
+    margin-left: 1px ;
+}
+    
+    #subscribe-btn {
+        margin-top: 10%;
+        padding: 15px 25px;
+        font-size: 20px;
+        color: #017CA3;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      #subscribe-btn:hover {
+          background-color: #00B2F0; 
+        color: white;
+    }
+      
+      #subscribe-btn:active {
+        background-color: #8aa1d3;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    
+    footer, footer a{
+        background-color: #00B2F0;
+        text-align: center;
+        color:rgb(240, 241, 247);
+    }
+    
+    footer li{
+        font-size: 50px;
+        padding: 2%;
+    }
+    
+    #footer-header{
+        font-size: 25px;
+    }
+    
+    #footer-contact{
+        font-size: 20px;
+        padding: 1.5%;
+    }
+    
+    #footer-header span{
+        color:#2cecfa
+    }
+    
+    footer p:last-of-type{
+        font-size: 18px;
+    }
+    
+}/*End of media*/
+
+/*Large laptop*/    
+@media screen and (min-width:1439px){
+
+    #logo{
+        width:7%;
+    }
+    
+    header{
+        
+        height: 80px;
+        position: relative;
+        top:-50%;
+        color: white;
+    }
+    
+    .title {
+        color: grey;
+        font-size: 18px;
+      }
+    
+    h1{
+        display: inline;
+        font-family: 'Varela Round', sans-serif;
+        position: relative;
+        top: -30%;
+        
+    }
+    h2{
+        font-family: 'Oleo Script', cursive;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: #EFEFF3;
+        font-size: 25px;
+    }
+    
+    h3{
+        position: absolute;
+        top: 90%;
+        left: 10%;
+        color: #EFEFF3;
+        font-size: 20px;
+        font-family: 'Varela Round', sans-serif;
+      
+    }
+    
+    h4{
+        color: black;
+    }
+    #front-image-header{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        color: #EFEFF3;
+        font-size: 50px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+    
+    
+    nav{
+     
+        position: relative;
+        left: 35%;
+        top: -70%;
+        width: 65%;   
+    }
+    
+    ul{
+        list-style-type: none;   
+    }
+    
+    ul a{
+        text-decoration: none; 
+        color: white;
+        padding-left: 3%;
+        font-size: 20px;
+        position: relative;
+        font-family: 'Oleo Script', cursive;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+      
+      a:hover {
+        opacity: 0.7;
+      }
+    li{
+        display: inline;
+       
+    }
+    
+    #front-image{
+        position: relative;
+         width: 100%;
+         height: 650px;
+        filter: brightness(60%);
+    }
+    
+    #limited-Offers{
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(240, 241, 247);
+    }
+    .card{
+        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+        width: 450px;
+        height: 265px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        display: flex;
+        
+      }
+    
+      .card img{
+          height: 100%;
+          width: 250px;
+      }
+    
+    
+    .items:hover {
+        box-shadow: inset 200px 0 0 0 #54b3d6;
+        
+      }
+    #banner a {
+        position: relative;
+        top: 35%;
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: white;
+      }
+    
+      #news-container{
+       
+        display: flex;
+        color: aliceblue;
+        flex-direction: column-reverse;
+    }
+    
+    #news-content p{
+        font-size: 20px;
+        font-family: 'Questrial', sans-serif;
+        color: black;
+    }
+    
+    #news-content{
+        background-color: rgb(240, 241, 247);
+    }
+    
+    #news-video iframe{
+        margin: 0 20% auto;
+        width: 60%;
+        height: 400px;
+        }
+    #news-video{
+        background-color: #00B2F0;
+    }
+    #main-scroll-div{
+        display: flex;
+        justify-content: center;
+        height: auto;
+       
+    }
+    
+    #image-wrapper{ 
+        width: 70%;    
+        height: auto;
+    }
+    
+    #image-wrapper img{
+        width: 1100px;
+        height: 650px;
+    }
+    
+    #image-wrapper::-webkit-scrollbar{
+        -webkit-appearance: none ;
+    }
+    
+    .icon{
+        color: #00B2F0;
+        background-color: unset;
+        font-size: 35px;
+        padding: unset;
+    
+         
+    }
+    
+    #health{
+        background-color: #00B2F0;
+        color: aliceblue;
+        height: 150px;
+        padding: 3%;
+    }
+    
+    #health span{
+      font-family:'Nothing You Could Do', cursive;
+      font-size: 40px;
+      margin: 0 15% auto;
+      }
+    
+      #health p{
+          font-family: 'Questrial', sans-serif;
+          text-align: center;
+    
+      }
+    #news-letter-container{
+        height: unset;
+        flex: wrap;
+    }
+    
+    
+    #news-letter-image img{
+    margin-top: -3%;
+    height: unset;
+    width: unset;
+    margin-left: 1px ;
+    }
+    
+    #subscribe-btn {
+        margin-top: 10%;
+        padding: 15px 25px;
+        font-size: 20px;
+        color: #017CA3;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      #subscribe-btn:hover {
+          background-color: #00B2F0; 
+        color: white;
+    }
+      
+      #subscribe-btn:active {
+        background-color: #8aa1d3;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    
+    footer, footer a{
+        background-color: #00B2F0;
+        text-align: center;
+        color:rgb(240, 241, 247);
+    }
+    
+    footer li{
+        font-size: 50px;
+        padding: 2%;
+    }
+    
+    #footer-header{
+        font-size: 25px;
+    }
+    
+    #footer-contact{
+        font-size: 20px;
+        padding: 1.5%;
+    }
+    
+    #footer-header span{
+        color:#2cecfa
+    }
+    
+    footer p:last-of-type{
+        font-size: 18px;
+    }
+    
+    
+    }/*End of media(/
+    
+
+
+
