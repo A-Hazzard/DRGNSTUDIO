@@ -1361,6 +1361,50 @@ footer p:last-of-type{
       }
 }
 
+/*1920p */
+@media screen and (min-width: 1919px){
+    
+    #logo{
+        position: unset;
+        width:6%;
+    }
+    
+    header{
+        
+        height: 80px;
+        position: relative;
+        top:-50%;
+        color: white;
+    }
+    
+    .title {
+        color: grey;
+        font-size: 18px;
+      }
+    
+    h1{
+        display: inline;
+        font-family: 'Varela Round', sans-serif;
+        top: -35%;
+        left: 1mm;
+        
+    }
+    
+    nav{ 
+        position: relative;
+        left: 42%;
+        top: -70%;
+        width: 60%;   
+    }
+    
+    li a{
+        font-size: 25px;
+    }
+    
+    
+    
+}
+
 
 
 
