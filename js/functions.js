@@ -1,4 +1,4 @@
-//alert( 'Your screen resolution is ' + screen.width + 'x' + screen.height );
+alert( 'Your screen resolution is ' + screen.width + 'x' + screen.height );
 function scrollright(){
     let right = document.querySelector("#image-wrapper");
     if ($(window).width() >= 1024) {

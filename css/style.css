@@ -113,7 +113,7 @@ li{
     display: flex;
     background-color: rgb(240, 241, 247);
 }
-.card{
+.card{ border-radius: 5%;
    
     width: 450px;
     margin: auto;
@@ -232,6 +232,10 @@ h4{
     padding: 0px 10px;
     height: 576.2px;
 
+}
+
+.icon:hover{
+    cursor: pointer;
 }
 
 #health span{
@@ -359,7 +363,7 @@ footer p:last-of-type{
             height: auto;
         }
     
-        .card{
+        .card{ border-radius: 5%;
             box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
            height: 300px;
            margin: 5% 18% auto;
@@ -402,10 +406,9 @@ footer p:last-of-type{
         }
     
     #main-scroll-div{
-        display: flex;
-        justify-content: space-between;
-        height: auto;
-        width: 90%;
+     
+       width: 600px;
+        margin: auto;
     }
     
     #image-wrapper{
@@ -575,27 +578,31 @@ footer p:last-of-type{
         top: 110%;
     }
     nav{
-        width: 70%;
-        left: 28%;
+        width: 80%;
+        left: 15%;
         top: -40%;
        
     }
     
     #limited-Offers{
-        flex-wrap: wrap;
-        height: auto;
+        height: auto;  
+        flex-direction: row;
     }
-
-    .card{
-        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
-        flex-direction: column ;
-        margin-top: 5%;
-        height: auto;
-        padding: 3%;
-      }
-    .card3{
+    .card{ border-radius: 5%;
+        flex-direction: column;
+        width: 350px;
+        height: 350px;
+        margin: 5% .5% auto;
+        border-radius: 5%;
         margin-bottom: 5%;
     }
+
+      .card img{
+          height: 100%;
+          width: 250px;
+      }
+
+  
 
     #news-container{
         background-color: #00B2F0;
@@ -619,14 +626,10 @@ footer p:last-of-type{
         display: flex;
         justify-content: space-between;
         height: auto;
-    
+        width: 850px;
+        margin: auto;
     }
-    
-    #image-wrapper{ 
-        width: 90%;    
-        height: auto;
-      
-    }
+ 
 
     #image-wrapper img{
         width: 950px;
@@ -728,297 +731,7 @@ footer p:last-of-type{
     
 }/*End of media*/
 
-
-
-/*Large laptop*/    
-@media screen and (min-width:1439px){
-
-    #logo{
-        position: unset;
-        width:7%;
-    }
-    
-    header{
-        
-        height: 80px;
-        position: relative;
-        top:-50%;
-        color: white;
-    }
-    
-    .title {
-        color: grey;
-        font-size: 18px;
-      }
-    
-    h1{
-        display: inline;
-        font-family: 'Varela Round', sans-serif;
-        top: -25%;
-        left: 1mm;
-        
-    }
-    h2{
-        font-family: 'Oleo Script', cursive;
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        color: #EFEFF3;
-        font-size: 25px;
-    }
-    
-    h3{
-        position: absolute;
-        top: 90%;
-        left: 10%;
-        color: #EFEFF3;
-        font-size: 20px;
-        font-family: 'Varela Round', sans-serif;
-      
-    }
-    
-    h4{
-        color: black;
-    }
-    #front-image-header{
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        color: #EFEFF3;
-        font-size: 50px;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-    }
-    
-    
-    nav{
-     
-        position: relative;
-        left: 38%;
-        top: -45%;
-        width: 60%;   
-    }
-    
-    ul{
-        list-style-type: none;   
-    }
-    
-    ul a{
-        text-decoration: none; 
-        color: white;
-        padding-left: 3%;
-        font-size: 20px;
-        position: relative;
-        font-family: 'Oleo Script', cursive;
-    }
-    
-    a {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-      }
-      
-      a:hover {
-        opacity: 0.7;
-      }
-    li{
-        display: inline;
-       
-    }
-    
-    #front-image{
-        position: relative;
-         width: 100%;
-         height: 650px;
-        filter: brightness(60%);
-    }
-    
-    #limited-Offers{
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(240, 241, 247);
-    }
-    .card{
-        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
-        width: auto;
-        margin: auto;
-        text-align: center;
-        font-family: arial;
-        display: flex;
-       margin-bottom: 2%;
-        
-      }
-    .card:nth-child(1){
-        order: 2;
-    }
-      .card img{
-          height: 100%;
-          width: 250px;
-      }
-    
-    
-    .items:hover {
-        box-shadow: inset 200px 0 0 0 #54b3d6;
-        
-      }
-    #banner a {
-        position: relative;
-        top: 35%;
-        box-shadow: inset 0 0 0 0 #54b3d6;
-        color: white;
-      }
-    #banner{
-        border-bottom: 2px solid white;
-        
-    }
-      
-      #news-container{
-       
-        display: flex;
-        color: aliceblue;
-        flex-direction: column-reverse;
-    }
-    
-    #news-content p{
-        font-size: 20px;
-        font-family: 'Questrial', sans-serif;
-        color: black;
-    }
-    
-    #news-content{
-        background-color: #00B2F0;
-        width: 100%;
-        margin: unset;
-    }
-    
-    #news-video iframe{
-        margin: unset;
-        width: 100%;
-        height: 90vh;
-        }
-    #news-video{
-        background-color: rgb(240, 241, 247);
-    }
-    #main-scroll-div{
-        display: flex;
-        justify-content: center;
-        height: auto;
-       
-    }
-    
-    #image-wrapper{ 
-        width: 70%;    
-        height: auto;
-    }
-    
-    #image-wrapper img{
-        width: 1100px;
-        height: 650px;
-    }
-    
-    #image-wrapper::-webkit-scrollbar{
-        -webkit-appearance: none ;
-    }
-    
-    .icon{
-        color: #00B2F0;
-        background-color: unset;
-        font-size: 35px;
-        padding: unset;
-    
-         
-    }
-    
-    #health{
-        background-color: #00B2F0;
-        color: aliceblue;
-        height: 150px;
-        padding: 3%;
-    }
-    
-
-
-    #health span{
-      font-family:'Nothing You Could Do', cursive;
-      font-size: 40px;
-      text-align: center;
-      display: block;
-      }
-    
-      #health p{
-          font-family: 'Questrial', sans-serif;
-          text-align: center;
-        width: 55%;
-        margin: 0 22% auto;
-      }
-    #news-letter-container{
-        height: unset;
-        flex: wrap;
-    }
-    
-    
-    #news-letter-image img{
-    margin-top: -3%;
-    height: unset;
-    width: unset;
-    margin-left: 1px ;
-    }
-    
-    #subscribe-btn {
-        margin-top: 10%;
-        padding: 15px 25px;
-        font-size: 20px;
-        color: #017CA3;
-        background-color: white;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
-      }
-      
-      #subscribe-btn:hover {
-          background-color: #00B2F0; 
-        color: white;
-    }
-      
-      #subscribe-btn:active {
-        background-color: #8aa1d3;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-      }
-    
-    footer, footer a{
-        background-color: #00B2F0;
-        text-align: center;
-        color:rgb(240, 241, 247);
-    }
-    
-    footer li{
-        font-size: 50px;
-        padding: 2%;
-    }
-    
-    #footer-header{
-        font-size: 25px;
-    }
-    
-    #footer-contact{
-        font-size: 20px;
-        padding: 1.5%;
-    }
-    
-    #footer-header span{
-        color:#2cecfa
-    }
-    
-    footer p:last-of-type{
-        font-size: 18px;
-    }
-    
-    
-    }/*End of media(/
-    
-/*Medium laptop*/    
+/*Medium laptop 1366px*/    
 @media screen and (min-width:1365px){
 
     #logo{
@@ -1082,8 +795,8 @@ footer p:last-of-type{
     nav{
 
         position: relative;
-        left: 35%;
-        top: -40%;
+        left: 34%;
+        top: -55%;
         width: 65%;   
     }
     
@@ -1127,18 +840,25 @@ footer p:last-of-type{
         flex-direction: row;
         background-color: rgb(240, 241, 247);
     }
-    .card{
-        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+    .card{ border-radius: 5%; 
+        flex-direction: column;
         width: auto;
-        margin: auto;
-        text-align: center;
-        font-family: arial;
-        display: flex;
-       margin-bottom: 2%;
-        
-      }
+        height: 400px;
+        margin: 5% 5% auto;
+        margin-bottom: 5%;
+    }
+
+
     .card:nth-child(1){
         order: 2;
+    }
+
+    .card:nth-child(3){
+        order: 2;
+    }
+
+    .card .flex-content{
+        margin-top: 3%;
     }
       .card img{
           height: 100%;
@@ -1162,7 +882,7 @@ footer p:last-of-type{
     }
       
       #news-container{
-       
+       width: 100%;
         display: flex;
         color: aliceblue;
         flex-direction: column-reverse;
@@ -1172,16 +892,19 @@ footer p:last-of-type{
         font-size: 20px;
         font-family: 'Questrial', sans-serif;
         color: black;
+        width: 75%;
+        margin: 2% 10% auto;
     }
     
     #news-content{
         background-color: #00B2F0;
         width: 100%;
         margin: unset;
+        width: unset;
     }
     
     #news-video iframe{
-        margin: unset;
+       
         width: 100%;
         height: 90vh;
         }
@@ -1189,10 +912,9 @@ footer p:last-of-type{
         background-color: rgb(240, 241, 247);
     }
     #main-scroll-div{
-        display: flex;
-        justify-content: center;
-        height: auto;
-       margin: 2% 5% auto;
+       
+       
+       margin: 0 25% auto;
     }
     
     #image-wrapper{ 
@@ -1307,6 +1029,338 @@ footer p:last-of-type{
     
     }/*End of media(/
   
+
+/*Large laptop*/    
+@media screen and (min-width:1439px){
+
+    #logo{
+        position: unset;
+        width:7%;
+    }
+    
+    header{
+        
+        height: 80px;
+        position: relative;
+        top:-50%;
+        color: white;
+    }
+    
+    .title {
+        color: grey;
+        font-size: 18px;
+      }
+    
+    h1{
+        display: inline;
+        font-family: 'Varela Round', sans-serif;
+        top: -25%;
+        left: 1mm;
+        
+    }
+    h2{
+        font-family: 'Oleo Script', cursive;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: #EFEFF3;
+        font-size: 25px;
+    }
+    
+    h3{
+        position: absolute;
+        top: 90%;
+        left: 10%;
+        color: #EFEFF3;
+        font-size: 20px;
+        font-family: 'Varela Round', sans-serif;
+      
+    }
+    
+    h4{
+        color: black;
+    }
+    #front-image-header{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        color: #EFEFF3;
+        font-size: 50px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+    
+    
+    nav{
+     
+        position: relative;
+        left: 38%;
+        top: -45%;
+        width: 60%;   
+    }
+    
+    ul{
+        list-style-type: none;   
+    }
+    
+    ul a{
+        text-decoration: none; 
+        color: white;
+        padding-left: 3%;
+        font-size: 20px;
+        position: relative;
+        font-family: 'Oleo Script', cursive;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+      
+      a:hover {
+        opacity: 0.7;
+      }
+    li{
+        display: inline;
+       
+    }
+    
+    #front-image{
+        position: relative;
+         width: 100%;
+         height: 650px;
+        filter: brightness(60%);
+    }
+    
+    #limited-Offers{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(240, 241, 247);
+    }
+    .card{ border-radius: 5%;
+        flex-direction: column;
+        width: auto;
+        height: 500px;
+        margin: 5% 2% auto;
+        margin-bottom: 5%;
+    }
+
+    .card:nth-child(1){
+        order: 2;
+    }
+
+    .card:nth-child(3){
+        order: 2;
+    }
+
+    .card .flex-content{
+        margin-top: 3%;
+    }
+      .card img{
+
+          height: 100%;
+          width: 300px;
+      }
+    
+    
+    .items:hover {
+        box-shadow: inset 200px 0 0 0 #54b3d6;
+        
+      }
+    #banner a {
+        position: relative;
+        top: 35%;
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: white;
+      }
+    #banner{
+        border-bottom: 2px solid white;
+        
+    }
+      
+      #news-container{
+       
+        display: flex;
+        color: aliceblue;
+        flex-direction: column-reverse;
+    }
+    
+    #news-content p{
+        font-size: 20px;
+        font-family: 'Questrial', sans-serif;
+        color: black;
+    }
+    
+    #news-content{
+        background-color: #00B2F0;
+        width: unset;
+        margin: unset;
+    }
+    
+    #news-video iframe{
+        margin: unset;
+        width: 100%;
+        height: 90vh;
+        }
+    #news-video{
+        background-color: rgb(240, 241, 247);
+    }
+    #main-scroll-div{
+        display: flex;
+        justify-content: center;
+        height: auto;
+         margin: 2% 25% auto;
+    }
+    
+    #image-wrapper{ 
+        width: auto;    
+        height: auto;
+    }
+    
+    #image-wrapper img{
+        width: 1100px;
+        height: 650px;
+    }
+    
+    #image-wrapper::-webkit-scrollbar{
+        -webkit-appearance: none ;
+    }
+    
+    .icon{
+        color: #00B2F0;
+        background-color: unset;
+        font-size: 35px;
+        padding: unset;
+    
+         
+    }
+    
+    #health{
+        background-color: #00B2F0;
+        color: aliceblue;
+        height: 150px;
+        padding: 3%;
+    }
+    
+
+
+    #health span{
+      font-family:'Nothing You Could Do', cursive;
+      font-size: 40px;
+      text-align: center;
+      display: block;
+      }
+    
+      #health p{
+          font-family: 'Questrial', sans-serif;
+          text-align: center;
+        width: 55%;
+        margin: 0 22% auto;
+      }
+    #news-letter-container{
+        height: unset;
+        flex: wrap;
+    }
+    
+    
+    #news-letter-image img{
+    margin-top: -3%;
+    height: unset;
+    width: unset;
+    margin-left: 1px ;
+    }
+    
+    #subscribe-btn {
+        margin-top: 10%;
+        padding: 15px 25px;
+        font-size: 20px;
+        color: #017CA3;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      #subscribe-btn:hover {
+          background-color: #00B2F0; 
+        color: white;
+    }
+      
+      #subscribe-btn:active {
+        background-color: #8aa1d3;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    
+    footer, footer a{
+        background-color: #00B2F0;
+        text-align: center;
+        color:rgb(240, 241, 247);
+    }
+    
+    footer li{
+        font-size: 50px;
+        padding: 2%;
+    }
+    
+    #footer-header{
+        font-size: 25px;
+    }
+    
+    #footer-contact{
+        font-size: 20px;
+        padding: 1.5%;
+    }
+    
+    #footer-header span{
+        color:#2cecfa
+    }
+    
+    footer p:last-of-type{
+        font-size: 18px;
+    }
+    
+    
+    }/*End of media*/
+
+/*1080p */
+@media screen and (min-width: 1500px){
+    
+    
+    #limited-Offers{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(240, 241, 247);
+    }
+    .card{ border-radius: 5%;
+        flex-direction: column;
+        width: 400px;
+        height: 450px;
+        margin: 5% 5% auto;
+        margin-bottom: 5%;
+    }
+
+    .card:nth-child(1){
+        order: 2;
+    }
+
+    .card:nth-child(3){
+        order: 2;
+    }
+
+    .card .flex-content{
+        margin-top: 3%;
+    }
+      .card img{
+
+          height: 100%;
+          width: 300px;
+      }
+}
+
 
 
 
