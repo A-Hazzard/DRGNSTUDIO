@@ -58,22 +58,23 @@ li{
     display: inline;
    
 }
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+ul {
+	list-style-type: none;
+	}
+body {
+	font-family: Verdana, sans-serif;
+}
 
 /* Month header */
 .month {
-  padding: 70px 25px;
-  width: 100%;
+  padding: 70px;
+  width: 40.9%;
   background: #005AFF;
   text-align: center;
+  margin-left: 250px;
 }
 
-/* Month list */
-.month ul {
-  margin: 0;
-  padding: 0;
-}
+
 
 .month ul li {
   color: black;
@@ -94,16 +95,18 @@ body {font-family: Verdana, sans-serif;}
   padding-top: 10px;
 }
 
-/* Weekdays (Mon-Sun) */
+/* Weekdays (Sun-Sat) */
 .weekdays {
   margin: 0;
   padding: 10px 0;
   background-color:#575757;
+  width: 50%;
+  margin-left: 250px;
 }
 
 .weekdays li {
   display: inline-block;
-  width: 13.6%;
+  width: 13.5%;
   color: black;
   text-align: center;
 }
@@ -112,13 +115,14 @@ body {font-family: Verdana, sans-serif;}
 .days {
   padding: 10px 0;
   background: #eee;
-  margin: 0;
+  margin-left: 250px;
+  width: 50%;
 }
 
 .days li {
   list-style-type: none;
   display: inline-block;
-  width: 13.6%;
+  width: 13.5%;
   text-align: center;
   margin-bottom: 5px;
   font-size:12px;
@@ -130,4 +134,7 @@ body {font-family: Verdana, sans-serif;}
   padding: 5px;
   background: #005AFF;
   color: white !important
+}
+.last-month{
+	opacity: 0.5;
 }
