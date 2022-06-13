@@ -1373,7 +1373,7 @@ footer p:last-of-type{
         
         height: 80px;
         position: relative;
-        top:-50%;
+        top:-30%;
         color: white;
     }
     
@@ -1393,7 +1393,7 @@ footer p:last-of-type{
     nav{ 
         position: relative;
         left: 42%;
-        top: -70%;
+        top: -100%;
         width: 60%;   
     }
     
