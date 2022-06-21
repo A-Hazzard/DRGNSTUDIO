@@ -1,23 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+
 .main-container{
     width: 80%;
     margin: 0 auto;
     height: 100vh;
+
 }
 
 .image{
     width: 50%;
-
 }
 
 .content{
-    width: 40%;
+    width: 50%;
+   
+}
+.content p{
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 .image img{
-    margin-left: 3%;
-    height: 500px;
+    height: 400px;
+    margin: 0 7% auto;
+        
 }
 
 .wrapper{
     display: flex;
+  
 }
