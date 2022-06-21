@@ -107,3 +107,30 @@ nav ul li a:hover{
 .image img{
     margin-left: 3%;
 }
+footer, footer a{
+    background-color: #00B2F0;
+    text-align: center;
+    color:rgb(240, 241, 247);
+}
+
+footer li{
+    font-size: 50px;
+    padding: 2%;
+}
+
+#footer-header{
+    font-size: 25px;
+}
+
+#footer-contact{
+    font-size: 20px;
+    padding: 1.5%;
+}
+
+#footer-header span{
+    color:#2cecfa
+}
+
+footer p:last-of-type{
+    font-size: 18px;
+}
