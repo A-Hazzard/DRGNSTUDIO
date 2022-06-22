@@ -72,6 +72,7 @@ nav{
     left: 35%;
     top: -100%;
     width: 65%;   
+    border: 1px solid black;
 }
 
 ul{
@@ -1091,12 +1092,11 @@ footer p:last-of-type{
     }
     
     
-    nav{
-     
+    nav{   
         position: relative;
-        left: 38%;
-        top: -45%;
-        width: 60%;   
+        left: 34%;
+        top: -70%;
+        width: 65%;   
     }
     
     ul{
