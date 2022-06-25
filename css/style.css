@@ -72,7 +72,6 @@ nav{
     left: 35%;
     top: -100%;
     width: 65%;   
-    border: 1px solid black;
 }
 
 ul{
@@ -1328,7 +1327,10 @@ footer p:last-of-type{
 /*1080p */
 @media screen and (min-width: 1500px){
     
-    
+    nav{
+        left: 40%;
+        width: 58%;
+    }
     #limited-Offers{
         height: auto;
         display: flex;

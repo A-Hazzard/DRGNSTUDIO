@@ -5,20 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admission.css">
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oleo+Script&family=Varela+Round&display=swap" rel="stylesheet">   
-    <title>Admission</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oleo+Script&family=Varela+Round&display=swap" rel="stylesheet">     
+	<link rel="apple-touch-icon" type="image/png" href="icon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>Calendar and  Clock</title>
+  
+  
+	
+	<title>Admission</title>
 </head>
 <body>
     <header>
@@ -28,113 +26,98 @@
 
         <nav>
            
-            <ul>
-                <li><a href="#">Water Park</a></li>
-                <li><a href="#">Amusement Park</a></li>              
-                <li><a href="#">Pricing</a></li>                
-                <li><a href="#">Opening Hours</a></li>             
+			<ul>
+                <li><a href="#" onclick="alert('Coming Soon!')">Water Park</a></li>
+                <li><a href="#" onclick="alert('Coming Soon!')">Amusement Park</a></li>              
+                <li><a href="#" onclick="alert('Coming Soon!')">Pricing</a></li>                
+                <li><a href="#" onclick="alert('Coming Soon!')">Opening Hours</a></li>             
+                <li><a href="#" onclick="alert('You are already here')">Admission</a></li>
                 <li><a href="#">Jobs</a></li>
-                <li><a href="#">Faqs</a></li>
-                <li><a href="Aboutus.html">AboutUs</a></li>
-           
-			
-			</ul>
+                <li><a href="html/contactUs.html">Contact</a></li>
+                <li><a href="html/Aboutus.html">AboutUs</a></li>
+            </ul>
         </nav>
         
     </header>
 
-
-<h1>Operating Hours and Prices</h1>
-			<h2>Our opening hours can help you plan perfect days</h2>
-			<p>
+<main>
+<div class="container">
+<h2><strong>Operating Hours and Prices</strong>
+			<br><span>Our opening hours can help you plan perfect days</span></h2>			
 			<br/>
-			<h2>Opening Weekend and Public Holiday Hours:</h2>
+			<p>Opening Weekend and Public Holiday Hours:</p>
 			<p>Open 11:00 am to 6:00 pm</p>
 			<p>We are no longer a safe zone. <strong>ALL</strong> are welcome to the park.</p> 
-			<br/>
-			<div id = "calendar">
-			<div class = "month">
-				<ul>
-					<li class ="prev">&#10094;</li>
-					<li class ="next">&#10095;</li>
-					<li>June<br><span style="font-size:18px">2022</span></li>
-				</ul>
+</div>
+<br><br><br>
+<hr>
+<section id="calender">
+	<div class="card">
+		<div class="calendar-bar">
+			<button class="prev soft-btn"><i class="fas fa-chevron-left"></i></button>
+			<div class="current-month"></div>
+			<button class="next soft-btn"><i class="fas fa-chevron-right"></i></button>
+		</div>
+		<div class="calendar">
+			<div class="weekdays-name">
+				<div class="days-name">Sa</div>
+				<div class="days-name">Su</div>
+				<div class="days-name">Mo</div>
+				<div class="days-name">Tu</div>
+				<div class="days-name">We</div>
+				<div class="days-name">Th</div>
+				<div class="days-name">Fr</div>
 			</div>
+			<div class="calendar-days"></div>
+		</div>
+		<div class="goto-buttons">
+			<button type="button" class="btn prev-year">Prev Year</button>
+			<button type="button" class="btn today">Today</button>
+			<button type="button" class="btn next-year">Next Year</button>
+		</div>
+	</div>
 
-			<ul class ="weekdays">
-				<li>Sun</li>
-				<li>Mon</li>
-				<li>Tue</li>
-				<li>Wed</li>
-				<li>Thu</li>
-				<li>Fri</li>
-				<li>Sat</li>
-			</ul>
-			
-			<ul class ="days">
-				<li class = "last-month">29</li>
-				<li class = "last-month">30</li>
-				<li class = "last-month">31</li>
-			
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				</ul>
-				<ul class ="days">
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-				<li>11</li>
-				</ul>
-				<ul class ="days">
-				<li>12</li>
-				<li>13</li>
-				<li>14</li>
-				<li>15</li>
-				<li>16</li>
-				<li>17</li>
-				<li>18</li>
-				</ul>
-				<ul class ="days">
-				<li>19</li>
-				<li>20</li>
-				<Li>21</li>
-				<li>22</li>
-				<li>23</li>
-				<li>24</li>
-				<li>25</li>
-				</ul>
-				<ul class ="days">
-				<li>26</li>
-				<li>27</li>
-				<li>28</li>
-				<li>29</li>
-				<li><span class ="active">30</span></li>
-				<li>31</li>
-				</ul>
-			</ul>	
-			</div>
-			<br/>
-			
-			<footer>
-			<br>
-				<ul id="social-medias">
-					<li><ion-icon name="logo-facebook"></ion-icon></li>
-					<li><ion-icon name="logo-instagram"></ion-icon></li>
-					<li><ion-icon name="logo-youtube"></ion-icon></li>   
-				</ul>
+	<div class="logo">
+		<img id="logo-2" src="../images/logo.png"> 
+		<p class="status">WE ARE OPEN</p>
+	</div>
+</section>
 
-				<p id="footer-header">Dragon Studio Water & Amusement Park - <span>Live the Adventure!</span></p>
-				<p id="footer-contact">(868) 761-8373 | info@dragonstudio.com | Port-of-Spain, Port</p> 
-				<p>2021 <u>Dragon Studio Water Park</u> All Rights Reserved <br><br><a href="https://5islandspark.com/refund/">Terms and Condition</a></p><br>
-			</footer>
+<div class="banners">
+
+	<div class="banner">
+<img src="https://www.ragingwaters.com/content/rla/en/operating-hours---prices/_jcr_content/responsiveGrid/cc32_distributivecar/1_card/image.coreimg.jpeg/1624447834035/horarios-mirabilandia.jpeg" alt="operating hours image"/>
+<h3>Operating Hours</h3>
+<br>
+<button>See More</button>
+</div>
+
+<div class="banner">
+<img src="https://www.ragingwaters.com/content/rla/en/operating-hours---prices/_jcr_content/responsiveGrid/cc32_distributivecar/2_card/image.coreimg.jpeg/1624447828168/precios-mirabilandia.jpeg">
+<h3>Prices</h3>
+<br>
+<button>Prices</button>
+
+</div>
 
 
-   
+</div>
 
-	</body>
+
+</main>
+
+<footer>
+	<br>
+		<ul id="social-medias">
+			<li><ion-icon name="logo-facebook"></ion-icon></li>
+			<li><ion-icon name="logo-instagram"></ion-icon></li>
+			<li><ion-icon name="logo-youtube"></ion-icon></li>   
+	</ul>
+	
+	<p id="footer-header">Dragon Studio Water & Amusement Park - <span>Live the Adventure!</span></p>
+	<p id="footer-contact">(868) 761-8373 | info@dragonstudio.com | Port-of-Spain, Port</p> 
+	<p>2021 <u>Dragon Studio Water Park</u> All Rights Reserved <br><br><a href="https://5islandspark.com/refund/">Terms and Condition</a></p><br>
+	</footer>
+<script type="text/javascript" src="../js/functions.js"></script>
+</body>
 </html>
