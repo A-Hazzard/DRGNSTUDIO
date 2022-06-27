@@ -1308,7 +1308,7 @@ footer p:last-of-type{
 @media screen and (min-width: 1500px){
     
     header{
-        position: sticky;
+       
         top: 0;
         z-index: 1;
       
