@@ -120,7 +120,7 @@
     margin:auto;
     padding:5% 5%;
     overflow:hidden;
-    background-color: hsla(211, 99%, 36%, 0.709);
+    background-color: hsl(211, 80%, 45%);
  }
  .team h1{
     text-align:center;
