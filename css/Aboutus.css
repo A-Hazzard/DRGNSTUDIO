@@ -1,33 +1,191 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
 
-.main-container{
-    width: 80%;
-    margin: 0 auto;
-    height: 100vh;
-
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.image{
-    width: 50%;
+
+#business-name a{
+    color: unset;
+    font-size: unset;
+    
+  }
+#title{
+    margin-left: 35%;
 }
 
-.content{
-    width: 50%;
-   
-}
-.content p{
-    font-size: 25px;
-    font-family: 'Nanum Gothic', sans-serif;
-
+#title-2{
+    margin-left: 20%;
 }
 
-.image img{
-    height: 400px;
-    margin: 0 7% auto;
-        
-}
 
-.wrapper{
-    display: flex;
   
+ .container h1{
+    font-size:50px;
+    
+ }
+ .about{
+    background-image: url("https://s.hdnux.com/photos/01/15/21/47/20257245/3/rawImage.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 90% 75%;
+    padding:5% 0;
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    background-attachment: fixed ;
+ }
+ .about .left{
+    padding:2% 0;
+    float:left;
+    width:50%;
+ }
+ .about .right{
+    width:50%;
+    display:inline-block;
+ }
+ .about .right img{
+    width:100%;
+    margin-left: -1%;
+ }
+ .about .left h1{
+    text-align:center;
+    color:#1EADFF;
+    margin:0 0 10px 0;
+ }
+ .about .left hr{
+    width:20%;
+    margin-left: 40%;
+    border-top:2px solid #000;
+    border-bottom:none;
+ }
+ .about .left p{
+    font-size:1rem;
+    margin:40px auto;
+    width:80%
+ }
+ 
+ .mission{
+    background-image: url("https://gray-wtvy-prod.cdn.arcpublishing.com/resizer/TVyqME2Tpu9yl-MfU0J7ElAV1h0=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/NCQ2CPF63FCDJINQJFTYYPXUPM.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 1% 65%;
+    background-attachment: fixed;
+    padding:5% 0;
+    width:100%;
+    height:auto;
+    background-color:#fff;
+
+ }
+ 
+ .mission .right{
+    padding:2% 0;
+    width:50%;
+    margin-left: 50%;
+    display:inline-block;
+ }
+ .mission .left{
+    
+    float:left;
+    width:50%;
+
+ }
+ .mission .left img{
+    width:100%;
+    margin-left: 1%;
+ }
+ .mission .right h1{
+    text-align:center;
+    color:#1EADFF;
+    margin:0 0 20px 0;
+ }
+ .mission .right hr{
+    width:35%;
+    border-top:2px solid #000;
+    border-bottom:none;
+    margin-left: 30%;
+ }
+ .mission .right p{
+    font-size:1rem;
+    margin:40px auto;
+    width:80%;
+ }
+ 
+ 
+ .team{
+    width:90%;
+    margin:auto;
+    padding:5% 5%;
+    overflow:hidden;
+    background-color: hsla(211, 99%, 36%, 0.709);
+ }
+ .team h1{
+    text-align:center;
+    color: white;
+    
+ }
+ .team h1 hr{
+    width:15%;
+    border-top:2px solid #000;
+    background-color: transparent;
+    border-bottom:none;
+    margin-bottom:50px;
+ }
+ .team .card{
+    padding-bottom:20px;
+    padding-top:20px;
+    position:relative;
+    min-width:20%;
+    height:500px !important;
+    height:auto;
+    background-color:#cee4fc;
+    display:inline-block;
+    margin:40px 10%;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+    text-align:center;
+ }
+
+.team .card:last-of-type{
+    margin-left: 35%;
 }
+
+ .card .circle-container{
+    position:relative;
+    background-color:#579f79;
+    width:250px;
+    height:250px;
+    border:none;
+    border-radius:50%;
+    margin:auto;
+    color:#fff;
+ }
+ .circle-container h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    font-size:60px;
+ }
+ 
+ .team .card h2{
+    color: unset;
+    margin:55px 0% 0 0;
+ }
+
+ .team .card h4{
+    text-align:center;
+    margin:50px 0 0 0;
+ }
+ .team .card p{
+    width:250px;
+    margin:30px auto;
+    text-align:center;
+ 
+ }
+ .clear{
+     clear: both;			
+ }

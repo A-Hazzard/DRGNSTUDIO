@@ -11,59 +11,65 @@ body{
 }
 
 
-#logo{
-    width: 7%;
-}
-
 header{
-    background-color: #0059B7;
-    height: 80px;
-    position: relative;
-    top:-50%;
-    color: white;
+  background-color: #0159B6;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 80px;
+  color: white;
 }
 
-h1{
-    display: inline;
-    font-family: 'Varela Round', sans-serif;
-    position: relative;
-    top: -30%;
-    
+#logo{
+  width: 7%;
 }
 
-h1 a{
-    text-decoration: none;
-    color: white;
+h1, h1 a{
+  display: inline;
+  font-family: 'Varela Round', sans-serif;
+  position: relative;
+  color: white;
+  top: -8%;
+
+  font-size: 35px;
 }
 
-a:hover {
-    opacity: 0.7;
-  }
 
 nav{
- 
-    position: relative;
-    left: 38%;
-    top: -70%;
-    width: 66%;   
+
+  position: relative;
+  left: 38%;
+  top: -70%;
+  width: 65%;   
+}
+
+ul{
+  list-style-type: none;   
 }
 
 ul a{
-    text-decoration: none; 
-    color: white;
-    padding-left: 3%;
-    font-size: 20px;
-    position: relative;
-    font-family: 'Oleo Script', cursive;
+  text-decoration: none; 
+  color: white;
+  padding-left: 3%;
+  font-size: 20px;
+  position: relative;
+  font-family: 'Oleo Script', cursive;
 }
 
-li{
-    display: inline;
-   
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
 }
-ul {
-	list-style-type: none;
-	}
+
+a:hover {
+  opacity: 0.7;
+}
+li{
+  display: inline;
+ 
+}
+
 
 main{
   margin: 0 15% auto;

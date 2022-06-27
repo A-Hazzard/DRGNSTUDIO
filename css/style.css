@@ -18,8 +18,7 @@ body{
 header{
     background-color: #0159B6;
     height: 80px;
-    position: relative;
-    top:-50%;
+   
     color: white;
 }
 
@@ -32,7 +31,7 @@ h1{
     display: inline;
     font-family: 'Varela Round', sans-serif;
     position: relative;
-    
+    font-size: 35px;
     
 }
 h2{
@@ -69,7 +68,7 @@ h3{
 nav{
  
     position: relative;
-    left: 35%;
+    left: 30%;
     top: -100%;
     width: 65%;   
 }
@@ -297,8 +296,9 @@ h5{
     transform: translateY(4px);
   }
 
-footer, footer a{
-    background-color: #00B2F0;
+ 
+  footer, footer a{
+    background-color: hsl(211, 99%, 48%);
     text-align: center;
     color:rgb(240, 241, 247);
 }
@@ -525,11 +525,6 @@ footer p:last-of-type{
 
 
 
-    footer, footer a{
-        background-color: #00B2F0;
-        text-align: center;
-        color:rgb(240, 241, 247);
-    }
     
     footer li{
         font-size: 50px;
@@ -700,12 +695,7 @@ footer p:last-of-type{
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
-    
-    footer, footer a{
-        background-color: #00B2F0;
-        text-align: center;
-        color:rgb(240, 241, 247);
-    }
+   
     
     footer li{
         font-size: 50px;
@@ -997,12 +987,7 @@ footer p:last-of-type{
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
-    
-    footer, footer a{
-        background-color: #00B2F0;
-        text-align: center;
-        color:rgb(240, 241, 247);
-    }
+   
     
     footer li{
         font-size: 50px;
@@ -1293,12 +1278,7 @@ footer p:last-of-type{
         transform: translateY(4px);
       }
     
-    footer, footer a{
-        background-color: #00B2F0;
-        text-align: center;
-        color:rgb(240, 241, 247);
-    }
-    
+  
     footer li{
         font-size: 50px;
         padding: 2%;
@@ -1327,6 +1307,13 @@ footer p:last-of-type{
 /*1080p */
 @media screen and (min-width: 1500px){
     
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      
+    }
+
     nav{
         left: 40%;
         width: 58%;
