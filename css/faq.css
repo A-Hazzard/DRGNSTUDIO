@@ -51,6 +51,7 @@ main{
     background: linear-gradient(0,rgba(96, 176, 255, 0.978) 0, #cceef0 100%);
     border-radius: 10px;
     padding: 1%;
+    width: 80%;
 }
 
 .categories{
@@ -60,7 +61,7 @@ main{
 
 
 #keyword{
-    width: 95%;
+    width: 80%;
     height: 32px;
     font-size: 100%;
     padding-left: 2%;
@@ -81,3 +82,61 @@ main{
     font-size: 25px;
     color: grey;
 }
+
+
+input[type=text]{
+    position: relative;
+    padding: 15px 40px 15px 20px;
+    margin-left: 35%;
+    width: 0px;
+    color: #525252;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
+    outline: none;
+   
+    
+  }
+
+  input[type=text]:focus{ 
+    
+    animation: slide 1s ease-in-out;
+    animation-fill-mode: forwards;
+ }
+
+  
+  i{
+    position: relative;
+    left: -37px;
+    color: #8233C5;
+    animation: slideOutIcon 1s ease-out;
+  }
+
+
+  @keyframes slide{
+    from{
+        transform: translate(0, 0);
+    }
+
+    to{
+        transform: translate(-100px, 0);
+        width: 40%;
+    }
+  }
+  
+
+  @keyframes slideOutIcon{
+    from{
+        transform: translate(200px, 0);
+    }
+
+    to{
+        transform: translate(0px, 0);
+        width: 0%;
+    }
+  }
