@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-*::after,
-*::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 :root {
     --primary-color: #fff;
@@ -37,51 +31,8 @@ body {
         color: white;
     }
 
-    #logo{
-        width: 15%;
-    }
+  
 
-    nav{
-        
-        position: relative;
-        left: 12%;
-        top: -100%;
-        width: 110%;   
-    }
-    
-    h1{
-        position: relative;
-        top: -100%;
-        left: 13%;
-        font-size: 25px;
-    }
-
-    ul{
-        list-style-type: none;   
-    }
-    
-    ul a{
-        text-decoration: none; 
-        color: white;
-        padding-left: 1%;
-        font-size: 15px;
-        position: relative;
-        font-family: 'Oleo Script', cursive;
-    }
-    
-    a {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-      }
-      
-      a:hover {
-        opacity: 0.7;
-      }
-    li{
-        display: inline;
-       
-    }    
 }
 
 @media screen and (min-width: 1023px) {
@@ -93,109 +44,12 @@ body {
         color: white;
     }
 
-    #logo{
-        width: 10%;
-    }
+   
 
-    nav{
-        
-        position: relative;
-        left: 20%;
-        top: -100%;
-        width: 110%;   
-    }
-    
-    h1{
-        position: relative;
-        top: -100%;
-        left: 10%;
-        font-size: 25px;
-    }
-
-    ul{
-        list-style-type: none;   
-    }
-    
-    ul a{
-        text-decoration: none; 
-        color: white;
-        padding-left: 2%;
-        font-size: 15px;
-        position: relative;
-        font-family: 'Oleo Script', cursive;
-    }
-    
-    a {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-      }
-      
-      a:hover {
-        opacity: 0.7;
-      }
-    li{
-        display: inline;
-       
-    }    
 }
 
 @media screen and (min-width: 1023px) {
-    header{
-        background-color: #0159B6;
-        height: 80px;
-        position: relative;
-        top:-50%;
-        color: white;
-    }
-
-    #logo{
-        width: 8%;
-    }
-
-    nav{
-        
-        position: relative;
-        left: 45%;
-        top: -110%;
-        width: 110%;   
-    }
-    
-    h1{
-        position: relative;
-        top: -85%;
-        left: 7%;
-        font-size: 25px;
-    }
-
-    ul{
-        list-style-type: none;   
-    }
-    
-    ul a{
-        text-decoration: none; 
-        color: white;
-        padding-left: 1.5%;
-        font-size: 15px;
-        position: relative;
-        font-family: 'Oleo Script', cursive;
-    }
-    
-    a {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-      }
-      
-      a:hover {
-        opacity: 0.7;
-      }
-    li{
-        display: inline;
-       
-    }    
-
-    
+ 
 footer, footer a{
     background-color: #00B2F0;
     text-align: center;
@@ -225,60 +79,15 @@ footer p:last-of-type{
 }
 }
 
+
+@media screen and (min-width: 1080px){
+    h1 a{
+        font-size: unset;
+        color: unset;
+    }
+}
+
 @media screen and (min-width: 1365px) {
-    header{
-        background-color: #0159B6;
-        height: 80px;
-        position: relative;
-        top:-50%;
-        color: white;
-    }
-
-    #logo{
-        width: 8%;
-    }
-
-    nav{       
-        position: relative;
-        left: 45%;
-        top: -110%;
-        width: 110%;   
-    }
-    
-    h1{
-        position: relative;
-        top: -85%;
-        left: 7%;
-        font-size: 25px;
-    }
-
-    ul{
-        list-style-type: none;   
-    }
-    
-    ul a{
-        text-decoration: none; 
-        color: white;
-        padding-left: 1.5%;
-        font-size: 15px;
-        position: relative;
-        font-family: 'Oleo Script', cursive;
-    }
-    
-    a {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-      }
-      
-      a:hover {
-        opacity: 0.7;
-      }
-    li{
-        display: inline;
-       
-    }    
-
     
 footer, footer a{
     background-color: #00B2F0;
