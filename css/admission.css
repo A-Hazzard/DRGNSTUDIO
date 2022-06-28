@@ -11,66 +11,6 @@ body{
 }
 
 
-header{
-  background-color: #0159B6;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 80px;
-  color: white;
-}
-
-#logo{
-  width: 7%;
-}
-
-h1, h1 a{
-  display: inline;
-  font-family: 'Varela Round', sans-serif;
-  position: relative;
-  color: white;
-  top: -8%;
-
-  font-size: 35px;
-}
-
-
-nav{
-
-  position: relative;
-  left: 38%;
-  top: -70%;
-  width: 65%;   
-}
-
-ul{
-  list-style-type: none;   
-}
-
-ul a{
-  text-decoration: none; 
-  color: white;
-  padding-left: 3%;
-  font-size: 20px;
-  position: relative;
-  font-family: 'Oleo Script', cursive;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-li{
-  display: inline;
- 
-}
-
-
 main{
   margin: 0 15% auto;
 
@@ -78,33 +18,46 @@ main{
  
 }
 
+h1 a{
+  color: unset;
+  font-size: unset;
+}
+
 h2{
-  margin-top: 1%;
+  position: unset;
+  color: unset;
   font-size: 40px;
   font-family: Anton, 'sans serif';
 }
 
 h2 span{
   font-size: 32px;
+
 }
 
 #calender{
-  
+
   margin-top: 10%;
   display: flex;
 }
 
 .container{
   font-size: 25px;
+ margin-top: 5%;
 }
 
 .card {  
   width: 50%;
-  margin-bottom: 5%;
+  margin-top: 10%;
     height: fit-content;
   background: linear-gradient(45deg, #0059B7, #9ab3ce);
   border-radius: 20px; 
    box-shadow: 0px 0px 10px #000;
+   
+}
+
+.logo{
+  order: 2;
 }
 
 .calendar-bar { 
@@ -258,6 +211,7 @@ h2 span{
 
 
 h3{
+  position: unset;
   font-size: 35px;
   margin-left: 5%;
   font-family: 'Courier New', Courier, monospace;

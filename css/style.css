@@ -70,7 +70,7 @@ nav{
     position: relative;
     left: 30%;
     top: -100%;
-    width: 65%;   
+    width: 65%;
 }
 
 ul{
@@ -1315,8 +1315,8 @@ footer p:last-of-type{
     }
 
     nav{
-        left: 40%;
-        width: 58%;
+        left: 30%;
+        width: 70%;
     }
     #limited-Offers{
         height: auto;

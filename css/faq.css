@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+h1 a{
+    color: unset;
+    font-size: unset;
+}
+
+main{
+    border: 1px solid;
+    width: 90vw;
+    margin-left: 5%;
+}
+
+.title{
+    position: relative;
+    top: 30%;
+    left: unset;
+    color: unset;
+    font-size: 45px;
+    font-family: Anton;
+    letter-spacing: 3px;
+}
