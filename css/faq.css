@@ -9,7 +9,7 @@ h1 a{
 }
 
 main{
-    border: 1px solid;
+  
     width: 90vw;
     margin-left: 5%;
 }
@@ -22,4 +22,41 @@ main{
     font-size: 45px;
     font-family: Anton;
     letter-spacing: 3px;
+}
+
+.title:nth-child(2){
+    font-size: larger;
+}
+
+.container-1 p{
+    font-size: large;
+    padding: 1%;
+}
+
+.container-1{
+    margin-top: 5%;
+}
+
+.container-2{
+
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 29%;
+    margin-top: 2%;
+}
+
+.container-2 div{
+    margin: 1% 0 1% 0;
+    background: linear-gradient(0,rgba(96, 176, 255, 0.978) 0, #cceef0 100%);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#keyword{
+    width: 95%;
+    height: 32px;
+    font-size: 100%;
+    padding-left: 2%;
+    border-radius: 15px;
 }
