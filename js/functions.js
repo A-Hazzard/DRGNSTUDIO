@@ -95,20 +95,7 @@ document.querySelectorAll(".soft-btn").forEach(function (element) {
 		renderCalendar();
 	});
 });
-document.querySelectorAll(".btn").forEach(function (element) {
-	element.addEventListener("click", function () {
-		let btnClass = element.classList;
-		date = new Date(currentMonth.textContent);
-		if (btnClass.contains("today")) date = new Date();
-		else if (btnClass.contains("prev-year"))
-			date = new Date(date.getFullYear() - 1, 0, 1);
-		else date = new Date(date.getFullYear() + 1, 0, 1);
-		currentMonth.textContent = date.toLocaleDateString("en-US", {
-			month: "long",
-			year: "numeric"
-		});
-		renderCalendar();
-	});
-});
+
+
 
 
