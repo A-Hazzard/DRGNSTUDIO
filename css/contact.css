@@ -249,3 +249,7 @@ footer p:last-of-type{
         margin-right: 0;
     }
 }
+
+#social-medias li{
+    display: inline !important;
+}
