@@ -358,3 +358,6 @@ input[type=text]{
     }
   }
   
+  #social-medias li{
+    display: inline !important;
+  }

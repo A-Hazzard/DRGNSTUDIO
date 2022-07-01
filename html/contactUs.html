@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/18479e6558.js" crossorigin="anonymous"></script>
     <title>Contact Us</title>
 </head>
 <body>
+ 
+
     <header>
         <img id="logo" src="../images/logo.png"> 
 
@@ -16,13 +22,13 @@
 
         <nav>
            
-            <ul>
+            <ul class="nav-ul">
                 <li><a href="#" onclick="alert('Coming Soon!')">Water Park</a></li>
                 <li><a href="#" onclick="alert('Coming Soon!')">Amusement Park</a></li>              
                 <li><a href="#" onclick="alert('Coming Soon!')">Pricing</a></li>                
                 <li><a href="#" onclick="alert('Coming Soon!')">Opening Hours</a></li>             
-                <li><a href="#"  onclick="alert('You are already here')">Admission</a></li>
-                <li><a href="#">Jobs</a></li>
+                <li><a href="admissions.html">Admission</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
                 <li><a href="contactUs.html">Contact</a></li>
 				<li><a href="parkSafety.html">Faq</a></li>
                 <li><a href="AboutUs.html">AboutUs</a></li>
@@ -40,8 +46,10 @@
                 <h6>Email</h6>
                 <p class="mail">info@dragonstudio.com</p>
             </div>
+
+
             <div class="contact-form">
-                <form>
+      <form action="../php/contact.php" method="post">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required>
                     <label for="email">Email</label>
@@ -66,5 +74,7 @@
         <p id="footer-contact">(868) 761-8373 | info@dragonstudio.com | Port-of-Spain, Port</p> 
         <p>2021 <u>Dragon Studio Water Park</u> All Rights Reserved <br><br><a href="https://5islandspark.com/refund/">Terms and Condition</a></p><br>
         </footer>
+
+        
 </body>
 </html>

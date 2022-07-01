@@ -21,6 +21,7 @@
 
 
 
+
   
  .container h1{
     font-size:50px;
@@ -114,39 +115,6 @@
     margin:40px auto;
     width:80%;
  }
- .curve {
-    position: absolute;
-    height: 250px;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-}
-
-.curve::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 60%;
- 
-    height: 100%;
-    transform: translate(71%, 257%);
-    background-color: hsl(211, 80%, 45%);
-}
-
-.curve::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 60%;
-    height: 100%;
-    background-color: #fff;
-    transform: translate(-19%, 240%);
-    z-index: 1;
-}
-
- 
  .team{
     width:90%;
     margin:auto;
@@ -158,15 +126,15 @@
     text-align:center;
     color: white;
     margin-top: 93%;
-    margin-left: 65%;
-    position: absolute;
+    margin-left: 3%;
+   
  }
  .team h1 hr{
-    width:55%;
+    width:10%;
     border-top:2px solid #000;
     background-color: transparent;
     border-bottom:none;
-    margin-left: 25%;
+    margin-left: 6%;
     margin-bottom:50px;
  }
  .team .card{
@@ -223,4 +191,8 @@
  }
  .clear{
      clear: both;			
+ }
+
+ #social-medias li{
+   display: inline !important;
  }

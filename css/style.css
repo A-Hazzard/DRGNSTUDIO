@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oleo+Script&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Oleo+Script&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Co.nav-uld+Do&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 *{
     margin: 0;
@@ -34,7 +34,7 @@ h1{
     font-size: 35px;
     
 }
-h2{
+.container h2{
     font-family: 'Oleo Script', cursive;
     position: absolute;
     top: 40%;
@@ -43,7 +43,7 @@ h2{
     font-size: 25px;
 }
 
-h3{
+.container h3{
     position: absolute;
     top: 90%;
     left: 10%;
@@ -73,11 +73,11 @@ nav{
     width: 65%;
 }
 
-ul{
+.nav-ul{
     list-style-type: none;   
 }
 
-ul a{
+.nav-ul a{
     text-decoration: none; 
     color: white;
     padding-left: 3%;
@@ -95,7 +95,7 @@ a {
   a:hover {
     opacity: 0.7;
   }
-li{
+.nav-ul li{
     display: inline;
    
 }
@@ -238,7 +238,7 @@ h4{
 }
 
 #health span{
-    font-family:'Nothing You Could Do', cursive;
+    font-family:'Nothing You Co.nav-uld Do', cursive;
 }
 
 #health p{
@@ -343,7 +343,7 @@ footer p:last-of-type{
         font-size: 25;
     }
     
-    h3{
+    .container h3{
         top: 100%;    
         }
       
@@ -354,7 +354,7 @@ footer p:last-of-type{
         
         }  
     
-        ul a{
+        .nav-ul a{
             font-size: 17px;
         }
       
@@ -453,7 +453,7 @@ footer p:last-of-type{
     }
 
     #health span{
-      font-family:'Nothing You Could Do', cursive;
+      font-family:'Nothing You Co.nav-uld Do', cursive;
       font-size: 40px;
       }
 
@@ -569,7 +569,10 @@ footer p:last-of-type{
         left: -2%;
     }
 
-    h3{
+    h1 a{
+        color: white;
+    }
+    .container h3{
         top: 110%;
     }
     nav{
@@ -651,7 +654,7 @@ footer p:last-of-type{
     }
 
     #health span{
-      font-family:'Nothing You Could Do', cursive;
+      font-family:'Nothing You Co.nav-uld Do', cursive;
       font-size: 40px;
       margin: 0 15% auto;
       }
@@ -749,7 +752,7 @@ footer p:last-of-type{
         left: 1mm;
         
     }
-    h2{
+   .container h2{
         font-family: 'Oleo Script', cursive;
         position: absolute;
         top: 40%;
@@ -758,7 +761,7 @@ footer p:last-of-type{
         font-size: 25px;
     }
     
-    h3{
+    .container h3{
         position: absolute;
         top: 90%;
         left: 10%;
@@ -790,11 +793,11 @@ footer p:last-of-type{
         width: 65%;   
     }
     
-    ul{
+    .nav-ul{
         list-style-type: none;   
     }
     
-    ul a{
+    .nav-ul a{
         text-decoration: none; 
         color: white;
         padding-left: 3%;
@@ -812,7 +815,7 @@ footer p:last-of-type{
       a:hover {
         opacity: 0.7;
       }
-    li{
+    .nav-ul li{
         display: inline;
        
     }
@@ -941,7 +944,7 @@ footer p:last-of-type{
 
 
     #health span{
-      font-family:'Nothing You Could Do', cursive;
+      font-family:'Nothing You Co.nav-uld Do', cursive;
       font-size: 40px;
       text-align: center;
       display: block;
@@ -1043,7 +1046,7 @@ footer p:last-of-type{
         left: 1mm;
         
     }
-    h2{
+    .container h2{
         font-family: 'Oleo Script', cursive;
         position: absolute;
         top: 40%;
@@ -1052,7 +1055,7 @@ footer p:last-of-type{
         font-size: 25px;
     }
     
-    h3{
+    .container h3{
         position: absolute;
         top: 90%;
         left: 10%;
@@ -1083,11 +1086,11 @@ footer p:last-of-type{
         width: 65%;   
     }
     
-    ul{
+    .nav-ul{
         list-style-type: none;   
     }
     
-    ul a{
+    .nav-ul a{
         text-decoration: none; 
         color: white;
         padding-left: 3%;
@@ -1105,7 +1108,7 @@ footer p:last-of-type{
       a:hover {
         opacity: 0.7;
       }
-    li{
+    .nav-ul li{
         display: inline;
        
     }
@@ -1231,7 +1234,7 @@ footer p:last-of-type{
 
 
     #health span{
-      font-family:'Nothing You Could Do', cursive;
+      font-family:'Nothing You Co.nav-uld Do', cursive;
       font-size: 40px;
       text-align: center;
       display: block;
