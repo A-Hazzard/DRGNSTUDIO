@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+
+:root{
+    --website-name-font-size: 18px;
+    --website-name-margin-left: 20%;
+    --website-name-margin-top: -15%;
+    --website-name-font-family: 'Helvetica Neue', Helvetica, Arial, sans-;
+    --front-cover-font-size: 30px;
+    --h2-font-family: 'Anton', sans-serif;
+    --h2-font-size: 20px;
+    --h3-font-size: 35px;
+    --h3-font-family: 'Anton', sans-serif;
+    --paragraph-font-family: 'Barlow', sans-serif;
+    --blue-theme-color: #0082E6;
+    --flex-image-width: 120px;
+    --flex-image-height: 150px;
+    --banner-font-size: 20px;
+    --iframe-width: 90%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+ 
+  @media (min-width: 279px){
+    nav{
+        background: var(--blue-theme-color);
+        height: 80px;
+        width: 100%;
+        z-index: -1;
+      }
+      label.website-name{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        font-weight: bold;
+      }
+    
+      
+      nav ul{
+        float: right;
+        margin-right: 20px;
+      }
+      nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+      nav ul li a{
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+      }
+      a.active,a:hover{
+        background: #1b9bff;
+        transition: .5s;
+      }
+      .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+      }
+      #check{
+        display: none;
+      }
+    
+    label.website-name{
+        font-size: var(--website-name-font-size);
+        margin-left: var(--website-name-margin-left);
+        margin-top: var(--website-name-margin-top);
+        
+        font-family: var(--website-name-font-family);
+        
+    }
+    #logo{
+        height: 50px;
+        margin-left: 2%;
+        margin-top: 5%;
+        position: absolute;
+      }
+
+      #home-main-container #front-cover{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -30%;
+      }
+      #front-cover-image{
+        object-fit: cover;
+        width: 100vw;
+        height: 300px;
+      }
+
+      #front-cover-title, #front-cover-title-2{
+      
+        font-family: var(--website-name-font-family);
+        margin-left: 5%;
+      }
+
+      #front-cover-title{
+        font-size: var(--front-cover-font-size);
+
+      }
+
+      #front-cover-title-2{
+        font-size: calc(var(--front-cover-font-size) - 15px);
+
+      }
+
+      #limited-offers{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+      }
+
+      .card .flex-image img {
+        block-size: 150px;
+        border-block-end-color: rgb(33, 37, 41);
+        border-block-start-color: rgb(33, 37, 41);
+        border-inline-end-color: rgb(33, 37, 41);
+        border-inline-start-color: rgb(33, 37, 41);
+        border-start-start-radius: 12px;
+        box-sizing: border-box;
+        caret-color: rgb(33, 37, 41);
+        color: rgb(33, 37, 41);
+        column-rule-color: rgb(33, 37, 41);
+        cursor: pointer;
+        height: var(--flex-image-height);
+        inline-size: 88px;
+        object-fit: cover;
+        overflow-wrap: break-word;
+        perspective-origin: 44px 75px;
+        text-align: left;
+        text-decoration: none solid rgb(33, 37, 41);
+        text-emphasis-color: rgb(33, 37, 41);
+        text-size-adjust: 100%;
+        transform-origin: 44px 75px;
+        vertical-align: middle;
+        width: var(--flex-image-width);
+        border: 0px none rgb(33, 37, 41);
+        border-radius: 12px 0px 0px;
+        font: 16px / 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        outline: rgb(33, 37, 41) none 0px;
+    }/*.card .flex-image img*/
+    
+    .card .flex-image img:after {
+        border-block-end-color: rgb(33, 37, 41);
+        border-block-start-color: rgb(33, 37, 41);
+        border-inline-end-color: rgb(33, 37, 41);
+        border-inline-start-color: rgb(33, 37, 41);
+        box-sizing: border-box;
+        caret-color: rgb(33, 37, 41);
+        color: rgb(33, 37, 41);
+        column-rule-color: rgb(33, 37, 41);
+        cursor: pointer;
+        overflow-wrap: break-word;
+        text-align: left;
+        text-decoration: none solid rgb(33, 37, 41);
+        text-emphasis-color: rgb(33, 37, 41);
+        text-size-adjust: 100%;
+        border: 0px none rgb(33, 37, 41);
+        font: 16px / 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        outline: rgb(33, 37, 41) none 0px;
+    }/*.card .flex-image img:after*/
+    
+    .card .flex-image img:before {
+        border-block-end-color: rgb(33, 37, 41);
+        border-block-start-color: rgb(33, 37, 41);
+        border-inline-end-color: rgb(33, 37, 41);
+        border-inline-start-color: rgb(33, 37, 41);
+        box-sizing: border-box;
+        caret-color: rgb(33, 37, 41);
+        color: rgb(33, 37, 41);
+        column-rule-color: rgb(33, 37, 41);
+        cursor: pointer;
+        overflow-wrap: break-word;
+        text-align: left;
+        text-decoration: none solid rgb(33, 37, 41);
+        text-emphasis-color: rgb(33, 37, 41);
+        text-size-adjust: 100%;
+        border: 0px none rgb(33, 37, 41);
+        font: 16px / 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        outline: rgb(33, 37, 41) none 0px;
+    }/*.card .flex-image img:before*/
+    
+    
+    .flex-content h2{
+        padding: 30% 0 0 10%;
+        font-size: var(--h4-font-size);
+        font-family: var(--h4-font-family);
+    }
+
+      .title{
+        display: none;
+      }
+
+     
+      .card{
+        background-color: #f3f2f2 ;
+        margin-bottom: 10%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+
+     #banner-container{
+        background-color: var(--blue-theme-color);
+        padding: 5%;
+     }
+
+     .banner{
+        text-align: center;
+        padding: 15%;
+        font-size: var(--banner-font-size);
+     }
+
+     iframe{
+        border-radius: 20px;
+        margin-left: 5%;
+        width: var(--iframe-width);
+        margin-top: 5%;
+     }
+
+     #news{
+        padding: 5%;
+     }
+
+     #news h3{
+        font-size: var(--h3-font-size);
+        font-family: var(--h3-font-family);
+        letter-spacing: 2px;
+     }
+
+     #news p{
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+     }
+
+  
+
+     #button{
+       
+        background-color: var(--blue-theme-color);
+        font-size: 15px;
+        height: 50px;
+        text-align: center;
+        padding-top: 5%;
+        border-radius: 20px;
+        color: white;
+       
+     }
+
+     
+    .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
