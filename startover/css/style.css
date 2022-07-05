@@ -77,13 +77,14 @@
       }
 
           
-    #logo{
+    .logo{
       height: var(--logo-height);
       margin-left: 5%;
       top: 3.5%;
       position: fixed;
       
     }
+
       #website-name{
         color: white;
         line-height: 80px;
@@ -435,14 +436,31 @@
       }
 
 
+      .admission-container{
+        padding: 5%;
 
+      }
+
+      .admission-container h2{
+        font-size: var(--h2-font-size);
+        font-family: var(--h2-font-family);
+      }
+
+      .admission-container p{
+        font-size: var(--news-paragraph-font-size);
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+      }
 
       /*CALENDAR*/
     
+     
+
       .calendar {
+        overflow-x: scroll;
         font-family: 'IBM Plex Sans', sans-serif;
         position: relative;
-        max-width: 400px; /*change as per your design need */
+        max-width: 500px; /*change as per your design need */
         min-width: 100px;
         background: var(--calendar-bg-color);
         color: var(--calendar-font-color);
@@ -578,14 +596,72 @@
       border: 1px solid transparent;
       pointer-events: none;
     }
-     
+
+    .open-logo #logo-2{
+      height: 150px;
+      margin-left: 20%;
+    }
+    
+    .status{
+      text-align: center;
+      font-family: var(--paragraph-font-family);
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10%;
+      margin-left: -8%;
+    } 
+    .admission-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .admission-banner{
+      overflow: hidden;
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 10%;
+      background-color: #f5f7fb;
+    }
+    .admission-banner img{
+    
+      height: 7rem;
+      margin-left: 0%;
+      object-fit: cover;
+    }
+
+    .admission-banner h3{
+      font-family: var(--h3-font-family);
+      text-align: center;
+      font-size: var(--h3-font-size);
+    }
+
+    .admission-banner button{
+      background-color: var(--blue-theme-color);
+      color: white;
+      border: none;
+      padding: 10%;
+      border-radius: 1rem;
+      width: 70%;
+      margin-bottom: 10%;
+      margin-left:15%;
+    }
+
+    .admission-banner:first-of-type button{
+      font-size: 1.4rem;
+      
+      }
+
+      .admission-banner:last-of-type button{
+        font-size: 1.4rem;
+        
+        }
   }
 
   @media (min-width: 767px){
      header{
     height: 6rem;
    }
-    #logo{
+    .logo{
       height: var(--logo-height);
       top: 1%;
       left: -3%;
@@ -771,11 +847,36 @@
     display: none;
   }
 
+    .calender-flex-wrapper{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .admission-container h2{
+      font-size: calc(var(--h2-font-size) + 1rem);
+    }
+
+    .admission-container p{
+      font-size: calc(var(--news-paragraph-font-size) + .5rem);
+    }
+    .open-logo{
+      flex: .6;
+    }
+
+    .open-logo #logo-2{
+      margin-top: 50%;
+    }
+
+    .admission-banner h3{
+      margin-top: 5%;
+    }
+    .admission-banner button{
+      padding: 3%;
+    }
  
   }
 
-  @media (min-width: 1023px) {
-   
+  @media (min-width: 1023px) {  
    
     ul{
       left: 13%;
@@ -797,9 +898,58 @@
       top: 55%;
      }
 
+     .open-logo{
+      margin-top: -5%;
+     }
+     .status{
+      margin-left: -20%;
+      font-size: 2rem;
+     }
+
+     .admission-banners{
+      display: flex;
+      flex-direction: row;
+      margin-top: 10%;
+     }
+
+     .admission-banner{
+    
+      width: 40%;
+      margin: 0 auto;
+      margin-bottom: 10%;
+    }
+    .admission-banner img{
+    
+      height: 10rem;
+      margin-left: 0%;
+      object-fit: cover;
+    }
+
+    .admission-banner h3{
+      text-align: left;
+      margin-left: 5%;
+      font-size: calc(var(--h3-font-size) - .5rem);
+    }
+
+    .admission-banner button{
+     
+      padding: 3%;
+     margin-left: 20%;
+      width: 70%;
+    }
+
+    .admission-banner:first-of-type button{
+      font-size: 1.4rem;
+      
+      }
+
+      .admission-banner:last-of-type button{
+        font-size: 1.4rem;
+        
+        }
   }
 
-  @media (min-width: 1199px){
+@media (min-width: 1199px){
     ul{
       left: 25%
     }
@@ -818,6 +968,28 @@
   }
 
   @media (min-width: 1365px){
+    .calendar{
+      width: 45rem;
+      flex: 1;
+    }
+
+    .open-logo{
+      flex: .5;
+    }
+
+    .open-logo #logo-2{
+      height: 20rem;
+      margin-top: 20%;
+    }
+
+    .status{
+      margin-left: -20%;
+    }
+     ul {
+      left: 28%;
+      top: 55%;
+    }
+    
     ul{
       left: 20%;
     }
@@ -830,7 +1002,7 @@
       font-size: calc(var(--website-name-font-size) + 1rem);
     }
 
-    #logo{
+    .logo{
       height: calc(var(--logo-height) + 1rem);
     }
 
@@ -840,7 +1012,9 @@
     }
   }
 
-  @media (min-width: 1530px){
+  @media (min-width: 1529px){
+
+   
     #front-cover #front-cover-title{
       top: 60%;
     }
