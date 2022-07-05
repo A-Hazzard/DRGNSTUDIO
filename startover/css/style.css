@@ -673,3 +673,13 @@
       height: calc(var(--logo-height) + 1rem);
     }
   }
+
+  @media (min-width: 1530px){
+    #front-cover #front-cover-title{
+      top: 60%;
+    }
+
+    #front-cover #front-cover-title-2{
+      top: 55%;
+     }
+  }
