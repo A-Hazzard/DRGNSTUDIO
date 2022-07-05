@@ -2,11 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
 
 :root{
+     --nav-height: 80px;
+    --nav-width: 100%;
+    --nav-link-font-size: 17px;
+    --nav-link-padding-top: 7px;
+    --nav-link-padding-right:13px;
+    --logo-height: 50px;
     --website-name-font-size: 18px;
-    --website-name-margin-left: 20%;
-    --website-name-margin-top: -15%;
     --website-name-font-family: 'Helvetica Neue', Helvetica, Arial, sans-;
     --front-cover-font-size: 30px;
+    --front-cover-image-width: 100vw;
+    --front-cover-image-height: 300px;
     --h2-font-family: 'Anton', sans-serif;
     --h2-font-size: 20px;
     --h3-font-size: 35px;
@@ -17,6 +23,16 @@
     --flex-image-height: 150px;
     --banner-font-size: 20px;
     --iframe-width: 90%;
+    --flex-content-h2-padding-top: 30%;
+    --flex-container-h2-padding-left: 10%;
+    --button-font-size: 20px;
+    --button-height: 50px;
+    --button-width: 80%;
+    --h4-font-size: 20px;
+    --safety-container-p-font-size: 18px;
+    --safety-container-p-width: 98vw;
+    --newsletter-container-width: 100vw;
+    --icon-font-size: 28px;
 }
 
 *{
@@ -31,17 +47,35 @@
   }
  
   @media (min-width: 279px){
+    header{
+      background-color: var(--blue-theme-color);
+      position: sticky;
+      top: 0;
+      margin-bottom: 5%;
+
+    }
     nav{
-        background: var(--blue-theme-color);
-        height: 80px;
-        width: 100%;
-        z-index: -1;
+        height: var(--nav-height);
+        width: var(--nav-width);
+ 
       }
-      label.website-name{
+
+          
+    #logo{
+      height: var(--logo-height);
+      margin-left: 5%;
+      top: 3.5%;
+      position: fixed;
+      
+    }
+      .website-name{
         color: white;
-        font-size: 35px;
         line-height: 80px;
         font-weight: bold;
+        font-size: var(--website-name-font-size);
+        margin-left: 25%;
+        position: absolute;
+        font-family: var(--website-name-font-family);
       }
     
       
@@ -57,7 +91,8 @@
       nav ul li a{
         color: white;
         font-size: 17px;
-        padding: 7px 13px;
+       padding-top: var(--nav-link-padding-top);
+       padding-right: var(--nav-link-padding-right);
         border-radius: 3px;
         text-transform: uppercase;
       }
@@ -77,31 +112,19 @@
       #check{
         display: none;
       }
-    
-    label.website-name{
-        font-size: var(--website-name-font-size);
-        margin-left: var(--website-name-margin-left);
-        margin-top: var(--website-name-margin-top);
-        
-        font-family: var(--website-name-font-family);
-        
-    }
-    #logo{
-        height: 50px;
-        margin-left: 2%;
-        margin-top: 5%;
-        position: absolute;
-      }
+
+  
 
       #home-main-container #front-cover{
         display: flex;
         flex-direction: column-reverse;
-        margin-top: -30%;
+     
       }
+
       #front-cover-image{
         object-fit: cover;
-        width: 100vw;
-        height: 300px;
+        width: var(--front-cover-image-width);
+        height: var(--front-cover-image-height);
       }
 
       #front-cover-title, #front-cover-title-2{
@@ -198,7 +221,8 @@
     
     
     .flex-content h2{
-        padding: 30% 0 0 10%;
+        padding-top: var(--flex-content-h2-padding-top);
+        padding-left: var(--flex-container-h2-padding-left);
         font-size: var(--h4-font-size);
         font-family: var(--h4-font-family);
     }
@@ -223,6 +247,7 @@
 
      .banner{
         text-align: center;
+        color: white;
         padding: 15%;
         font-size: var(--banner-font-size);
      }
@@ -251,22 +276,106 @@
 
   
 
-     #button{
+     #button, #button-2{
        
         background-color: var(--blue-theme-color);
-        font-size: 15px;
-        height: 50px;
+        font-size: var(--button-font-size);
+        height: var(--button-height);
         text-align: center;
-        padding-top: 5%;
+        padding-top: 4%;
         border-radius: 20px;
         color: white;
-       
+          margin: 0 auto;
+          width: var(--button-width);
      }
 
+     #button-2{
+      background-color: white;
+      color: rgb(0, 179, 255) ;
+      font-weight: bold;
+      margin-bottom: 5%;
+    }
+
+     #safety-container{
+      background-color: var(--blue-theme-color);
+      padding: 5%;
+      height: auto;
+      color: white;
+     }
+
+     #safety-container h4{
+      font-size: var(--h4-font-size);
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+
+     #safety-container p{
+      font-size: var(--safety-container-p-font-size);
+      width: var(--safety-container-p-width);
+     
+     }
+
+     #newsletter-container{
+      height: auto;
+      width: var(--newsletter-container-width);
+      display: flex;
+      margin-top: 15%;
+      flex-direction: column;
+      background-color: #F27121;
+      color: white;
+      
+    }
+
+    #newsletter-container img{
+      object-fit: cover;
+      height: 150px;
+      width: 100%;
+    
+    }
+
+    #newsletter-container h5{
+      font-size: 25px;
+      font-family: 'Abel', sans-serif;
+      letter-spacing: .1px;
+    
+    }
+
+    #newsletter-container h5, #newsletter-container p{
+      padding: 5%;
+    }
+
+    #newsletter-container p{
+      font-family: var(--paragraph-font-family);
+      font-weight: bold;
+    }
      
     .checkbtn{
         display: block;
       }
+   :checked ~ ul{
+        left: 0;
+      }
+
+      footer{
+        background-color: var(--blue-theme-color);
+        color: white;
+        padding: 5%;
+      }
+
+      footer a{
+        color: white;
+        text-decoration: underline;
+      }
+      #icon-container{
+        text-align: center;
+      }
+
+      .fab{
+        padding: 2%;
+        font-size: var(--icon-font-size);
+      }
+
+
       ul{
         position: fixed;
         width: 100%;
@@ -289,12 +398,10 @@
         background: none;
         color: #0082e6;
       }
-      #check:checked ~ ul{
-        left: 0;
-      }
+     
   }
-  section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
+
+  @media (min-width: 319px){
+   
+
   }
