@@ -334,7 +334,7 @@
 
      #safety-container p{
       font-size: var(--safety-container-p-font-size);
-      width: var(--safety-container-p-width);
+      
       font-family: var(--paragraph-font-family);
      }
 
