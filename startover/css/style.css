@@ -654,6 +654,10 @@
     #limited-offers .card img{
       width: 100%;
     }
+
+    iframe{
+      margin-top: 20%;
+    }
   }
 
   @media (min-width: 1365px){
@@ -672,6 +676,11 @@
     #logo{
       height: calc(var(--logo-height) + 1rem);
     }
+
+    iframe{
+      height: var(--iframe-height);
+      margin-top: 10%;
+    }
   }
 
   @media (min-width: 1530px){
@@ -681,5 +690,9 @@
 
     #front-cover #front-cover-title-2{
       top: 55%;
+     }
+
+     #news #button{
+      padding-top: 1.5%;
      }
   }
