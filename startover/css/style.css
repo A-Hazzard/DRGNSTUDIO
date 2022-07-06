@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
 :root{
      --nav-height: 80px;
     --nav-width: 100%;
@@ -124,7 +124,7 @@
         line-height: 80px;
         margin-right: 40px;
         cursor: pointer;
-        display: none;
+    
       }
       #check{
         display: none;
@@ -412,7 +412,7 @@
       }
 
 
-      ul{
+      nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -655,6 +655,90 @@
         font-size: 1.4rem;
         
         }
+
+        #jobs-container .left-container{
+          display: flex;
+          flex-direction: column;
+          padding: 5%;
+        }
+      #jobs-container .left-container h1{
+        font-size: calc(var(--h2-font-size) + 1rem);
+        font-family: var(--h2-font-family);
+        margin-bottom: 5%;
+      }
+
+       .position-btn{
+        padding: 8%;
+        text-align: left;
+        background-color: var(--blue-theme-color);
+        border-radius: 1rem;
+        border-color: transparent;
+        color: white;
+      }
+
+      #location{
+        font-family: var(--h2-font-family);
+        font-size: 1.5rem;
+        margin-top: 15%;
+        margin-bottom: 10%;
+      }
+
+      #p-1{
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .points{
+        font-family: 'Barlow', sans-serif;      
+        font-size: 1.7rem;
+      }
+      
+      .right-container img{
+        object-fit: contain;
+        width: 80%;
+        border-radius: 1rem;
+        margin-left: 10%;
+      }
+
+      .lists{
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+       padding-left: 5%;
+      }
+
+
+      .lists li{
+        list-style-type: disc;
+      }
+
+      #apply {
+        padding: 5%;
+      }
+
+      #apply h2{
+        font-family: var(--h2-font-family);
+      }
+
+      #apply p{
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+      }
+
+      #apply ol li{
+       
+       list-style-type: decimal;
+       padding: 0 0 2% 0;
+     
+      }
+
+      #apply ol{
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+        padding-left: 5%;
+      }
+
+      
   }
 
   @media (min-width: 767px){
@@ -820,13 +904,13 @@
     padding: 10%;
    }
 
-   ul{
+   nav ul{
     position: absolute;
     width: unset;
     height:unset;
     background: transparent;
     top: 70%;
-    left: -5%;
+    left: -1%;
     text-align: unset;
     transition: all .5s;
   }
@@ -873,12 +957,61 @@
     .admission-banner button{
       padding: 3%;
     }
+
+    
+    .lists{
+      position: static;
+      width: unset;
+      height: unset;
+      background-color:white;
+      top:unset;
+      left:unset;
+      text-align: unset;
+      transition: unset;
+    }
+
+    #jobs-container{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .left-container{
+      flex: 1;
+    }
+
+    .right-container{
+      flex: 1;
+    }
+
+    .left-container .position-btn:first-of-type{
+      display: none;
+    }
+
+
+    .left-container #location{
+      margin-top: 5%;
+    }
+
+    #p-1{
+      margin-top: -5%;
+    }
+
+    .right-container img{
+      margin-top: 10%;
+    }
+
+    .left-container .position-btn:last-of-type{
+      padding: 5%;
+      width: 70%;
+    }
+
+    
  
   }
 
   @media (min-width: 1023px) {  
    
-    ul{
+    nav ul{
       left: 13%;
     }
 
@@ -947,10 +1080,15 @@
         font-size: 1.4rem;
         
         }
+
+        .left-container .position-btn:last-of-type{
+          padding: 3%;
+          width: 50%;
+        }
   }
 
 @media (min-width: 1199px){
-    ul{
+    nav ul{
       left: 25%
     }
 
@@ -1012,9 +1150,17 @@
     }
   }
 
+  @media(min-width:1439px){
+    nav ul{
+      top: 55%;
+      left: 20%;
+    }
+  }
   @media (min-width: 1529px){
 
-   
+   nav ul{
+    left: 28%;
+   }
     #front-cover #front-cover-title{
       top: 60%;
     }
