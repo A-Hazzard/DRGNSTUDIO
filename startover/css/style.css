@@ -738,7 +738,193 @@
         padding-left: 5%;
       }
 
+      #contact-container{
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #contact-information h1{
+        font-size: 2.5rem;
+        margin-bottom: 25%;
+        font-family: var(--h2-font-family);
+      }
+
+      #contact-information-heading, #leave-message{
+        font-size: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+      }
+
+      #contact-information p{
+        font-size: 1.2rem;
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+        margin-bottom: 20%;
+      }
+
+      #contact-information #location-name{
+        font-size: calc(var(--h2-font-size) + .5rem);
+        font-family: var(--h2-font-family);
+        letter-spacing: 1px;
+        
+      }
+      #contact-form{
+        padding: 8%;
+      }
+
+      #contact-form form label:not(#checkbox){
+        display: block;
+      }
+      #contact-form form label{
+       
+        font-size: 1.4rem;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-family: var(--paragraph-font-family);
+      }
+
+      #contact-form form input{
+        width: 90%;
+        height: 2.5rem;
+        border-radius: .5rem;
+        border-width: .1px;
+        
+      }
+
+      #contact-form #Message{
+        margin-bottom: 15%;
+        height: 10rem;
+      }
+
+      #contact-form #checkbox{
+        
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: 5%;
+      }
+      #contact-form form label:last-of-type{
+        display: inline;
+        font-size:  calc(var(--paragraph-font-family) - 2rem);
+        margin-top: -15%;
+        margin-left: 15%;
+      }
+
+      #contact-form #validate, #contact-form #reset{
+        padding: 8%;
+        width: 80%;
+        font-size: 100%;
+        margin: 10%;
+      }
+
+      #contact-form #validate{
+        background-color: var(--blue-theme-color);
+        color: white;
+        border-radius: .5rem;
+      }
+
+      #contact-form #reset{
+        background-color: transparent;
+        border-radius: var(--blue-theme-color);
+        border-radius: .5rem;
+        color: var(--blue-theme-color);
+      }
+
+      #faq-container{
+        padding: 5%;
+      }
+
+      #faq-container h1{
+        font-size: 3rem;
+        font-family: var(--h2-font-family);
+      }
+
+     #faq-container #faq-statement{
+        font-weight: bold;
+        font-family: var(--h2-font-family);
+        letter-spacing: 1.5px;
+        font-size: 1.2rem;
+      }
+      #faq-container p{
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+        font-size: calc(var(--news-paragraph-font-size) - .2rem);
+      }
+
+      details {
+        margin: 0 auto ;
+        background: linear-gradient(top bottom, blue, transparent);
+        margin-bottom: .5rem;
+        box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+        border-radius: 5px;
+        overflow: hidden;
+   
+      }
       
+      summary {
+        padding: 1rem;
+        display: block;
+        background: linear-gradient(180deg, var(--blue-theme-color), hsla(206, 100%, 45%, 0.361), transparent);
+        padding-left: 2.2rem;
+        position: relative;
+        cursor: pointer;
+      }
+      
+      summary:before {
+        content: '';
+        border-width: .4rem;
+        border-style: solid;
+        border-color: transparent transparent transparent #fff;
+        position: absolute;
+        top: 1.3rem;
+        left: 1rem;
+        transform: rotate(0);
+        transform-origin: .2rem 50%;
+        transition: .25s transform ease;
+      }
+      
+      /* THE MAGIC 🧙‍♀️ */
+      details[open] > summary:before {
+        transform: rotate(90deg);
+      }
+      
+      details summary::-webkit-details-marker {
+        display:none;
+      }
+      
+      details > ul {
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+      }
+      
+      .details-expanded {
+        padding: 0 2rem;
+      }
+      
+     
+      
+      pre {
+        white-space: pre-wrap;
+        word-break: break-all;
+      }
+
+      #faq-container-2{
+        margin-top: 20%;
+        
+      }
+  }
+
+  @media (min-width: 374px){
+    #contact-form #checkbox{
+      margin-left: 5%;
+      margin-top: -10%;
+    }
+
+    #contact-form form label:last-of-type{
+    
+      margin-top: -9%;
+      margin-left: 16%;
+    }
   }
 
   @media (min-width: 767px){
@@ -910,7 +1096,7 @@
     height:unset;
     background: transparent;
     top: 70%;
-    left: -1%;
+    left: -6%;
     text-align: unset;
     transition: all .5s;
   }
@@ -1005,8 +1191,23 @@
       width: 70%;
     }
 
-    
+    #contact-container{
+      flex-direction: row;
+    }
  
+    #contact-information{
+      flex: 1;
+    }
+
+    #contact-form{
+      flex: 1;
+    }
+
+    #faq-container #faq-container-2{
+ 
+      width: 50%;
+      margin: 5% auto;
+    }
   }
 
   @media (min-width: 1023px) {  
@@ -1085,6 +1286,12 @@
           padding: 3%;
           width: 50%;
         }
+
+       #contact-form form label:last-of-type{
+          margin-top: -7%;
+        }
+
+   
   }
 
 @media (min-width: 1199px){
@@ -1148,6 +1355,11 @@
       height: var(--iframe-height);
       margin-top: 10%;
     }
+
+    #contact-form form label:last-of-type{
+      margin-top: -5%;
+      margin-left: 12%;
+    }
   }
 
   @media(min-width:1439px){
@@ -1173,6 +1385,25 @@
       padding-top: 1.5%;
      }
 
+     #contact-form #checkbox{
+      margin-left: 8%;
+     }
+
+     #contact-form form label:last-of-type{
+    
+      margin-left: 15%;
+    }
+     #contact-form form #validate, #contact-form form #reset{
+      padding: 3%;
+      width: 30%;
+      height: 4rem;
+     }
+
+     #button-flex-wrapper{
+      display: flex;
+      flex-direction: row;
+     
+     }
   
   }
   
