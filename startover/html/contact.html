@@ -35,7 +35,67 @@
         </header>
 
 <main>
+<div id="contact-container">
+    <section id="contact-information">
+        <h1>Contact Us</h1>
+
+        <span id="contact-information-heading">Address and contact information</span>
+        <p>Looking for additional information about your upcoming visit to DRGN STUDIO, or have feedback for us? Leave us a message below.
+        </p>
+        
+        <span id="location-name">DRGN STUDIO CHAGUANAS</span>
+       <p> 111 Mongro Drive
+        San Dimas, (909) 802-2200
+        </p>
+
+        <span id="leave-message">Leave Us a Message</span>
+       
+       <p>Please fill out the form below and we'll be in touch.
+        Due to a high volume of inquiries, please allow a minimum 48 hours for a response.
+        For immediate assistance, please call our Information Center Monday - Friday from 8 a.m. - 4 p.m. at (909) 802-2200
+        <br><br>
+       <i> NOTE: As of July 28th 2022, reservations are no longer required for Season Pass or Daily Ticket guests.</i>
+       </p>
+    </section>
+
+    <div id="contact-form">
+        <form>
+            <label for="Name">Name *</label>
+            <input type="text" id="Name" placeholder="Name" name="PersonName"  required/>
     
+            <label for="Email">Email *</label>
+            <input type="text" id="Email" placeholder="Email" name="PersonEmail" required/>
+    
+            <label for="Address">Address</label>
+            <input type="text" id="Address" placeholder="Address" name="PersonAddress"/>
+    
+            <label for="City">City</label>
+            <input type="text" id="City" placeholder="City" name="PersonCity" />
+    
+            <label for="Phone">Phone</label>
+            <input type="text" id="Phone" placeholder="Phone" name="PersonPhone" />
+    
+            <label for="Subject">Select Subject</label>
+            <input type="text" id="Subject" placeholder="Subject" name="Subject" required/>
+    
+            <label for="Message">Message</label>
+            <input type="text" id="Message" placeholder="Message" name="Message" required/>
+    
+            <select id="Subject" name="Subject">
+                <option value="Prices">Prices</option>
+                <option value="Policy">Policy</option>
+                <option value="Emergency">Emergency</option>
+              </select>
+    
+            <input type="checkbox" required />
+            <label for="checkbox">I agree to terms and service</label>
+    
+            <button id="validate">Validate</button>
+            <button id="reset">Reset</button>
+        </form>
+    </div>
+    
+</div>
 </main>
 
 <footer>
