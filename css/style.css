@@ -831,7 +831,7 @@
 
       #contact-form #reset{
         background-color: transparent;
-        border-radius: var(--blue-theme-color);
+        border-color: var(--blue-theme-color);
         border-radius: .5rem;
         color: var(--blue-theme-color);
       }
@@ -859,7 +859,7 @@
 
       details {
         margin: 0 auto ;
-        background: linear-gradient(top bottom, blue, transparent);
+        background: linear-gradient(180deg, var(--blue-theme-color), transparent);
         margin-bottom: .5rem;
         box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
         border-radius: 5px;
@@ -1170,6 +1170,7 @@ display: block;
 }
 
     iframe{
+ 
       height: var(--iframe-height);
       width: 45vw;
       height: calc(var(--iframe-height) - 100px);

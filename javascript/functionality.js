@@ -3,6 +3,7 @@
 //Added previous month and next month view
 
 function CalendarControl() {
+  "use strict";
     const calendar = new Date();
     const calendarControl = {
       localDate: new Date(),
