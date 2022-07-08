@@ -447,12 +447,12 @@
 
       }
 
-      .admission-container h2{
+      .admission-container h1, #admission-prices h2{
         font-size: var(--h2-font-size);
         font-family: var(--h2-font-family);
       }
 
-      .admission-container p{
+      .admission-container p, #admission-prices p{
         font-size: var(--news-paragraph-font-size);
         font-family: var(--paragraph-font-family);
         font-weight: bold;
@@ -1020,6 +1020,49 @@ display: block;
         margin-top: 1000vh;
       }
 
+      .section-divider{
+        width: 80%;
+        background-color: var(--blue-theme-color);
+        border-color: var(--blue-theme-color);
+        margin: 15% auto;
+        margin-bottom: -3%;
+      }
+
+      #special-offer{
+        padding: 5%;
+      }
+
+      #special-offer h3{
+        font-size: var(--h3-font-size);
+        font-family: var(--h3-font-family);
+        text-align: left;
+      }
+
+      #special-offer span:not(.price){
+        font-size: 1.2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: grey;
+        opacity: 50%;
+        text-align: center;
+        margin-top: 5%;
+      }
+
+      #special-offer .price{
+        color: orange;
+        float: right;
+        font-size: .75em;
+      }
+      #special-offer .special-type{
+        font-size: calc(var(--news-paragraph-font-size) + .5rem);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: var(--blue-theme-color);
+      }
+
+      #special-offer p:not(.special-type){
+        font-size: 1.3em;
+        font-family: var(--paragraph-font-family);
+        font-weight: bold;
+      }
 
   }
 
@@ -1231,7 +1274,7 @@ display: block;
       flex-direction: row;
     }
 
-    .admission-container h2{
+    .admission-container h1{
       font-size: calc(var(--h2-font-size) + 1rem);
     }
 
@@ -1316,6 +1359,10 @@ display: block;
  
       width: 50%;
       margin: 5% auto;
+    }
+
+    #special-offer, #special-offer h3{
+      text-align: center;
     }
   }
 
@@ -1597,6 +1644,23 @@ display: block;
     iframe{
       margin-top: 20%;
     }
+
+    
+    #admission-prices h2{
+      font-size: calc(var(--h2-font-size) + 2rem);
+    }
+
+    #admission-prices p{
+      font-size: calc(var(--news-paragraph-font-size) + .5em);
+    }
+
+    #admission-prices{
+      margin-top: -10%;
+    }
+
+    #special-offer .last-section{
+      margin-top: -10%;
+    }
   }
 
   @media (min-width: 1365px){
@@ -1648,6 +1712,7 @@ display: block;
     #about-us-container #first{
       height: 130vh;
     }
+
   }
 
   @media(min-width:1439px){
