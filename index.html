@@ -6,46 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="/images/logo.png">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   
+    <script src="https://kit.fontawesome.com/18479e6558.js" crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
         <title>DRGN STUDIO</title>
 
 </head>
+   
+
 <body>
-    <header>
-        <img id="logo" src="images/logo.png"> 
 
-        <h1>DRGN STUDIO</h1>
-
-        <nav>
-           
-            <ul class="nav-ul">
-                <li><a href="#" onclick="alert('Coming Soon!')">Water Park</a></li>
-                <li><a href="#" onclick="alert('Coming Soon!')">Amusement Park</a></li>              
-                <li><a href="#" onclick="alert('Coming Soon!')">Pricing</a></li>                
-                <li><a href="#" onclick="alert('Coming Soon!')">Opening Hours</a></li>             
-                <li><a href="html/admissions.html">Admission</a></li>
-                <li><a href="html/jobs.html">Jobs</a></li>
-                <li><a href="html/contactUs.html">Contact</a></li>
-                <li><a href="html/parkSafety.html">Faq</a></li>
-                <li><a href="html/Aboutus.html">AboutUs</a></li>
-            </ul>
-        </nav>
-        
+<header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img class="logo home-logo" src="images/logo.png" alt="logo image" />
+        <label id="website-name">DRGN STUDIO</label>
+      
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">Water Park</a></li>    
+          <li><a href="#">Amusement Park</a></li>
+          <li><a href="#">Opening Hours</a></li>
+          <li><a href="html/admission.html">Admission</a></li>
+          <li><a href="html/jobs.html">Jobs</a></li>
+          <li><a href="html/contact.html">Contact</a></li>
+          <li><a href="html/faq.html">Faq</a></li>
+         <li><a href="html/about.html">About</a></li>
+          
+        </ul>
+      </nav>
     </header>
+   
+   <main id="home-container">
 
-    <section class="container">
-        <img id="front-image" src="images/frontImg.jpg">
+    <section id="front-cover">
+<img id="front-cover-image" src="images/frontImg.jpg" alt="frontImg">
 
-        <h2>DRAGON STUDIO</h2>
-    <h2 id="front-image-header">DRAGON STUDIO, TRINIDAD'S<br> BIGGEST WATERPARK</h2>
-        <h3>WATER & AMUSEMENT PARK OPEN ON WEEKENDS& PUBLIC HOLIDAYS 11AM-6PM</h3>
+
+<h1 id="front-cover-title">TRINIDAD'S BIGGEST WATERPARK</h1>
+
+<p id="front-cover-title-2">WATER & AMUSEMENT PARK OPEN ON WEEKENDS& PUBLIC HOLIDAYS 11AM-6PM
+</p>
     </section>
 
-    <section id="limited-Offers">
+    <div id="limited-offers">
 
 
         <div class="card card1">
@@ -54,11 +62,13 @@
             </div>
 
             <div class="flex-content">
-            <h4>2022 Limited Time Offer</h4>
+            <h2>2022 Limited Time Offer</h2>
             <p class="title">For a limited time, save 50% off all rides.</p> 
             
           </div>
       </div>
+
+      
 
       <div class="card card2">
         <div class="flex-image">
@@ -66,7 +76,7 @@
         </div>
 
         <div class="flex-content">
-        <h4>Dragon Studio vaccination requirements removed</h4>
+        <h2>Dragon Studio vaccination requirements removed</h2>
         <p class="title">As the pandemic has easily calmed down.<br> we are proud to announce that vaccination
             is no longer essential to have a great time with us.
         </p> 
@@ -80,101 +90,87 @@
     </div>
 
     <div class="flex-content">
-    <h4>We're hiring</h4>
+    <h2>We're hiring</h2>
     <p class="title">Job Applications are now open from May-26-2022 until June-15-2022</p> 
     
   </div>
 </div>
+    </div>
+
+    <div id="banner-container">
+        <div class="banner">
+            <p>Order Tickets</p>
+       
+            <hr>
+        </div>
+         <div class="banner">
+            <p>Attractions</p>
+          
+            <hr>
+        </div> 
+        <div class="banner">
+            <p>Prices</p>
+        
+
+            <hr>
+        </div>
+    </div>
+
+<div id="flex-wrapper">
+    
+    <div id="iframe-container">
+    <iframe src="https://www.youtube.com/embed/-cjyWWi3exc" title="FIVE ISLANDS WATER & AMUSEMENT PARK (Late Evening) | TRINIDAD" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+    <section id="news">
+        <h3>COMING  SOON, AUGUST 1ST</h3>
+        <br>
+        <p> 
+            Step up to the pulse-pounding plunge of the new <i>Bombs Away!</i> Choose your drop tube and feel the anticipation build until… the floor disappears from under you! One tube sends you flying straight down at 26 feet per second. The other loops you around and around to splashdown. Pick your thrill with 300 feet of soaking, screaming fun of the new dual drop slide at Raging Waters
+        </p>
+<br><br>
+        <p id="button">Take a ride!</p>
+
+    </section>
+</div>
+
+    <section id="safety-container">
+        <h4>YOUR SAFETY IS OUR #1 PRIORITY</h4>
+        <p>We have implemented an extensive Health & Safety Opening Plan with strict safety protocols to ensure that we maintain the health and safety of our guests and staff while at our Parks.</p>
     </section>
 
-    <div id="banner">
-        <div id="banner-container">
-
-        <div class="items">
-            <a href="https://www.cognitoforms.com/FiveIslandsAmusementPark1/FiveIslandsGiftCardOrderForm">Order Gift Cards</a>
-        </div>
-
-        <div class="items">
-            <a href="https://5islandspark.com/water-park/">Attractions</a>
-        </div>
-
-        <div class="items">
-            <a href="https://5islandspark.com/pricing/">Pricing</a>
-        </div>
-        </div>
-    </div>
-  
-    <section id="news-container">
-        <div id="news-content">
-        <h4>COMING SOON, AUGUST 1ST</h4>
-        <p>Step up to the pulse-pounding plunge of the new Bombs Away! Choose your drop tube and feel the anticipation build until… the floor disappears from under you! One tube sends you flying straight down at 26 feet per second. The other loops you around and around to splashdown. Pick your thrill with 300 feet of soaking, screaming fun of the new dual drop slide at Raging Waters.</p>
-        </div>
-
-        <div id="news-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-cjyWWi3exc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       </div>
-    </section>
-
-<div id="main-scroll-div">
-
-    <button class="icon" onclick="scrollleft()">
-        <i class="fas fa-angle-double-left"></i>
-    </button>
-
-    <div id="image-wrapper">
-
-        <div class="images">
-            <img src="images/AquaRocket.png"></div>
-
-        <div class="images">
-            <img src="images/HighExtreme.png"></div>
-        
-        <div class="images">
-            <img src="images/Wave Cove.png"></div>
-
-        <div class="images">
-            <img src="images/KidsKingdom.png"></div>
-
-    </div>
-
-    <button class="icon" onclick="scrollright()">
-        <i class="fas fa-angle-double-right"></i>
-    </button>
-    </div>
-
-    <div id="health">
-       <span> YOUR SAFETY IS OUR #1 PRIORITY! </span>
-<p>We have implemented an extensive Health & Safety Opening Plan with strict safety protocols to ensure that we maintain the health and safety of our guests and staff while at our Parks.</p>
-    </div>
-<br>
-<section id="news-letter-container">
-    <div id="news-letter-image" class="flex">
-        <img src="https://www.ragingwaters.com/content/rla/en/home/_jcr_content/responsiveGrid/cc25_bannercta_copy_/image.coreimg.jpeg/1647437030669/newsletter-ranging-walters-la.jpeg">
-    </div>
-
-    <div id="news-letter-content" class="flex">
-        <h5>Subscribe to our newsletter!</h5>
-        <p>Subscribe to have a complete experience and be up-to-date of all news, offers and promos for Dragon Studio, Trinidad and Tobago.</p>
-        
-    <button id="subscribe-btn">Subscribe!</button>
-    </div>
-
-</section>
-
-<footer>
-<br>
-    <ul id="social-medias">
-        <li><ion-icon name="logo-facebook"></ion-icon></li>
-        <li><ion-icon name="logo-instagram"></ion-icon></li>
-        <li><ion-icon name="logo-youtube"></ion-icon></li>   
-</ul>
-
-<p id="footer-header">Dragon Studio Water & Amusement Park - <span>Live the Adventure!</span></p>
-<p id="footer-contact">(868) 761-8373 | info@dragonstudio.com | Port-of-Spain, Port</p> 
-<p>2021 <u>Dragon Studio Water Park</u> All Rights Reserved <br><br><a href="https://5islandspark.com/refund/">Terms and Condition</a></p><br>
-</footer>
-
-
+    <section id="newsletter-container">
+        <img src="images/newletter-img.jpeg" alt="a man and woman that are floating in water" />
+        <div id="newsletter-content-container">
+        <h5>SUBSCRIBE TO OUR NEWSLETTER!</h5>
+        <p>Subscribe to have a complete experience and be up-to-date of all news, offers and promos for Dragon Studio, Trinidad and Tobago.
+        </p>
    
- <script type="text/javascript" src="js/functions.js"></script>
+        <p id="button-2">Subscribe</p>
+    </div>
+    </section>
+   </main>
+    
+   <footer>
+    <br>
+   <div id="icon-container">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-brands fa-youtube"></i>
+   </div>
+
+    <p id="footer-header">Dragon Studio Water & Amusement Park - <span>Live the Adventure!</span>
+    </p>
+    <br>
+    <p id="footer-contact">(868) 761-8373 | info@dragonstudio.com | Port-of-Spain, Port</p> 
+    <br>
+    <p>2021 <u>Dragon Studio Water Park</u> All Rights Reserved <br><br><a href="https://5islandspark.com/refund/">Terms and Condition</a></p><br>
+
+
+   </footer>
 </body>
 </html>
+
+  
+
