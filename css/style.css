@@ -1129,8 +1129,28 @@ display: block;
 
     #limited-offers{
       flex-direction: row;
+    
+      display: hidden;
     }
 
+    .slideUp{
+      animation-name: slideUp;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slideUp{
+      0%{
+        opacity: 0;
+        transform: translateY(10%);
+
+      }
+
+      100%{
+        opacity: 100%;
+        transform: translateY(20%);
+      }
+    }
     #limited-offers .card{
       flex-direction: column;
       width: 300px;
