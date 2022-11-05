@@ -1,3 +1,157 @@
+--Patient Table
+CREATE TABLE Patient(
+    pat_num NUMBER PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    DOB date NOT NULL,
+    allergies VARCHAR(50),
+    bloodType VARCHAR(2) NOT NULL,
+    address VARCHAR(100) NOT NULL
+);
+
+--Correct
+INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (1, 'Aaron', '17-SEP-2002', 'Peach', 'AA', 'Cocorite');
+INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (2, 'Jonathan', '17-JAN-2005', 'Banana', 'B', 'St. James');
+INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (3, 'Josiah', '19-Jul-2002', null, 'A', 'POS');
+INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (4, 'Shannon', '29-Sep-1984', null, 'A', 'POS');
+INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (5, 'Alex', '1-Sep-1984', null, 'B', 'POS');
+
+--Appointment Bridge Table
+CREATE TABLE Appointment (
+    appID NUMBER PRIMARY KEY,
+    pat_num NUMBER,
+    time DATE,
+    particular VARCHAR(100),
+    FOREIGN KEY(pat_num) REFERENCES Patient(pat_num)
+);
+
+INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (1, 1,  '1-JAN-2022',  'Sick');
+INSERT INTO Appointment (APPID, PAT_NUM,TIME, PARTICULAR) VALUES (2, 2,'2-JAN-2022', 'Ingury');
+INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (3, 3,  '5-JUL-2022', 'Chest pain');
+INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (4, 4,  '15-JUL-2022', 'Cough');
+INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (5, 5,  '15-JUL-2022', 'Visit');
+
+
+--STAFF Table <<SUPER CLASS>>
+CREATE TABLE Staff(
+    staffID NUMBER NOT NULL PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    type VARCHAR(25)  NOT NULL,
+    address VARCHAR(50)  NOT NULL,
+    department VARCHAR(20)  NOT NULL,
+    appID NUMBER,
+    FOREIGN KEY(appID) REFERENCES Appointment(appID)
+);
+
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (1, 'Donald', 'Doctor', 'Cocorite', 'HR', 1);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (2, 'Trump', 'Nurse', 'POS', 'HVC', 2);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (3, 'Jake', 'Lab Technician', 'Cocorite', 'I.T', NULL);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (4, 'Paul', 'Therapist', 'Cocorite', 'Therapy', 4);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (5, 'Dona', 'CSR', 'San Fernanao', 'Accounting', 5);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (6, 'Sharon', 'X-Ray Technician', 'Cocorite', 'I.T', NULL);
+
+--CSR Table <<SUB CLASS OF STAFF>>
+CREATE TABLE CSR(
+    staffID NUMBER PRIMARY KEY NOT NULL,
+    FOREIGN KEY(staffID) REFERENCES STAFF(staffID)
+);
+
+INSERT INTO CSR VALUES(5);
+
+--Creating foreign key staffID in appointment table
+ALTER TABLE Appointment
+ADD (
+StaffID NUMBER,
+CSR_ID NUMBER,
+FOREIGN KEY(StaffID) REFERENCES Staff(StaffID),
+FOREIGN KEY(CSR_ID) REFERENCES CSR(StaffID)
+);
+
+UPDATE Appointment
+SET staffid = 1
+WHERE APPID = 1;
+
+UPDATE Appointment
+SET staffid = 2
+WHERE APPID = 2;
+
+UPDATE Appointment
+SET staffid = 3
+WHERE APPID = 3;
+
+UPDATE Appointment
+SET staffid = 1
+WHERE APPID = 4;
+
+UPDATE Appointment
+SET staffid = 1
+WHERE APPID = 5;
+
+UPDATE Appointment
+SET CSR_ID = 5
+WHERE APPID= 1;
+
+UPDATE Appointment
+SET CSR_ID = 5
+WHERE APPID= 2;
+
+UPDATE Appointment
+SET CSR_ID = 5
+WHERE APPID= 3;
+
+UPDATE Appointment
+SET CSR_ID = 5
+WHERE APPID= 4;
+
+UPDATE Appointment
+SET CSR_ID = 5
+WHERE APPID= 5;
+
+
+
+
+
+
+--Doctor Table <<SUB CLASS OF STAFF>>
+CREATE TABLE DOCTOR(
+    staffID NUMBER PRIMARY KEY NOT NULL,
+    FOREIGN KEY(staffID) REFERENCES STAFF(staffID)
+);
+
+--Nurse Table <<SUB CLASS OF STAFF>>
+CREATE TABLE NURSE(
+    staffID NUMBER PRIMARY KEY NOT NULL,
+    FOREIGN KEY(staffID) REFERENCES STAFF(staffID)
+);
+
+--Technician Table <<SUB CLASS OF STAFF AND SUPER CLASS OF LAB AND X-RAY>> 
+CREATE TABLE Technician(
+    staffID NUMBER NOT NULL,
+    FOREIGN KEY(staffID) REFERENCES STAFF(staffID)
+);
+
+CREATE TABLE Lab(
+     staffID NUMBER NOT NULL,
+    FOREIGN KEY(staffID) REFERENCES STAFF(staffID)
+);
+
+CREATE TABLE XRay(
+    staffID NUMBER NOT NULL,
+    FOREIGN KEY(staffID) REFERENCES STAFF(staffID)
+);
+
+--Therapist Table <<SUB CLASS OF STAFF>>
+CREATE TABLE Therapist(
+    staffID NUMBER PRIMARY KEY NOT NULL,
+    FOREIGN KEY(staffID) REFERENCES STAFF(staffID)
+);
+
+INSERT INTO DOCTOR VALUES (1);
+INSERT INTO NURSE VALUES (2);
+INSERT INTO Lab VALUES (3);
+INSERT INTO Therapist VALUES (4);
+INSERT INTO XRAY VALUES (6);
+
+
 
 --RAUSHAWN CODE
 CREATE TABLE DRUG(
@@ -8,14 +162,11 @@ PAT_NUM NUMBER,
 FOREIGN KEY(PAT_NUM) REFERENCES Patient(PAT_NUM)
 );
 
-
 --Correct
 INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(20,'twice a day',50, 1);
 INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(50,'three times a week',20, 2);
 INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
 
-
-    
      CREATE TABLE SERVICE(   
     SERVE_TYPE VARCHAR(20),
     UNITCOST NUMBER(20),
@@ -91,7 +242,6 @@ INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Xray', 500,  5);
 INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Practice', 0,  5);
 INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Specialist', 300,  3);
 
-
 INSERT INTO PEDIATRIC VALUES ('Pediatric', 'Jake', 2);
 INSERT INTO GENERAL VALUES ('General', 'Hanner', 3);
 INSERT INTO PRACTICE VALUES ('Practice', 'Kate', 1);
@@ -100,8 +250,8 @@ INSERT INTO SPECIALIST VALUES ('Specialist', 'Pete', 4);
 INSERT INTO LABORATORY VALUES ('Laboratory', 'Dr. Frank', null);
 INSERT INTO THERAPY VALUES ('Therapist', 'Dr. Bob', null);
 
-
-   drop table invoice;
+   
+    
 CREATE TABLE INVOICE(
 INVOICEID NUMBER,
 SERVE_TYPE VARCHAR(20),
@@ -130,4 +280,8 @@ INSERT INTO treatment (INVOICEID) VALUES(2);
 INSERT INTO treatment (INVOICEID) VALUES(3);
 INSERT INTO treatment (INVOICEID) VALUES(4);
 INSERT INTO treatment (INVOICEID) VALUES(5);
-   
+
+
+
+
+
