@@ -24,13 +24,11 @@ CREATE TABLE Appointment (
     FOREIGN KEY(pat_num) REFERENCES Patient(pat_num)
 );
 
-
 INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (1, 1,  '1-JAN-2022',  'Sick');
 INSERT INTO Appointment (APPID, PAT_NUM,TIME, PARTICULAR) VALUES (2, 2,'2-JAN-2022', 'Ingury');
 INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (3, 3,  '5-JUL-2022', 'Chest pain');
 INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (4, 4,  '15-JUL-2022', 'Cough');
 INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (5, 5,  '15-JUL-2022', 'Visit');
-
 
 
 --STAFF Table <<SUPER CLASS>>
@@ -80,7 +78,6 @@ UPDATE Appointment
 SET staffid = 3
 WHERE APPID = 3;
 
-
 UPDATE Appointment
 SET staffid = 1
 WHERE APPID = 4;
@@ -88,7 +85,6 @@ WHERE APPID = 4;
 UPDATE Appointment
 SET staffid = 1
 WHERE APPID = 5;
-
 
 UPDATE Appointment
 SET CSR_ID = 5
@@ -102,7 +98,6 @@ UPDATE Appointment
 SET CSR_ID = 5
 WHERE APPID= 3;
 
-
 UPDATE Appointment
 SET CSR_ID = 5
 WHERE APPID= 4;
@@ -110,7 +105,6 @@ WHERE APPID= 4;
 UPDATE Appointment
 SET CSR_ID = 5
 WHERE APPID= 5;
-
 
 
 
@@ -145,7 +139,6 @@ CREATE TABLE XRay(
     FOREIGN KEY(staffID) REFERENCES STAFF(staffID)
 );
 
-
 --Therapist Table <<SUB CLASS OF STAFF>>
 CREATE TABLE Therapist(
     staffID NUMBER PRIMARY KEY NOT NULL,
@@ -160,7 +153,6 @@ INSERT INTO XRAY VALUES (6);
 
 
 
-
 --RAUSHAWN CODE
 CREATE TABLE DRUG(
 AMOUNT NUMBER(20),
@@ -169,7 +161,6 @@ COST NUMBER(20),
 PAT_NUM NUMBER,
 FOREIGN KEY(PAT_NUM) REFERENCES Patient(PAT_NUM)
 );
-
 
 --Correct
 INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(20,'twice a day',50, 1);
@@ -251,7 +242,6 @@ INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Xray', 500,  5);
 INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Practice', 0,  5);
 INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Specialist', 300,  3);
 
-
 INSERT INTO PEDIATRIC VALUES ('Pediatric', 'Jake', 2);
 INSERT INTO GENERAL VALUES ('General', 'Hanner', 3);
 INSERT INTO PRACTICE VALUES ('Practice', 'Kate', 1);
@@ -259,7 +249,6 @@ INSERT INTO X_RAY VALUES ('Xray', 'Paul', 5);
 INSERT INTO SPECIALIST VALUES ('Specialist', 'Pete', 4);
 INSERT INTO LABORATORY VALUES ('Laboratory', 'Dr. Frank', null);
 INSERT INTO THERAPY VALUES ('Therapist', 'Dr. Bob', null);
-
 
    
     
@@ -281,7 +270,6 @@ INSERT INTO INVOICE  VALUES(4,'Pediatric',450, 4);
 INSERT INTO INVOICE  VALUES(5,'General',650, 5);
 
 
-
 CREATE TABLE TREATMENT(
 INVOICEID NUMBER,
 FOREIGN KEY(INVOICEID) REFERENCES INVOICE(INVOICEID));
@@ -292,6 +280,8 @@ INSERT INTO treatment (INVOICEID) VALUES(2);
 INSERT INTO treatment (INVOICEID) VALUES(3);
 INSERT INTO treatment (INVOICEID) VALUES(4);
 INSERT INTO treatment (INVOICEID) VALUES(5);
+
+
 
 
 
