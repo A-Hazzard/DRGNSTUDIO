@@ -1,0 +1,12 @@
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\bin\Debug\PremiereCare.exe.config
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\bin\Debug\PremiereCare.exe
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\bin\Debug\PremiereCare.pdb
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.csproj.AssemblyReference.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.csproj.SuggestedBindingRedirects.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.Form1.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.Login.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.Properties.Resources.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.csproj.GenerateResource.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.csproj.CoreCompileInputs.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.exe
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\documents\Documenation\PremiereCareSln\PremiereCare\obj\Debug\PremiereCare.pdb
