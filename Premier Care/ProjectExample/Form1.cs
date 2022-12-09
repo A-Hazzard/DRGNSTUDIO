@@ -15,6 +15,7 @@ namespace ProjectExample
         Information info = new Information();
         Registration reg = new Registration();
         Login loginForm = new Login();
+        PatientDetails patientDetail = new PatientDetails();
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +55,11 @@ namespace ProjectExample
         private void infobtn_Click(object sender, EventArgs e)
         {
             info.Show();
+        }
+
+        private void patientDetails_Click(object sender, EventArgs e)
+        {
+            patientDetail.Show();
         }
     }
 }
