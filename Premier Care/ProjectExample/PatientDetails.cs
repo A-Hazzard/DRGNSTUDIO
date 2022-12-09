@@ -55,5 +55,22 @@ namespace ProjectExample
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Connected :");
+
+
+            /*when clicked will load the datain table table in the datagrid.
+             First an object of the DataAdapter class will allow you to fetch the records*/
+            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO patientDetails VALUES(pat#.nextval, '" + insertName.Text + "', '" + insertAddress.Text + "', '" + insertDOB.Text + "', '" + inputAllergies + "', '" + insertBloodtype + "')", con);
+
+            DataTable dt = new DataTable();
+            oda.Fill(dt);
+
+            View.DataSource = dt;
+
+            con.Close();
+        }
     }
 }

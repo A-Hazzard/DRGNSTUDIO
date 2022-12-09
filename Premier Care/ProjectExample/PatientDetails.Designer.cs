@@ -32,7 +32,6 @@
             this.insertAddress = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.insertBloodtype = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,11 +45,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.insertName = new System.Windows.Forms.TextBox();
             this.View = new System.Windows.Forms.DataGridView();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.insertAllergyType = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.inputAllergies = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.View)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -66,7 +63,7 @@
             // 
             // insertAddress
             // 
-            this.insertAddress.Location = new System.Drawing.Point(215, 218);
+            this.insertAddress.Location = new System.Drawing.Point(153, 203);
             this.insertAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.insertAddress.Multiline = true;
             this.insertAddress.Name = "insertAddress";
@@ -92,19 +89,6 @@
             this.label6.Size = new System.Drawing.Size(80, 19);
             this.label6.TabIndex = 15;
             this.label6.Text = "Allergies:";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(730, 112);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(57, 25);
-            this.radioButton2.TabIndex = 14;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "No";
-            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -198,6 +182,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -252,19 +237,6 @@
             this.View.Size = new System.Drawing.Size(845, 190);
             this.View.TabIndex = 4;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(583, 112);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(65, 25);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Yes";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -278,12 +250,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(88)))), ((int)(((byte)(159)))));
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.insertAllergyType);
+            this.groupBox1.Controls.Add(this.inputAllergies);
             this.groupBox1.Controls.Add(this.insertAddress);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.insertBloodtype);
             this.groupBox1.Controls.Add(this.label4);
@@ -291,7 +261,6 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.insertName);
             this.groupBox1.Controls.Add(this.View);
-            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(-45, 19);
@@ -303,24 +272,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registration";
             // 
-            // insertAllergyType
+            // inputAllergies
             // 
-            this.insertAllergyType.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insertAllergyType.Location = new System.Drawing.Point(550, 162);
-            this.insertAllergyType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.insertAllergyType.Name = "insertAllergyType";
-            this.insertAllergyType.Size = new System.Drawing.Size(313, 28);
-            this.insertAllergyType.TabIndex = 18;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(473, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 19);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Type:";
+            this.inputAllergies.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputAllergies.Location = new System.Drawing.Point(546, 113);
+            this.inputAllergies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.inputAllergies.Name = "inputAllergies";
+            this.inputAllergies.Size = new System.Drawing.Size(313, 28);
+            this.inputAllergies.TabIndex = 18;
             // 
             // PatientDetails
             // 
@@ -347,7 +306,6 @@
         private System.Windows.Forms.TextBox insertAddress;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox insertBloodtype;
         private System.Windows.Forms.Label label4;
@@ -361,10 +319,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox insertName;
         private System.Windows.Forms.DataGridView View;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox insertAllergyType;
+        private System.Windows.Forms.TextBox inputAllergies;
     }
 }
