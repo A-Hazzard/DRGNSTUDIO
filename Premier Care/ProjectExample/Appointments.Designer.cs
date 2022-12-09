@@ -222,7 +222,7 @@
         private System.Windows.Forms.Button loadappbtn;
         private System.Windows.Forms.Button createappbtn;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView Show;
+        private new System.Windows.Forms.DataGridView Show;
         private System.Windows.Forms.TextBox insertStaff;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
