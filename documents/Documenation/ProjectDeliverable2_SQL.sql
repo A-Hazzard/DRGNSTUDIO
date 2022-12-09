@@ -1,19 +1,19 @@
 --PatientDetails Table
 CREATE TABLE PatientDetails(
     pat_num NUMBER PRIMARY KEY,
-    name VARCHAR(20) NOT NULL,
+    name VARCHAR2(20) NOT NULL,
+    address VARCHAR2(150) NOT NULL,
     DOB date NOT NULL,
-    allergies VARCHAR(50),
-    bloodType VARCHAR(2) NOT NULL,
-    address VARCHAR(100) NOT NULL
+    allergies VARCHAR2(50),
+    bloodType VARCHAR2(5) NOT NULL
 );
 
 --Correct
-INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Aaron Hazzard', '17-SEP-2002', 'Peach', 'AA', 'Cocorite');
-INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Jonathan Grant', '17-JAN-2005', 'Banana', 'B', 'St. James');
-INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Josiah Lawrence', '19-Jul-2002', null, 'A', 'POS');
-INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Shannon Singh', '29-Sep-1984', null, 'A', 'POS');
-INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Alex Choi', '1-Sep-1984', null, 'B', 'POS');
+INSERT INTO patientDetails VALUES (pat#.nextval, 'Jonathan Grant', 'St. James', '17-JAN-2005', 'Banana', 'B');
+INSERT INTO patientDetails VALUES (pat#.nextval, 'Josiah Lawrence', 'Port of Spain', '19-Jul-2002', null, 'A');
+INSERT INTO patientDetails VALUES (pat#.nextval, 'Shannon Singh', 'Port of Spain', '29-Sep-1984', null, 'A');
+INSERT INTO patientdetails values(pat#.nextval, 'Aaron Hazzard', 'POS', '23/12/2002', 'Cats', 'A');
+INSERT INTO patientdetails values(pat#.nextval, 'Raushawn Mitchel', 'St james', '1/2/2003', 'Peanuts', 'B');
 
 --Appointment Bridge Table
 CREATE TABLE Appointment (
@@ -24,11 +24,11 @@ CREATE TABLE Appointment (
     FOREIGN KEY(pat_num) REFERENCES PatientDetails(pat_num)
 );
 
-INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (1, 1,  '1-JAN-2022',  'Sick');
-INSERT INTO Appointment (APPID, PAT_NUM,TIME, PARTICULAR) VALUES (2, 2,'2-JAN-2022', 'Ingury');
-INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (3, 3,  '5-JUL-2022', 'Chest pain');
-INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (4, 4,  '15-JUL-2022', 'Cough');
-INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (5, 5,  '15-JUL-2022', 'Visit');
+INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (10, 1,  '1-JAN-2022',  'Sick');
+INSERT INTO Appointment (APPID, PAT_NUM,TIME, PARTICULAR) VALUES (20, 2,'2-JAN-2022', 'Ingury');
+INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (30, 3,  '5-JUL-2022', 'Chest pain');
+INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (40, 4,  '15-JUL-2022', 'Cough');
+INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (50, 5,  '15-JUL-2022', 'Visit');
 
 
 --STAFF Table <<SUPER CLASS>>
@@ -42,12 +42,12 @@ CREATE TABLE Staff(
     FOREIGN KEY(appID) REFERENCES Appointment(appID)
 );
 
-INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (1, 'Donald', 'Doctor', 'Cocorite', 'HR', 1);
-INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (2, 'Trump', 'Nurse', 'POS', 'HVC', 2);
-INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (3, 'Jake', 'Lab Technician', 'Cocorite', 'I.T', NULL);
-INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (4, 'Paul', 'Therapist', 'Cocorite', 'Therapy', 4);
-INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (5, 'Dona', 'CSR', 'San Fernanao', 'Accounting', 5);
-INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (6, 'Sharon', 'X-Ray Technician', 'Cocorite', 'I.T', NULL);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (100, 'Donald', 'Doctor', 'Cocorite', 'HR', 10);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (200, 'Trump', 'Nurse', 'POS', 'HVC', 20);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (300, 'Jake', 'Lab Technician', 'Cocorite', 'I.T', NULL);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (400, 'Paul', 'Therapist', 'Cocorite', 'Therapy', 40);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (500, 'Dona', 'CSR', 'San Fernanao', 'Accounting', 50);
+INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (600, 'Sharon', 'X-Ray Technician', 'Cocorite', 'I.T', NULL);
 
 --CSR Table <<SUB CLASS OF STAFF>>
 CREATE TABLE CSR(
@@ -67,16 +67,16 @@ FOREIGN KEY(CSR_ID) REFERENCES CSR(StaffID)
 );
 
 UPDATE Appointment
-SET staffid = 1
-WHERE APPID = 1;
+SET staffid = 100;
+WHERE APPID = 10;
 
 UPDATE Appointment
-SET staffid = 2
-WHERE APPID = 2;
+SET staffid = 200
+WHERE APPID = 20;
 
 UPDATE Appointment
-SET staffid = 3
-WHERE APPID = 3;
+SET staffid = 300
+WHERE APPID = 30;
 
 UPDATE Appointment
 SET staffid = 1
@@ -242,11 +242,11 @@ INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Xray', 500,  5);
 INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Practice', 0,  5);
 INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Specialist', 300,  3);
 
-INSERT INTO PEDIATRIC VALUES ('Pediatric', 'Jake', 2);
-INSERT INTO GENERAL VALUES ('General', 'Hanner', 3);
-INSERT INTO PRACTICE VALUES ('Practice', 'Kate', 1);
-INSERT INTO X_RAY VALUES ('Xray', 'Paul', 5);
-INSERT INTO SPECIALIST VALUES ('Specialist', 'Pete', 4);
+INSERT INTO PEDIATRIC VALUES ('Pediatric', 'Jake', 200);
+INSERT INTO GENERAL VALUES ('General', 'Hanner', 300);
+INSERT INTO PRACTICE VALUES ('Practice', 'Kate', 100);
+INSERT INTO X_RAY VALUES ('Xray', 'Paul', 500);
+INSERT INTO SPECIALIST VALUES ('Specialist', 'Pete', 400);
 INSERT INTO LABORATORY VALUES ('Laboratory', 'Dr. Frank', null);
 INSERT INTO THERAPY VALUES ('Therapist', 'Dr. Bob', null);
 

@@ -40,5 +40,20 @@ namespace ProjectExample
 
             con.Close();
         }
+
+        private void PatientDetails_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void insertName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void insertDOB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
