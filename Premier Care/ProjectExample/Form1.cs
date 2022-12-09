@@ -15,7 +15,7 @@ namespace ProjectExample
         Information info = new Information();
         Registration reg = new Registration();
         Login loginForm = new Login();
-        Appointments appoint = new Appointments();
+       // Appointments appoint = new Appointments();
         PatientDetails patientDetail = new PatientDetails();
         public Form1()
         {
@@ -65,7 +65,7 @@ namespace ProjectExample
 
         private void appbtn_Click(object sender, EventArgs e)
         {
-            appoint.Show();
+       //     appoint.Show();
         }
     }
 }

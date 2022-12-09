@@ -94,3 +94,7 @@ C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.exe
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.pdb
+<<<<<<< HEAD
+=======
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
+>>>>>>> parent of 31518c2 (Fixed SQL and changed sequence for patient num)
