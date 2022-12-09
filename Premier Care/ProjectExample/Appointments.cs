@@ -27,7 +27,7 @@ namespace ProjectExample
 
             /*when clicked will load the datain table table in the datagrid.
              First an object of the DataAdapter class will allow you to fetch the records*/
-            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO patientDetails VALUES(app#.nextval, '" + insertPatNum.Text + "', '" + insertTime.Text + "', '" + insertParticulars.Text + "', '" + insertStaff.Text + "', '" + insertCSR.Text + "')", con);
+            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO patientDetails VALUES(appID.nextval, '" + insertPatNum.Text + "', '" + insertTime.Text + "', '" + insertParticulars.Text + "', '" + insertStaff.Text + "', '" + insertCSR.Text + "')", con);
 
             DataTable dt = new DataTable();
             oda.Fill(dt);
