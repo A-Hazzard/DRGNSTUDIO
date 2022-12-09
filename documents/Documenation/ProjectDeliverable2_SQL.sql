@@ -1,5 +1,5 @@
---Patient Table
-CREATE TABLE Patient(
+--PatientDetails Table
+CREATE TABLE PatientDetails(
     pat_num NUMBER PRIMARY KEY,
     name VARCHAR(20) NOT NULL,
     DOB date NOT NULL,
@@ -9,11 +9,11 @@ CREATE TABLE Patient(
 );
 
 --Correct
-INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (1, 'Aaron', '17-SEP-2002', 'Peach', 'AA', 'Cocorite');
-INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (2, 'Jonathan', '17-JAN-2005', 'Banana', 'B', 'St. James');
-INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (3, 'Josiah', '19-Jul-2002', null, 'A', 'POS');
-INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (4, 'Shannon', '29-Sep-1984', null, 'A', 'POS');
-INSERT INTO PATIENT (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (5, 'Alex', '1-Sep-1984', null, 'B', 'POS');
+INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Aaron Hazzard', '17-SEP-2002', 'Peach', 'AA', 'Cocorite');
+INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Jonathan Grant', '17-JAN-2005', 'Banana', 'B', 'St. James');
+INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Josiah Lawrence', '19-Jul-2002', null, 'A', 'POS');
+INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Shannon Singh', '29-Sep-1984', null, 'A', 'POS');
+INSERT INTO PatientDetails (PAT_NUM, NAME, DOB, ALLERGIES, BLOODTYPE, ADDRESS) VALUES (pat#.nextval, 'Alex Choi', '1-Sep-1984', null, 'B', 'POS');
 
 --Appointment Bridge Table
 CREATE TABLE Appointment (
@@ -21,7 +21,7 @@ CREATE TABLE Appointment (
     pat_num NUMBER,
     time DATE,
     particular VARCHAR(100),
-    FOREIGN KEY(pat_num) REFERENCES Patient(pat_num)
+    FOREIGN KEY(pat_num) REFERENCES PatientDetails(pat_num)
 );
 
 INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (1, 1,  '1-JAN-2022',  'Sick');
@@ -159,7 +159,7 @@ AMOUNT NUMBER(20),
 INTAKE VARCHAR(20),
 COST NUMBER(20),
 PAT_NUM NUMBER,
-FOREIGN KEY(PAT_NUM) REFERENCES Patient(PAT_NUM)
+FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
 );
 
 --Correct
@@ -172,7 +172,7 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
     UNITCOST NUMBER(20),
     PAT_NUM NUMBER,
     PRIMARY KEY(SERVE_TYPE),
-    FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(pat_num)
+    FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(pat_num)
     );
   
         CREATE TABLE PEDIATRIC(
@@ -180,7 +180,7 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
         WORKER VARCHAR(20),
         PAT_NUM NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(PAT_NUM)
+        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
 
         );
         
@@ -189,7 +189,7 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
         WORKER VARCHAR(20),
         PAT_NUM NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(PAT_NUM)
+        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
         
         );
         
@@ -198,7 +198,7 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
         WORKER VARCHAR(20),
         PAT_NUM NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(PAT_NUM)
+        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
         );
         
         CREATE TABLE X_RAY(
@@ -206,7 +206,7 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
         WORKER VARCHAR(20),
         PAT_NUM NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(PAT_NUM)
+        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
         );
         
         CREATE TABLE SPECIALIST(
@@ -214,7 +214,7 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
         WORKER VARCHAR(20),
         PAT_NUM NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(PAT_NUM)
+        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
         );
         
         CREATE TABLE LABORATORY(
@@ -222,7 +222,7 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
         WORKER VARCHAR(20),
         PAT_NUM NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(PAT_NUM)
+        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
         );
         
         CREATE TABLE THERAPY(
@@ -230,7 +230,7 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
         WORKER VARCHAR(20),
         PAT_NUM NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(PAT_NUM)
+        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
         );
         
 
@@ -259,7 +259,7 @@ COST NUMBER(20),
 PAT_NUM NUMBER,
 PRIMARY KEY(INVOICEID),
 FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-FOREIGN KEY(PAT_NUM) REFERENCES PATIENT(PAT_NUM)
+FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
 );
 
 --Correct
