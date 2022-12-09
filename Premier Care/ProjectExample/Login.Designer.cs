@@ -137,7 +137,7 @@
             // emailInput
             // 
             this.emailInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailInput.Location = new System.Drawing.Point(446, 175);
+            this.emailInput.Location = new System.Drawing.Point(446, 172);
             this.emailInput.Name = "emailInput";
             this.emailInput.Size = new System.Drawing.Size(313, 28);
             this.emailInput.TabIndex = 7;
@@ -146,7 +146,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(393, 175);
+            this.label2.Location = new System.Drawing.Point(361, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 19);
             this.label2.TabIndex = 6;

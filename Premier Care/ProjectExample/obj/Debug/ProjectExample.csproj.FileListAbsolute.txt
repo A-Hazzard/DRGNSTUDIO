@@ -45,6 +45,7 @@ C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectEx
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.exe
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.pdb
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.PatientDetails.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.exe.config
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.exe
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.pdb
@@ -81,6 +82,7 @@ C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.ValueTuple.xml
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.AssemblyReference.cache
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Form1.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Information.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Login.resources
@@ -92,5 +94,3 @@ C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.exe
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.pdb
-C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
-C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources

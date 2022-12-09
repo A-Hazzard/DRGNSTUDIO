@@ -37,11 +37,11 @@
             this.loadappbtn = new System.Windows.Forms.Button();
             this.createappbtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Show = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.insertStaff = new System.Windows.Forms.TextBox();
-            this.insertCSR = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.insertCSR = new System.Windows.Forms.TextBox();
+            this.insertStaff = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Show = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Show)).BeginInit();
             this.SuspendLayout();
@@ -105,26 +105,29 @@
             // 
             // loadappbtn
             // 
+            this.loadappbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(33)))), ((int)(((byte)(79)))));
             this.loadappbtn.Location = new System.Drawing.Point(897, 43);
             this.loadappbtn.Name = "loadappbtn";
             this.loadappbtn.Size = new System.Drawing.Size(153, 59);
             this.loadappbtn.TabIndex = 29;
             this.loadappbtn.Text = "Load Appointments";
-            this.loadappbtn.UseVisualStyleBackColor = true;
+            this.loadappbtn.UseVisualStyleBackColor = false;
             this.loadappbtn.Click += new System.EventHandler(this.loadappbtn_Click);
             // 
             // createappbtn
             // 
+            this.createappbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(33)))), ((int)(((byte)(79)))));
             this.createappbtn.Location = new System.Drawing.Point(897, 141);
             this.createappbtn.Name = "createappbtn";
             this.createappbtn.Size = new System.Drawing.Size(153, 60);
             this.createappbtn.TabIndex = 30;
             this.createappbtn.Text = "Create Appointment";
-            this.createappbtn.UseVisualStyleBackColor = true;
+            this.createappbtn.UseVisualStyleBackColor = false;
             this.createappbtn.Click += new System.EventHandler(this.createappbtn_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.PaleVioletRed;
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.insertCSR);
             this.groupBox1.Controls.Add(this.insertStaff);
@@ -143,15 +146,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // Show
+            // label4
             // 
-            this.Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Show.Location = new System.Drawing.Point(7, 181);
-            this.Show.Name = "Show";
-            this.Show.RowHeadersWidth = 51;
-            this.Show.RowTemplate.Height = 24;
-            this.Show.Size = new System.Drawing.Size(821, 217);
-            this.Show.TabIndex = 29;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(613, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 19);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "CSR:";
+            // 
+            // insertCSR
+            // 
+            this.insertCSR.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insertCSR.Location = new System.Drawing.Point(677, 59);
+            this.insertCSR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.insertCSR.Name = "insertCSR";
+            this.insertCSR.Size = new System.Drawing.Size(151, 28);
+            this.insertCSR.TabIndex = 32;
+            // 
+            // insertStaff
+            // 
+            this.insertStaff.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insertStaff.Location = new System.Drawing.Point(483, 126);
+            this.insertStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.insertStaff.Name = "insertStaff";
+            this.insertStaff.Size = new System.Drawing.Size(151, 28);
+            this.insertStaff.TabIndex = 31;
             // 
             // label3
             // 
@@ -163,33 +184,15 @@
             this.label3.TabIndex = 30;
             this.label3.Text = "Staff#:";
             // 
-            // insertStaff
+            // Show
             // 
-            this.insertStaff.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insertStaff.Location = new System.Drawing.Point(483, 126);
-            this.insertStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.insertStaff.Name = "insertStaff";
-            this.insertStaff.Size = new System.Drawing.Size(151, 28);
-            this.insertStaff.TabIndex = 31;
-            // 
-            // insertCSR
-            // 
-            this.insertCSR.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insertCSR.Location = new System.Drawing.Point(677, 59);
-            this.insertCSR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.insertCSR.Name = "insertCSR";
-            this.insertCSR.Size = new System.Drawing.Size(151, 28);
-            this.insertCSR.TabIndex = 32;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(613, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 19);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "CSR:";
+            this.Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Show.Location = new System.Drawing.Point(7, 181);
+            this.Show.Name = "Show";
+            this.Show.RowHeadersWidth = 51;
+            this.Show.RowTemplate.Height = 24;
+            this.Show.Size = new System.Drawing.Size(821, 217);
+            this.Show.TabIndex = 29;
             // 
             // Appointments
             // 
