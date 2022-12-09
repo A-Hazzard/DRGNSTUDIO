@@ -195,6 +195,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // insertDOB
             // 
@@ -249,7 +250,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(88)))), ((int)(((byte)(159)))));
+            this.groupBox1.BackColor = System.Drawing.Color.PaleVioletRed;
             this.groupBox1.Controls.Add(this.inputAllergies);
             this.groupBox1.Controls.Add(this.insertAddress);
             this.groupBox1.Controls.Add(this.label7);
@@ -270,7 +271,6 @@
             this.groupBox1.Size = new System.Drawing.Size(998, 505);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Registration";
             // 
             // inputAllergies
             // 
