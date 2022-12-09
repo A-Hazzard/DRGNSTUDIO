@@ -74,5 +74,45 @@ namespace ProjectExample
 
             View.DataSource = dt;
         }
+
+        private void Drugs_Click(object sender, EventArgs e)
+        {
+            OracleCommand oc = new OracleCommand("select pat# from drug", con);
+            con.Open();
+
+            //
+            OracleDataReader odr = oc.ExecuteReader();
+
+            //
+            while (odr.Read())
+            {
+                //
+                string patient_number = odr["pat#"].ToString();
+                
+                //add items to lostbox
+                drugList.Items.Add(patient_number);
+            }
+            con.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OracleCommand oc = new OracleCommand("select intake from drug", con);
+            con.Open();
+
+            //
+            OracleDataReader odr = oc.ExecuteReader();
+
+            //
+            while (odr.Read())
+            {
+                //
+                string intake = odr["intake"].ToString();
+
+                //add items to lostbox
+                drugList.Items.Add(intake);
+            }
+            con.Close();
+        }
     }
 }

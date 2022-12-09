@@ -32,12 +32,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.registry = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.patientDetails = new System.Windows.Forms.Button();
             this.infobtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.patientDetails = new System.Windows.Forms.Button();
+            this.appointbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -69,6 +70,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.panel1.Controls.Add(this.appointbtn);
             this.panel1.Controls.Add(this.patientDetails);
             this.panel1.Controls.Add(this.infobtn);
             this.panel1.Controls.Add(this.label2);
@@ -83,6 +85,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(962, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // patientDetails
+            // 
+            this.patientDetails.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.patientDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.patientDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.patientDetails.Location = new System.Drawing.Point(280, 3);
+            this.patientDetails.Name = "patientDetails";
+            this.patientDetails.Size = new System.Drawing.Size(166, 51);
+            this.patientDetails.TabIndex = 7;
+            this.patientDetails.Text = "Patient Details";
+            this.patientDetails.UseVisualStyleBackColor = false;
+            this.patientDetails.Click += new System.EventHandler(this.patientDetails_Click);
             // 
             // infobtn
             // 
@@ -142,18 +157,18 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // patientDetails
+            // appointbtn
             // 
-            this.patientDetails.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.patientDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.patientDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.patientDetails.Location = new System.Drawing.Point(280, 3);
-            this.patientDetails.Name = "patientDetails";
-            this.patientDetails.Size = new System.Drawing.Size(166, 51);
-            this.patientDetails.TabIndex = 7;
-            this.patientDetails.Text = "Patient Details";
-            this.patientDetails.UseVisualStyleBackColor = false;
-            this.patientDetails.Click += new System.EventHandler(this.patientDetails_Click);
+            this.appointbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.appointbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.appointbtn.Location = new System.Drawing.Point(108, 3);
+            this.appointbtn.Name = "appointbtn";
+            this.appointbtn.Size = new System.Drawing.Size(166, 51);
+            this.appointbtn.TabIndex = 8;
+            this.appointbtn.Text = "Appointments";
+            this.appointbtn.UseVisualStyleBackColor = false;
+            this.appointbtn.Click += new System.EventHandler(this.appointbtn_Click);
             // 
             // Form1
             // 
@@ -182,6 +197,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button infobtn;
         private System.Windows.Forms.Button patientDetails;
+        private System.Windows.Forms.Button appointbtn;
     }
 }
 

@@ -12,6 +12,7 @@ namespace ProjectExample
 {
     public partial class Form1 : Form
     {
+        Appointments appoint = new Appointments();
         Information info = new Information();
         Registration reg = new Registration();
         Login loginForm = new Login();
@@ -60,6 +61,11 @@ namespace ProjectExample
         private void patientDetails_Click(object sender, EventArgs e)
         {
             patientDetail.Show();
+        }
+
+        private void appointbtn_Click(object sender, EventArgs e)
+        {
+            appoint.Show();
         }
     }
 }
