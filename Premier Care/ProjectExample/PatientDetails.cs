@@ -63,7 +63,7 @@ namespace ProjectExample
 
             /*when clicked will load the datain table table in the datagrid.
              First an object of the DataAdapter class will allow you to fetch the records*/
-            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO patientDetails VALUES(pat#.nextval, '" + insertName.Text + "', '" + insertAddress.Text + "', '" + insertDOB.Text + "', '" + inputAllergies + "', '" + insertBloodtype + "')", con);
+            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO patientDetails VALUES(pat_num.nextval, '" + insertName.Text + "', '" + insertAddress.Text + "', '" + insertDOB.Text + "', '" + inputAllergies + "', '" + insertBloodtype + "')", con);
 
             DataTable dt = new DataTable();
             oda.Fill(dt);
@@ -71,11 +71,6 @@ namespace ProjectExample
             View.DataSource = dt;
 
             con.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

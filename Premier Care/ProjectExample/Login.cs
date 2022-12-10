@@ -13,7 +13,7 @@ namespace ProjectExample
 {
     public partial class Login : Form
     {
-        Form1 home = new Form1();
+       
         public Login()
         {
             InitializeComponent();
@@ -25,13 +25,18 @@ namespace ProjectExample
             if (emailInput.Text == "premierstaff@gmail.com" && passwordInput.Text == "premiercare123")
             {
                 MessageBox.Show("Successful Login");
+                appointmentBTN home = new appointmentBTN();
+                Login loginPage = new Login();
+                this.Hide();
+                
                 home.Show();
             }
             else
             {
                 MessageBox.Show("Invalid Credentials");
             }
-            
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)

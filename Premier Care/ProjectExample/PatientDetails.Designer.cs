@@ -35,12 +35,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.insertBloodtype = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.morebtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.insertDOB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.insertName = new System.Windows.Forms.TextBox();
@@ -119,21 +116,9 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Bloodtype:";
             // 
-            // morebtn
-            // 
-            this.morebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(33)))), ((int)(((byte)(79)))));
-            this.morebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.morebtn.Location = new System.Drawing.Point(-1, 389);
-            this.morebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.morebtn.Name = "morebtn";
-            this.morebtn.Size = new System.Drawing.Size(135, 55);
-            this.morebtn.TabIndex = 5;
-            this.morebtn.Text = "More";
-            this.morebtn.UseVisualStyleBackColor = false;
-            // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(33)))), ((int)(((byte)(79)))));
+            this.button4.BackColor = System.Drawing.Color.PaleVioletRed;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(0, 28);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -144,25 +129,10 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(33)))), ((int)(((byte)(79)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 300);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 55);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.morebtn);
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Location = new System.Drawing.Point(960, 19);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
@@ -173,9 +143,9 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(33)))), ((int)(((byte)(79)))));
+            this.button2.BackColor = System.Drawing.Color.PaleVioletRed;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(-1, 203);
+            this.button2.Location = new System.Drawing.Point(-1, 87);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(135, 55);
@@ -183,19 +153,6 @@
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(33)))), ((int)(((byte)(79)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 116);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 55);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // insertDOB
             // 
@@ -229,6 +186,7 @@
             // 
             // View
             // 
+            this.View.BackgroundColor = System.Drawing.Color.White;
             this.View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.View.Location = new System.Drawing.Point(96, 297);
             this.View.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -271,6 +229,7 @@
             this.groupBox1.Size = new System.Drawing.Size(998, 505);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Registration";
             // 
             // inputAllergies
             // 
@@ -309,12 +268,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox insertBloodtype;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button morebtn;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox insertDOB;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox insertName;

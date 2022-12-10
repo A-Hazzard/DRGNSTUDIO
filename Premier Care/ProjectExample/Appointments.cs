@@ -12,22 +12,25 @@ using System.Windows.Forms;
 
 namespace ProjectExample
 {
+
     public partial class Appointments : Form
     {
+
         OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
         public Appointments()
         {
             InitializeComponent();
         }
 
-        private void createappbtn_Click(object sender, EventArgs e)
+        private void loadappbtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Connected :");
 
+            //Load Button
+            con.Open();
 
             /*when clicked will load the datain table table in the datagrid.
              First an object of the DataAdapter class will allow you to fetch the records*/
-            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO patientDetails VALUES(appID.nextval, '" + insertPatNum.Text + "', '" + insertTime.Text + "', '" + insertParticulars.Text + "', '" + insertStaff.Text + "', '" + insertCSR.Text + "')", con);
+            OracleDataAdapter oda = new OracleDataAdapter("Select * from appointment", con);
 
             DataTable dt = new DataTable();
             oda.Fill(dt);
@@ -37,14 +40,14 @@ namespace ProjectExample
             con.Close();
         }
 
-        private void loadappbtn_Click(object sender, EventArgs e)
+        private void createappbtn_Click(object sender, EventArgs e)
         {
-            //Load Button
-            con.Open();
+            MessageBox.Show("Connected :");
+
 
             /*when clicked will load the datain table table in the datagrid.
              First an object of the DataAdapter class will allow you to fetch the records*/
-            OracleDataAdapter oda = new OracleDataAdapter("Select * from appointment", con);
+            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO appointment VALUES(appID.nextval, '" + insertPatNum.Text + "', '"+ insertTime.Text + "', '"+ insertParticulars.Text + "')", con);
 
             DataTable dt = new DataTable();
             oda.Fill(dt);

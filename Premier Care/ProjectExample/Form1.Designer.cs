@@ -1,6 +1,6 @@
 ﻿namespace ProjectExample
 {
-    partial class Form1
+    partial class appointmentBTN
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.registry = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(appointmentBTN));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.patientDetails = new System.Windows.Forms.Button();
-            this.infobtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
-            this.appbtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.moreDetails = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // registry
-            // 
-            this.registry.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.registry.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.registry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.registry.Location = new System.Drawing.Point(796, 3);
-            this.registry.Name = "registry";
-            this.registry.Size = new System.Drawing.Size(166, 51);
-            this.registry.TabIndex = 0;
-            this.registry.Text = "Registration";
-            this.registry.UseVisualStyleBackColor = false;
-            this.registry.Click += new System.EventHandler(this.registry_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.panel1.Controls.Add(this.appbtn);
+            this.panel1.Controls.Add(this.moreDetails);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.patientDetails);
-            this.panel1.Controls.Add(this.infobtn);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.loginBtn);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.registry);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -76,31 +63,44 @@
             this.panel1.Size = new System.Drawing.Size(962, 450);
             this.panel1.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(108, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(166, 51);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Appointment";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(280, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(166, 51);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Invoice";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // patientDetails
             // 
             this.patientDetails.BackColor = System.Drawing.Color.PaleVioletRed;
             this.patientDetails.Cursor = System.Windows.Forms.Cursors.Hand;
             this.patientDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.patientDetails.Location = new System.Drawing.Point(280, 3);
+            this.patientDetails.Location = new System.Drawing.Point(452, 3);
             this.patientDetails.Name = "patientDetails";
             this.patientDetails.Size = new System.Drawing.Size(166, 51);
             this.patientDetails.TabIndex = 7;
             this.patientDetails.Text = "Patient Details";
             this.patientDetails.UseVisualStyleBackColor = false;
             this.patientDetails.Click += new System.EventHandler(this.patientDetails_Click);
-            // 
-            // infobtn
-            // 
-            this.infobtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.infobtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.infobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infobtn.Location = new System.Drawing.Point(452, 3);
-            this.infobtn.Name = "infobtn";
-            this.infobtn.Size = new System.Drawing.Size(166, 51);
-            this.infobtn.TabIndex = 6;
-            this.infobtn.Text = "More Info";
-            this.infobtn.UseVisualStyleBackColor = false;
-            this.infobtn.Click += new System.EventHandler(this.infobtn_Click);
             // 
             // label2
             // 
@@ -137,19 +137,6 @@
             this.loginBtn.UseVisualStyleBackColor = false;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
-            // appbtn
-            // 
-            this.appbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.appbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.appbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.appbtn.Location = new System.Drawing.Point(108, 3);
-            this.appbtn.Name = "appbtn";
-            this.appbtn.Size = new System.Drawing.Size(166, 51);
-            this.appbtn.TabIndex = 8;
-            this.appbtn.Text = "Appointments";
-            this.appbtn.UseVisualStyleBackColor = false;
-            this.appbtn.Click += new System.EventHandler(this.appbtn_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -170,13 +157,26 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // moreDetails
+            // 
+            this.moreDetails.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.moreDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.moreDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.moreDetails.Location = new System.Drawing.Point(793, 3);
+            this.moreDetails.Name = "moreDetails";
+            this.moreDetails.Size = new System.Drawing.Size(166, 51);
+            this.moreDetails.TabIndex = 10;
+            this.moreDetails.Text = "More Details";
+            this.moreDetails.UseVisualStyleBackColor = false;
+            this.moreDetails.Click += new System.EventHandler(this.moreDetails_Click);
+            // 
+            // appointmentBTN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "appointmentBTN";
             this.Text = "x";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -189,15 +189,15 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button registry;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button infobtn;
         private System.Windows.Forms.Button patientDetails;
-        private System.Windows.Forms.Button appbtn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button moreDetails;
     }
 }
 
