@@ -27,12 +27,21 @@ CREATE TABLE PatientDetails(
     bloodType VARCHAR2(100) NOT NULL
 );
 
+CREATE TABLE invoice(
+    pat_num VARCHAR(200) NOT NULL,
+    invoice VARCHAR(150)
+);
+
+CREATE TABLE Patients(
+    
+);
+
 drop table appointment CASCADE CONSTRAINTS;
 --Appointment Bridge Table
 CREATE TABLE Appointment (
     appID NUMBER PRIMARY KEY,
     pat_num NUMBER,
-    time DATE,
+    time VARCHAR(15),
     particular VARCHAR(100),
     FOREIGN KEY(pat_num) REFERENCES PatientDetails(pat_num)
 );
@@ -213,13 +222,9 @@ INSERT INTO DRUG (amount,intake,cost, pat_num) VALUES(10,'once a day',30, 3);
 
    
 
-INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Therapist', 150, 1);
-INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Laboratory', 300, 2);
-INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('General', 50, 3);
-INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Pediatric', 200, 4);
-INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Xray', 500,  5);
-INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Practice', 0,  5);
-INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Specialist', 300,  3);
+INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Therapist', 150, 4);
+INSERT INTO SERVICE (serve_type, unitcost, pat_num) VALUES ('Laboratory', 300, 11);
+
 
 INSERT INTO PEDIATRIC VALUES ('Pediatric', 'Jake', 200);
 INSERT INTO GENERAL VALUES ('General', 'Hanner', 300);
