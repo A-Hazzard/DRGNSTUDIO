@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Oracle.ManagedDataAccess.Client;
 
 namespace ProjectExample
 {
     public partial class Registration : Form
     {
        Login loginForm = new Login();
+        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
+
         public Registration()
         {
             InitializeComponent();
@@ -42,12 +44,24 @@ namespace ProjectExample
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO staff VALUES(staffID.nextval, '" + emailInput.Text + "', '" + nameInput.Text + "')", con);
+
+            DataTable dt = new DataTable();
+            oda.Fill(dt);
+            MessageBox.Show("Seccessfull Registered " + nameInput.Text);
+
+            //View.DataSource = dt;
+            emailInput.Text = "";
+            nameInput.Text = "";
+
+            con.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           loginForm.Show();
+            Form1 home = new Form1();
+            this.Hide();
+           home.Show();
         }
     }
     

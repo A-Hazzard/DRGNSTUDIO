@@ -1,5 +1,3 @@
---Changed the amount of bytes the date stores and changed the data data type to varchar for simplicity
---Start from the bottom go to the top to drop tables, only create patient tables and appointment
 
 drop sequence pat_num;
 drop sequence appId;
@@ -11,6 +9,12 @@ INCREMENT BY 1
 CACHE 10;
 
 CREATE SEQUENCE appID
+MINVALUE 1
+START WITH 1
+INCREMENT BY 1
+CACHE 10;
+
+CREATE SEQUENCE staffID
 MINVALUE 1
 START WITH 1
 INCREMENT BY 1
@@ -33,7 +37,13 @@ CREATE TABLE invoice(
 );
 
 CREATE TABLE Patients(
-    
+   --TODO 
+);
+
+CREATE TABLE staff(
+    ID NUMBER NOT NULL PRIMARY KEY,
+    Name VARCHAR2(30) NOT NULL,
+    Email VARCHAR2(50) NOT NULL
 );
 
 drop table appointment CASCADE CONSTRAINTS;
