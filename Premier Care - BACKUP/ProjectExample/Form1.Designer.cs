@@ -29,43 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.registry = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.patientDetails = new System.Windows.Forms.Button();
-            this.infobtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.appointbtn = new System.Windows.Forms.Button();
+            this.patientDetails = new System.Windows.Forms.Button();
+            this.infobtn = new System.Windows.Forms.Button();
             this.loginBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.appointbtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.registry = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-12, 60);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1145, 407);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // registry
-            // 
-            this.registry.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.registry.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.registry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.registry.Location = new System.Drawing.Point(796, 3);
-            this.registry.Name = "registry";
-            this.registry.Size = new System.Drawing.Size(166, 51);
-            this.registry.TabIndex = 0;
-            this.registry.Text = "Registration";
-            this.registry.UseVisualStyleBackColor = false;
-            this.registry.Click += new System.EventHandler(this.registry_Click);
             // 
             // panel1
             // 
@@ -82,20 +59,63 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(962, 450);
+            this.panel1.Size = new System.Drawing.Size(912, 461);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(484, 262);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(295, 45);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Premier Care Clinic";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(544, 326);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(250, 60);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "When you need answers,\r\nyou know where to go.\r\n";
+            // 
+            // appointbtn
+            // 
+            this.appointbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.appointbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.appointbtn.Image = global::ProjectExample.Properties.Resources._4172165_appointment_booking_form_reservation_document_icon;
+            this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.appointbtn.Location = new System.Drawing.Point(84, 2);
+            this.appointbtn.Margin = new System.Windows.Forms.Padding(2);
+            this.appointbtn.Name = "appointbtn";
+            this.appointbtn.Size = new System.Drawing.Size(175, 57);
+            this.appointbtn.TabIndex = 8;
+            this.appointbtn.Text = "    Appoitments";
+            this.appointbtn.UseVisualStyleBackColor = false;
+            this.appointbtn.Click += new System.EventHandler(this.appointbtn_Click);
             // 
             // patientDetails
             // 
             this.patientDetails.BackColor = System.Drawing.Color.PaleVioletRed;
             this.patientDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.patientDetails.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientDetails.Image = global::ProjectExample.Properties.Resources._6079702_bed_clinic_healthcare_hospital_patient_icon;
             this.patientDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.patientDetails.Location = new System.Drawing.Point(280, 3);
+            this.patientDetails.Location = new System.Drawing.Point(263, 0);
+            this.patientDetails.Margin = new System.Windows.Forms.Padding(2);
             this.patientDetails.Name = "patientDetails";
-            this.patientDetails.Size = new System.Drawing.Size(166, 51);
+            this.patientDetails.Size = new System.Drawing.Size(207, 57);
             this.patientDetails.TabIndex = 7;
-            this.patientDetails.Text = "Patient Details";
+            this.patientDetails.Text = "     Patient Details";
             this.patientDetails.UseVisualStyleBackColor = false;
             this.patientDetails.Click += new System.EventHandler(this.patientDetails_Click);
             // 
@@ -103,47 +123,30 @@
             // 
             this.infobtn.BackColor = System.Drawing.Color.PaleVioletRed;
             this.infobtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.infobtn.Image = global::ProjectExample.Properties.Resources._2202278_detailed_i_info_information_more_icon;
             this.infobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infobtn.Location = new System.Drawing.Point(452, 3);
+            this.infobtn.Location = new System.Drawing.Point(474, 1);
+            this.infobtn.Margin = new System.Windows.Forms.Padding(2);
             this.infobtn.Name = "infobtn";
-            this.infobtn.Size = new System.Drawing.Size(166, 51);
+            this.infobtn.Size = new System.Drawing.Size(134, 57);
             this.infobtn.TabIndex = 6;
-            this.infobtn.Text = "More Info";
+            this.infobtn.Text = "        More Info";
             this.infobtn.UseVisualStyleBackColor = false;
             this.infobtn.Click += new System.EventHandler(this.infobtn_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(123, 287);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(427, 62);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Premier Care Clinic";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(127, 351);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 74);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "When you need answers,\r\nyou know where to go.\r\n";
             // 
             // loginBtn
             // 
             this.loginBtn.BackColor = System.Drawing.Color.PaleVioletRed;
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
             this.loginBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loginBtn.Location = new System.Drawing.Point(624, 3);
+            this.loginBtn.Location = new System.Drawing.Point(612, 2);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(166, 51);
+            this.loginBtn.Size = new System.Drawing.Size(125, 57);
             this.loginBtn.TabIndex = 3;
-            this.loginBtn.Text = "Login";
+            this.loginBtn.Text = "       Login";
             this.loginBtn.UseVisualStyleBackColor = false;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
@@ -151,38 +154,55 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 73);
+            this.pictureBox2.Size = new System.Drawing.Size(69, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // appointbtn
+            // pictureBox1
             // 
-            this.appointbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.appointbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.appointbtn.Location = new System.Drawing.Point(108, 3);
-            this.appointbtn.Name = "appointbtn";
-            this.appointbtn.Size = new System.Drawing.Size(166, 51);
-            this.appointbtn.TabIndex = 8;
-            this.appointbtn.Text = "Appointments";
-            this.appointbtn.UseVisualStyleBackColor = false;
-            this.appointbtn.Click += new System.EventHandler(this.appointbtn_Click);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 84);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(912, 377);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // registry
+            // 
+            this.registry.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.registry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.registry.FlatAppearance.BorderSize = 0;
+            this.registry.Image = global::ProjectExample.Properties.Resources._7830628_login_icon;
+            this.registry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.registry.Location = new System.Drawing.Point(741, 2);
+            this.registry.Margin = new System.Windows.Forms.Padding(2);
+            this.registry.Name = "registry";
+            this.registry.Size = new System.Drawing.Size(171, 57);
+            this.registry.TabIndex = 0;
+            this.registry.Text = "   Registration";
+            this.registry.UseVisualStyleBackColor = false;
+            this.registry.Click += new System.EventHandler(this.registry_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 450);
+            this.ClientSize = new System.Drawing.Size(912, 461);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.Text = "x";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

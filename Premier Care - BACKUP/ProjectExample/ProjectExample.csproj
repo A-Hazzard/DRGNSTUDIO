@@ -215,6 +215,24 @@
   <ItemGroup>
     <None Include="Resources\clothes1.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3994380_access_enter_input_login_sign in_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7830628_login_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9165684_login_arrow_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2202278_detailed_i_info_information_more_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4172165_appointment_booking_form_reservation_document_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6079702_bed_clinic_healthcare_hospital_patient_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -53,5 +53,10 @@ namespace ProjectExample
 
             con.Close();
         }
+
+        private void Show_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
