@@ -7,23 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.ManagedDataAccess.Client;
-using System.Configuration;
+
 
 namespace ProjectExample
 {
-    public partial class appointmentBTN : Form
+    public partial class Form1 : Form
     {
-        OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
+        Appointments appoint = new Appointments();
         Information info = new Information();
         Registration reg = new Registration();
         Login loginForm = new Login();
         PatientDetails patientDetail = new PatientDetails();
-        Invoice inv = new Invoice();
-        Appointments appoint = new Appointments();
-        public appointmentBTN()
+        
+
+
+        public Form1()
         {
             InitializeComponent();
+            
+       
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -45,7 +48,6 @@ namespace ProjectExample
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -53,14 +55,15 @@ namespace ProjectExample
 
         }
 
-        private void loginBtn_Click(object sender, EventArgs e)
+        private void loginBtn_Click(object sender, EventArgs e)//Changed to logout button
         {
-            this.Hide(); 
+            this.Hide();
             loginForm.Show();
         }
 
         private void infobtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             info.Show();
         }
 
@@ -70,22 +73,10 @@ namespace ProjectExample
             patientDetail.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            inv.Show();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
+        private void appointbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             appoint.Show();
-        }
-
-        private void moreDetails_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            info.Show();
         }
     }
 }

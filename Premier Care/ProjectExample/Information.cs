@@ -14,33 +14,15 @@ namespace ProjectExample
 {
     public partial class Information : Form
     {
-
         OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
-
-
         public Information()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Information_Load(object sender, EventArgs e)
         {
-            OracleCommand oc = new OracleCommand("select serve_type from service", con);
-            con.Open();
 
-            //
-            OracleDataReader odr = oc.ExecuteReader();
-
-            //
-            while (odr.Read())
-            {
-                //
-                string serve_type = odr["serve_type"].ToString();
-
-                //add items to lostbox
-                comboBox1.Items.Add(serve_type);
-            }
-            con.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -63,9 +45,38 @@ namespace ProjectExample
             con.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OracleCommand oc = new OracleCommand("select serve_type from service", con);
+            con.Open();
+
+            //
+            OracleDataReader odr = oc.ExecuteReader();
+
+            //
+            while (odr.Read())
+            {
+                //
+                string serve_type = odr["serve_type"].ToString();
+
+                //add items to lostbox
+                comboBox1.Items.Add(serve_type);
+            }
+            con.Close();
+        }
+
+        private void invoicebtn_Click(object sender, EventArgs e)
+        {
+            OracleDataAdapter oda = new OracleDataAdapter("Select * from invoice", con);
+
+            DataTable dt = new DataTable();
+            oda.Fill(dt);
+
+            View.DataSource = dt;
+        }
+
         private void Drugs_Click(object sender, EventArgs e)
         {
-
             OracleCommand oc = new OracleCommand("select pat# from drug", con);
             con.Open();
 
@@ -77,7 +88,7 @@ namespace ProjectExample
             {
                 //
                 string patient_number = odr["pat#"].ToString();
-
+                
                 //add items to lostbox
                 drugList.Items.Add(patient_number);
             }

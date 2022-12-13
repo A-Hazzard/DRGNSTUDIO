@@ -13,37 +13,58 @@ namespace ProjectExample
 {
     public partial class Login : Form
     {
-       
+   
         public Login()
         {
+
+
+            FormClosing += MyForm_FormClosing;
             InitializeComponent();
         }
-        
-        
+        private void MyForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Set the Cancel property to false to exit the program
+            e.Cancel = false;
+        }
+
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if (emailInput.Text == "premierstaff@gmail.com" && passwordInput.Text == "premiercare123")
+            Form1 home = new Form1();
+            if (emailInput.Text == "care@gmail.com" && passwordInput.Text == "care123")
             {
-                MessageBox.Show("Successful Login");
-                appointmentBTN home = new appointmentBTN();
-                Login loginPage = new Login();
-                this.Hide();
                 
+                this.Hide();
                 home.Show();
             }
             else
             {
-                MessageBox.Show("Invalid Credentials");
+                MessageBox.Show("Invalid email/passowrd");
+                
             }
 
-
-        }
+            }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            Environment.Exit(0);   
         }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void passwordInput_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void signUp_btn_Click(object sender, EventArgs e)
+        {
+            Registration signup = new Registration();
+            this.Hide();
+            signup.Show();
+        }
     }
     
     }

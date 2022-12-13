@@ -63,6 +63,66 @@ namespace ProjectExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2202278_detailed_i_info_information_more_icon {
+            get {
+                object obj = ResourceManager.GetObject("2202278_detailed_i_info_information_more_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3994380_access_enter_input_login_sign_in_icon {
+            get {
+                object obj = ResourceManager.GetObject("3994380_access_enter_input_login_sign in_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4172165_appointment_booking_form_reservation_document_icon {
+            get {
+                object obj = ResourceManager.GetObject("4172165_appointment_booking_form_reservation_document_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6079702_bed_clinic_healthcare_hospital_patient_icon {
+            get {
+                object obj = ResourceManager.GetObject("6079702_bed_clinic_healthcare_hospital_patient_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7830628_login_icon {
+            get {
+                object obj = ResourceManager.GetObject("7830628_login_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9165684_login_arrow_icon {
+            get {
+                object obj = ResourceManager.GetObject("9165684_login_arrow_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
