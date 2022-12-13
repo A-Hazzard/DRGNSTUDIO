@@ -30,9 +30,9 @@ namespace ProjectExample
         private void loginBtn_Click(object sender, EventArgs e)
         {
             Form1 home = new Form1();
-            if (emailInput.Text == "premierecare@gmail.com" && passwordInput.Text == "premierecare")
+            if (emailInput.Text == "care@gmail.com" && passwordInput.Text == "care123")
             {
-                MessageBox.Show("Login Success");
+                
                 this.Hide();
                 home.Show();
             }
@@ -57,6 +57,13 @@ namespace ProjectExample
         private void passwordInput_TextChanged(object sender, EventArgs e)
         {
           
+        }
+
+        private void signUp_btn_Click(object sender, EventArgs e)
+        {
+            Registration signup = new Registration();
+            this.Hide();
+            signup.Show();
         }
     }
     

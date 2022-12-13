@@ -33,12 +33,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cancelbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.loginText = new System.Windows.Forms.Label();
             this.welcomeBackText = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.passwordInput = new System.Windows.Forms.TextBox();
             this.emailInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.signUp_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +48,7 @@
             // 
             this.loginBtn.BackColor = System.Drawing.Color.PaleVioletRed;
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.Location = new System.Drawing.Point(445, 289);
+            this.loginBtn.Location = new System.Drawing.Point(450, 357);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(313, 55);
@@ -59,9 +60,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.groupBox1.Controls.Add(this.signUp_btn);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cancelbtn);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.loginText);
             this.groupBox1.Controls.Add(this.welcomeBackText);
             this.groupBox1.Controls.Add(this.loginBtn);
             this.groupBox1.Controls.Add(this.label3);
@@ -81,7 +83,7 @@
             // 
             this.cancelbtn.BackColor = System.Drawing.Color.PaleVioletRed;
             this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelbtn.Location = new System.Drawing.Point(445, 364);
+            this.cancelbtn.Location = new System.Drawing.Point(450, 432);
             this.cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancelbtn.Name = "cancelbtn";
             this.cancelbtn.Size = new System.Drawing.Size(313, 55);
@@ -101,16 +103,6 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // loginText
-            // 
-            this.loginText.AutoSize = true;
-            this.loginText.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginText.Location = new System.Drawing.Point(557, 126);
-            this.loginText.Name = "loginText";
-            this.loginText.Size = new System.Drawing.Size(106, 46);
-            this.loginText.TabIndex = 11;
-            this.loginText.Text = "Login";
-            // 
             // welcomeBackText
             // 
             this.welcomeBackText.AutoSize = true;
@@ -125,7 +117,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(347, 231);
+            this.label3.Location = new System.Drawing.Point(352, 299);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 19);
             this.label3.TabIndex = 9;
@@ -134,7 +126,7 @@
             // passwordInput
             // 
             this.passwordInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordInput.Location = new System.Drawing.Point(445, 231);
+            this.passwordInput.Location = new System.Drawing.Point(450, 299);
             this.passwordInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.PasswordChar = '*';
@@ -145,7 +137,7 @@
             // emailInput
             // 
             this.emailInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailInput.Location = new System.Drawing.Point(445, 175);
+            this.emailInput.Location = new System.Drawing.Point(450, 243);
             this.emailInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.emailInput.Name = "emailInput";
             this.emailInput.Size = new System.Drawing.Size(313, 28);
@@ -155,11 +147,34 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(377, 185);
+            this.label2.Location = new System.Drawing.Point(382, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 19);
             this.label2.TabIndex = 6;
             this.label2.Text = "Email:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 10.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(494, 138);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(221, 25);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Already have an account?";
+            // 
+            // signUp_btn
+            // 
+            this.signUp_btn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.signUp_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_btn.Location = new System.Drawing.Point(546, 165);
+            this.signUp_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.signUp_btn.Name = "signUp_btn";
+            this.signUp_btn.Size = new System.Drawing.Size(103, 31);
+            this.signUp_btn.TabIndex = 15;
+            this.signUp_btn.Text = "Sign Up";
+            this.signUp_btn.UseVisualStyleBackColor = false;
+            this.signUp_btn.Click += new System.EventHandler(this.signUp_btn_Click);
             // 
             // Login
             // 
@@ -183,12 +198,13 @@
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label loginText;
         private System.Windows.Forms.Label welcomeBackText;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox passwordInput;
         private System.Windows.Forms.TextBox emailInput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cancelbtn;
+        private System.Windows.Forms.Button signUp_btn;
+        private System.Windows.Forms.Label label1;
     }
 }

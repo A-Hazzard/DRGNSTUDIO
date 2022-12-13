@@ -55,7 +55,7 @@ namespace ProjectExample
 
         }
 
-        private void loginBtn_Click(object sender, EventArgs e)
+        private void loginBtn_Click(object sender, EventArgs e)//Changed to logout button
         {
             this.Hide();
             loginForm.Show();
