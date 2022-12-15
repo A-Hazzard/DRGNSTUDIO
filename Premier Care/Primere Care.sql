@@ -75,17 +75,18 @@ CREATE TABLE PatientDetails(
     allergies VARCHAR2(100),
     bloodType VARCHAR2(100) NOT NULL
 );
-
+/*
 CREATE TABLE invoice(
     pat_num VARCHAR(200) NOT NULL,
     invoice VARCHAR(150)
-);
+);*/
 CREATE TABLE admin(
     email VARCHAR(20) PRIMARY KEY NOT NULL,
     password VARCHAR(8) NOT NULL
 );
 INSERT INTO admin VALUES('care@gmail.com', 'care123');
 select * from admin;
+
 DROP TABLE STAFF;
 CREATE TABLE staff(
     ID NUMBER NOT NULL,
@@ -113,6 +114,7 @@ CREATE TABLE Appointment (
     FOREIGN KEY(doc_email) REFERENCES DOCTOR(email)
 );
 select * from appointment;
+
 drop table doctor CASCADE CONSTRAINTS;
 --Doctor Table <<SUB CLASS OF STAFF>>
 CREATE TABLE DOCTOR(
@@ -183,13 +185,13 @@ FOREIGN KEY(email) REFERENCES STAFF(email)
 
 drop table drug CASCADE CONSTRAINTS;
 --RAUSHAWN CODE
-CREATE TABLE DRUG(
-AMOUNT NUMBER(20),
-INTAKE VARCHAR(20),
-COST NUMBER(20),
-PAT_NUM NUMBER,
-FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
-);
+/*CREATE TABLE DRUG(
+    AMOUNT NUMBER(20),
+    INTAKE VARCHAR(20),
+    COST NUMBER(20),
+    PAT_NUM NUMBER,
+    FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+    );
 
 drop table service CASCADE CONSTRAINTS;
   CREATE TABLE SERVICE(   
@@ -346,5 +348,5 @@ INSERT INTO treatment (INVOICEID) VALUES(4);
 INSERT INTO treatment (INVOICEID) VALUES(5);
 
 
-
+*/
 
