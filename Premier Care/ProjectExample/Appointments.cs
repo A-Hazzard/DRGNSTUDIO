@@ -20,43 +20,34 @@ namespace ProjectExample
             InitializeComponent();
         }
 
-        private void loadappbtn_Click(object sender, EventArgs e)
-        {
-            //Load Button
-            con.Open();
+   
 
-            /*when clicked will load the datain table table in the datagrid.
-             First an object of the DataAdapter class will allow you to fetch the records*/
-            OracleDataAdapter oda = new OracleDataAdapter("Select * from appointment", con);
-
-            DataTable dt = new DataTable();
-            oda.Fill(dt);
-
-            Show.DataSource = dt;
-
-            con.Close();
-        }
-
-        private void createappbtn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Connected :");
-
-
-            /*when clicked will load the datain table table in the datagrid.
-             First an object of the DataAdapter class will allow you to fetch the records*/
-            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO appointment VALUES(appID.nextval, '" + insertPatNum.Text + "', '" + insertTime.Text + "', '" + insertParticulars.Text + "', '" + insertStaff.Text + "', '" + insertCSR.Text + "')", con);
-
-            DataTable dt = new DataTable();
-            oda.Fill(dt);
-
-            Show.DataSource = dt;
-
-            con.Close();
-        }
+   
 
         private void Show_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 home = new Form1();
+
+            home.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO appointment VALUES(appID.nextval, pat_num.nextval, '" + nameInput.Text + "', '" + dobInput.Text + "', '" + phoneInput.Text + "', '" + allergiesInput.Text + "','" + bloodtypeInput.Text + "', '" + doc_nameInput.Text+ "' ,'" + doc_emailInput.Text+ "','" + doc_positionInput.Text+ "'," + doc_idInput.Text + ", '" + timeInput.Text + "', '" + particularInput.Text + "')", con);
+
+            DataTable dt = new DataTable();
+            oda.Fill(dt);
         }
     }
 }

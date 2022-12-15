@@ -16,6 +16,7 @@ START WITH 1
 INCREMENT BY 1
 CACHE 10;
 
+
 CREATE SEQUENCE appID
 MINVALUE 1
 START WITH 1
@@ -69,7 +70,7 @@ drop table patientDetails CASCADE CONSTRAINTS;
 CREATE TABLE PatientDetails(
     pat_num NUMBER PRIMARY KEY,
     name VARCHAR2(20) NOT NULL,
-    address VARCHAR2(150) NOT NULL,
+    phone VARCHAR2(150) NOT NULL,
     DOB VARCHAR2(20) NOT NULL,
     allergies VARCHAR2(100),
     bloodType VARCHAR2(100) NOT NULL
@@ -96,12 +97,22 @@ drop table appointment CASCADE CONSTRAINTS;
 --Appointment Bridge Table
 CREATE TABLE Appointment (
     appID NUMBER PRIMARY KEY,
-    pat_num NUMBER,
-    time VARCHAR(15),
-    particular VARCHAR(100),
-    FOREIGN KEY(pat_num) REFERENCES PatientDetails(pat_num)
+    pat_num NUMBER NOT NULL,
+    pat_name VARCHAR(20) NOT NULL,
+    DOB  VARCHAR(20) NOT NULL,
+    pat_phone  VARCHAR(10) NOT NULL,
+    allergies  VARCHAR(20),
+    bloodtype  VARCHAR(20) NOT NULL,
+    --doctor info
+    doc_name  VARCHAR(20) NOT NULL,
+    doc_email  VARCHAR(20) NOT NULL,
+    doc_position  VARCHAR(20) NOT NULL,
+    doc_ID NUMBER NOT NULL,
+    time VARCHAR(50) NOT NULL,
+    particular VARCHAR(100)
+    --FOREIGN KEY(pat_num) REFERENCES PatientDetails(pat_num)
 );
-
+desc appointment;
 drop table doctor CASCADE CONSTRAINTS;
 --Doctor Table <<SUB CLASS OF STAFF>>
 CREATE TABLE DOCTOR(
