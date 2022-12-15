@@ -18,6 +18,18 @@ namespace ProjectExample
         public Appointments()
         {
             InitializeComponent();
+            con.Open();
+
+            /*when clicked will load the datain table table in the datagrid.
+             First an object of the DataAdapter class will allow you to fetch the records*/
+            OracleDataAdapter oda = new OracleDataAdapter("Select * from service", con);
+
+            DataTable dt = new DataTable();
+            oda.Fill(dt);
+
+            Show.DataSource = dt;
+
+            con.Close();
         }
 
    
@@ -44,10 +56,38 @@ namespace ProjectExample
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO appointment VALUES(appID.nextval, pat_num.nextval, '" + nameInput.Text + "', '" + dobInput.Text + "', '" + phoneInput.Text + "', '" + allergiesInput.Text + "','" + bloodtypeInput.Text + "', '" + doc_nameInput.Text+ "' ,'" + doc_emailInput.Text+ "','" + doc_positionInput.Text+ "'," + doc_idInput.Text + ", '" + timeInput.Text + "', '" + particularInput.Text + "', '" + serviceInput.Text + "')", con);
+            OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO appointment VALUES(appID.nextval, pat_num.nextval, '" + nameInput.Text + "', '" + dobInput.Text + "', '" + phoneInput.Text + "', '" + allergiesInput.Text + "','" + bloodtypeInput.Text + "', '" + doc_nameInput.Text+ "' ,'" + doc_emailInput.Text+ "','" + doc_positionInput.Text+ "'," + doc_idInput.Text + ", '" + timeInput.Text + "', '" + particularInput.Text + "', '" + serviceInput.Text.ToUpper() + "', " + serviceFeeInput.Text + ")", con);
 
             DataTable dt = new DataTable();
             oda.Fill(dt);
+
+            MessageBox.Show("Appointment made for " + nameInput.Text + " and Dr. " + doc_nameInput.Text);
+        }
+
+        private void serviceView_Click(object sender, EventArgs e)
+        {
+            con.Open();
+
+            /*when clicked will load the datain table table in the datagrid.
+             First an object of the DataAdapter class will allow you to fetch the records*/
+            OracleDataAdapter oda = new OracleDataAdapter("Select * from service", con);
+
+            DataTable dt = new DataTable();
+            oda.Fill(dt);
+
+            Show.DataSource = dt;
+
+            con.Close();
+        }
+
+        private void Show_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void serviceFeeInput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

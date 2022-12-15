@@ -35,11 +35,28 @@
             this.loginBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.registry = new System.Windows.Forms.Button();
-            this.Show = new System.Windows.Forms.DataGridView();
+            this.ShowMembers = new System.Windows.Forms.DataGridView();
             this.welcomeText = new System.Windows.Forms.Label();
-            this.loadappbtn = new System.Windows.Forms.Button();
+            this.showDoctors = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.showNurses = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.showXRayTechnicians = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.showLabTechnicians = new System.Windows.Forms.DataGridView();
+            this.LabTechnicians = new System.Windows.Forms.Label();
+            this.showTherapist = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.showCsr = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Show)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowMembers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showDoctors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showNurses)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showXRayTechnicians)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showLabTechnicians)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showTherapist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showCsr)).BeginInit();
             this.SuspendLayout();
             // 
             // appointbtn
@@ -127,17 +144,18 @@
             this.registry.Text = "   Registration";
             this.registry.UseVisualStyleBackColor = false;
             // 
-            // Show
+            // ShowMembers
             // 
-            this.Show.BackgroundColor = System.Drawing.Color.PaleVioletRed;
-            this.Show.ColumnHeadersHeight = 29;
-            this.Show.Location = new System.Drawing.Point(31, 219);
-            this.Show.Name = "Show";
-            this.Show.RowHeadersWidth = 51;
-            this.Show.RowTemplate.Height = 24;
-            this.Show.Size = new System.Drawing.Size(474, 275);
-            this.Show.TabIndex = 15;
-            this.Show.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.ShowMembers.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.ShowMembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ShowMembers.ColumnHeadersHeight = 29;
+            this.ShowMembers.Location = new System.Drawing.Point(31, 219);
+            this.ShowMembers.Name = "ShowMembers";
+            this.ShowMembers.RowHeadersWidth = 51;
+            this.ShowMembers.RowTemplate.Height = 24;
+            this.ShowMembers.Size = new System.Drawing.Size(474, 214);
+            this.ShowMembers.TabIndex = 15;
+            this.ShowMembers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // welcomeText
             // 
@@ -149,28 +167,164 @@
             this.welcomeText.TabIndex = 16;
             this.welcomeText.Text = "Staff Members";
             // 
-            // loadappbtn
+            // showDoctors
             // 
-            this.loadappbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.loadappbtn.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadappbtn.Location = new System.Drawing.Point(352, 130);
-            this.loadappbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.loadappbtn.Name = "loadappbtn";
-            this.loadappbtn.Size = new System.Drawing.Size(187, 84);
-            this.loadappbtn.TabIndex = 33;
-            this.loadappbtn.Text = "DIsplay Members";
-            this.loadappbtn.UseVisualStyleBackColor = false;
-            this.loadappbtn.Click += new System.EventHandler(this.loadappbtn_Click);
+            this.showDoctors.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.showDoctors.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showDoctors.ColumnHeadersHeight = 29;
+            this.showDoctors.Location = new System.Drawing.Point(546, 219);
+            this.showDoctors.Name = "showDoctors";
+            this.showDoctors.RowHeadersWidth = 51;
+            this.showDoctors.RowTemplate.Height = 24;
+            this.showDoctors.Size = new System.Drawing.Size(474, 214);
+            this.showDoctors.TabIndex = 15;
+            this.showDoctors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(536, 142);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 60);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Doctors";
+            // 
+            // showNurses
+            // 
+            this.showNurses.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.showNurses.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showNurses.ColumnHeadersHeight = 29;
+            this.showNurses.Location = new System.Drawing.Point(31, 500);
+            this.showNurses.Name = "showNurses";
+            this.showNurses.RowHeadersWidth = 51;
+            this.showNurses.RowTemplate.Height = 24;
+            this.showNurses.Size = new System.Drawing.Size(474, 275);
+            this.showNurses.TabIndex = 15;
+            this.showNurses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 423);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(159, 60);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Nurses";
+            // 
+            // showXRayTechnicians
+            // 
+            this.showXRayTechnicians.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.showXRayTechnicians.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showXRayTechnicians.ColumnHeadersHeight = 29;
+            this.showXRayTechnicians.Location = new System.Drawing.Point(546, 500);
+            this.showXRayTechnicians.Name = "showXRayTechnicians";
+            this.showXRayTechnicians.RowHeadersWidth = 51;
+            this.showXRayTechnicians.RowTemplate.Height = 24;
+            this.showXRayTechnicians.Size = new System.Drawing.Size(474, 275);
+            this.showXRayTechnicians.TabIndex = 15;
+            this.showXRayTechnicians.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(536, 423);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(375, 60);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "X-RAY Technicians";
+            // 
+            // showLabTechnicians
+            // 
+            this.showLabTechnicians.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.showLabTechnicians.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showLabTechnicians.ColumnHeadersHeight = 29;
+            this.showLabTechnicians.Location = new System.Drawing.Point(1026, 505);
+            this.showLabTechnicians.Name = "showLabTechnicians";
+            this.showLabTechnicians.RowHeadersWidth = 51;
+            this.showLabTechnicians.RowTemplate.Height = 24;
+            this.showLabTechnicians.Size = new System.Drawing.Size(474, 275);
+            this.showLabTechnicians.TabIndex = 15;
+            this.showLabTechnicians.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // LabTechnicians
+            // 
+            this.LabTechnicians.AutoSize = true;
+            this.LabTechnicians.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabTechnicians.Location = new System.Drawing.Point(1016, 428);
+            this.LabTechnicians.Name = "LabTechnicians";
+            this.LabTechnicians.Size = new System.Drawing.Size(325, 60);
+            this.LabTechnicians.TabIndex = 16;
+            this.LabTechnicians.Text = "Lab Technicians";
+            // 
+            // showTherapist
+            // 
+            this.showTherapist.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.showTherapist.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showTherapist.ColumnHeadersHeight = 29;
+            this.showTherapist.Location = new System.Drawing.Point(1026, 219);
+            this.showTherapist.Name = "showTherapist";
+            this.showTherapist.RowHeadersWidth = 51;
+            this.showTherapist.RowTemplate.Height = 24;
+            this.showTherapist.Size = new System.Drawing.Size(474, 214);
+            this.showTherapist.TabIndex = 15;
+            this.showTherapist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1016, 142);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(204, 60);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Therapist";
+            // 
+            // showCsr
+            // 
+            this.showCsr.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.showCsr.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showCsr.ColumnHeadersHeight = 29;
+            this.showCsr.Location = new System.Drawing.Point(21, 699);
+            this.showCsr.Name = "showCsr";
+            this.showCsr.RowHeadersWidth = 51;
+            this.showCsr.RowTemplate.Height = 24;
+            this.showCsr.Size = new System.Drawing.Size(474, 275);
+            this.showCsr.TabIndex = 15;
+            this.showCsr.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(11, 622);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 60);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "CSRs";
             // 
             // Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.ClientSize = new System.Drawing.Size(1311, 602);
-            this.Controls.Add(this.loadappbtn);
+            this.ClientSize = new System.Drawing.Size(1527, 1038);
+            this.Controls.Add(this.LabTechnicians);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.welcomeText);
-            this.Controls.Add(this.Show);
+            this.Controls.Add(this.showLabTechnicians);
+            this.Controls.Add(this.showXRayTechnicians);
+            this.Controls.Add(this.showCsr);
+            this.Controls.Add(this.showNurses);
+            this.Controls.Add(this.showTherapist);
+            this.Controls.Add(this.showDoctors);
+            this.Controls.Add(this.ShowMembers);
             this.Controls.Add(this.appointbtn);
             this.Controls.Add(this.patientDetails);
             this.Controls.Add(this.infobtn);
@@ -180,7 +334,13 @@
             this.Name = "Staff";
             this.Text = "Staff";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Show)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShowMembers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showDoctors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showNurses)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showXRayTechnicians)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showLabTechnicians)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showTherapist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showCsr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,8 +354,19 @@
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button registry;
-        private System.Windows.Forms.DataGridView Show;
+        private System.Windows.Forms.DataGridView ShowMembers;
         private System.Windows.Forms.Label welcomeText;
-        private System.Windows.Forms.Button loadappbtn;
+        private System.Windows.Forms.DataGridView showDoctors;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView showNurses;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView showXRayTechnicians;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView showLabTechnicians;
+        private System.Windows.Forms.Label LabTechnicians;
+        private System.Windows.Forms.DataGridView showTherapist;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView showCsr;
+        private System.Windows.Forms.Label label4;
     }
 }

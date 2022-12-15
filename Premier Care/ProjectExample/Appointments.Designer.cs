@@ -58,12 +58,23 @@
             this.label13 = new System.Windows.Forms.Label();
             this.serviceInput = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.Show = new System.Windows.Forms.DataGridView();
+            this.serviceView = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.serviceFeeInput = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Show)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.serviceFeeInput);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.serviceView);
+            this.groupBox1.Controls.Add(this.Show);
             this.groupBox1.Controls.Add(this.serviceInput);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.timeInput);
@@ -99,7 +110,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1142, 622);
+            this.groupBox1.Size = new System.Drawing.Size(1142, 778);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -131,7 +142,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PaleVioletRed;
             this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(804, 494);
+            this.button2.Location = new System.Drawing.Point(804, 530);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(303, 54);
@@ -388,17 +399,74 @@
             this.label14.TabIndex = 28;
             this.label14.Text = "Service:";
             // 
+            // Show
+            // 
+            this.Show.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.Show.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Show.ColumnHeadersHeight = 29;
+            this.Show.Location = new System.Drawing.Point(57, 475);
+            this.Show.Name = "Show";
+            this.Show.RowHeadersWidth = 51;
+            this.Show.RowTemplate.Height = 24;
+            this.Show.Size = new System.Drawing.Size(349, 245);
+            this.Show.TabIndex = 30;
+            this.Show.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Show_CellContentClick_1);
+            // 
+            // serviceView
+            // 
+            this.serviceView.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.serviceView.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serviceView.Location = new System.Drawing.Point(57, 416);
+            this.serviceView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.serviceView.Name = "serviceView";
+            this.serviceView.Size = new System.Drawing.Size(106, 54);
+            this.serviceView.TabIndex = 31;
+            this.serviceView.Text = "Refresh";
+            this.serviceView.UseVisualStyleBackColor = false;
+            this.serviceView.Click += new System.EventHandler(this.serviceView_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F);
+            this.label15.Location = new System.Drawing.Point(425, 674);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(262, 46);
+            this.label15.TabIndex = 32;
+            this.label15.Text = "Current Services";
+            // 
+            // serviceFeeInput
+            // 
+            this.serviceFeeInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serviceFeeInput.Location = new System.Drawing.Point(804, 498);
+            this.serviceFeeInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.serviceFeeInput.Name = "serviceFeeInput";
+            this.serviceFeeInput.Size = new System.Drawing.Size(303, 28);
+            this.serviceFeeInput.TabIndex = 33;
+            this.serviceFeeInput.TextChanged += new System.EventHandler(this.serviceFeeInput_TextChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(655, 498);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(139, 32);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Service Fee:";
+            // 
             // Appointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1142, 622);
+            this.ClientSize = new System.Drawing.Size(1142, 778);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Appointments";
             this.Text = "Appointments";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Show)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -435,5 +503,10 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox serviceInput;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button serviceView;
+        private System.Windows.Forms.DataGridView Show;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox serviceFeeInput;
+        private System.Windows.Forms.Label label15;
     }
 }

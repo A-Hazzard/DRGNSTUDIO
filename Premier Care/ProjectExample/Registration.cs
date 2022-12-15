@@ -97,7 +97,7 @@ namespace ProjectExample
                 }
                 else if (positionInput.Text.ToUpper() == "CSR")
                 {
-                    OracleDataAdapter oda5 = new OracleDataAdapter("INSERT INTO csr VALUES(csrID.nextval, '" + nameInput.Text + "', '" + emailInput.Text + "', 'CSR')", con);
+                    OracleDataAdapter oda5 = new OracleDataAdapter("INSERT INTO csr VALUES(csr_ID.nextval, '" + nameInput.Text + "', '" + emailInput.Text + "', 'CSR')", con);
                     DataTable dt5 = new DataTable();
                     oda5.Fill(dt5);
 

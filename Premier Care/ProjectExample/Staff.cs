@@ -19,29 +19,51 @@ namespace ProjectExample
         public Staff()
         {
             InitializeComponent();
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
-        private void loadappbtn_Click(object sender, EventArgs e)
-        {
-
             con.Open();
 
             /*when clicked will load the datain table table in the datagrid.
              First an object of the DataAdapter class will allow you to fetch the records*/
             OracleDataAdapter oda = new OracleDataAdapter("Select * from staff", con);
+            OracleDataAdapter oda1 = new OracleDataAdapter("Select * from doctor", con);
+            OracleDataAdapter oda2 = new OracleDataAdapter("Select * from nurse", con);
+            OracleDataAdapter oda3 = new OracleDataAdapter("Select * from therapist", con);
+            OracleDataAdapter oda4 = new OracleDataAdapter("Select * from lab", con);
+            OracleDataAdapter oda5 = new OracleDataAdapter("Select * from xray", con);
+            OracleDataAdapter oda6 = new OracleDataAdapter("Select * from csr", con);
 
             DataTable dt = new DataTable();
-            oda.Fill(dt);
+            DataTable dt1 = new DataTable();
+            DataTable dt2 = new DataTable();
+            DataTable dt3 = new DataTable();
+            DataTable dt4 = new DataTable();
+            DataTable dt5 = new DataTable();
+            DataTable dt6 = new DataTable();
 
-            Show.DataSource = dt;
+            oda.Fill(dt);
+            oda1.Fill(dt1);
+            oda2.Fill(dt2);
+            oda3.Fill(dt3);
+            oda4.Fill(dt4);
+            oda5.Fill(dt5);
+            oda6.Fill(dt6);
+
+            ShowMembers.DataSource = dt;
+            showDoctors.DataSource = dt1;
+            showNurses.DataSource = dt2;
+            showTherapist.DataSource = dt3;
+            showLabTechnicians.DataSource = dt4;
+            showXRayTechnicians.DataSource = dt5;
+            showCsr.DataSource = dt6;
 
             con.Close();
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+     
     }
 }
