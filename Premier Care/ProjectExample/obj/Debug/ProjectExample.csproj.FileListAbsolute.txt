@@ -35,7 +35,6 @@ C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Va
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.AssemblyReference.cache
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.SuggestedBindingRedirects.cache
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Form1.resources
-C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Information.resources
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Login.resources
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Properties.Resources.resources
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Registration.resources
@@ -188,3 +187,5 @@ C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.exe
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.pdb
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Staff.resources

@@ -1,19 +1,23 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 namespace ProjectExample
 {
     public partial class Login : Form
     {
-   
+    OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
+        // OleDbDataAdapter da = new OleDbDataAdapter();
+        OleDbCommand cmd = new OleDbCommand();
         public Login()
         {
 
@@ -30,20 +34,29 @@ namespace ProjectExample
         private void loginBtn_Click(object sender, EventArgs e)
         {
             Form1 home = new Form1();
-            if (emailInput.Text == "care@gmail.com" && passwordInput.Text == "care123")
+
+            con.Open();
+           
+            //Check to see if credentials match the db email and password
+            OracleCommand command = new OracleCommand("Select * from admin where email = '" + emailInput.Text + "' AND password = '" + passwordInput.Text + "'", con);
+
+            OracleDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
             {
-                
+                MessageBox.Show("Logged in");
                 this.Hide();
                 home.Show();
             }
             else
             {
-                MessageBox.Show("Invalid email/passowrd");
-                
+                MessageBox.Show("Invalid Email/Password");
             }
 
-            }
-
+            con.Close();
+   
+        }
+       
         private void button1_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);   

@@ -14,7 +14,7 @@ namespace ProjectExample
     public partial class Form1 : Form
     {
         Appointments appoint = new Appointments();
-        Information info = new Information();
+        Staff staffMembers = new Staff();
         Registration reg = new Registration();
         Login loginForm = new Login();
         PatientDetails patientDetail = new PatientDetails();
@@ -64,7 +64,7 @@ namespace ProjectExample
         private void infobtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            info.Show();
+            staffMembers.Show();
         }
 
         private void patientDetails_Click(object sender, EventArgs e)

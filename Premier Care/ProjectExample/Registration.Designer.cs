@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.nameInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.positionInput = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -45,6 +47,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.groupBox1.Controls.Add(this.positionInput);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.welcomeText);
@@ -102,7 +106,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PaleVioletRed;
             this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(419, 217);
+            this.button2.Location = new System.Drawing.Point(419, 274);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(303, 54);
@@ -151,6 +155,25 @@
             this.label1.Text = "Name:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // positionInput
+            // 
+            this.positionInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.positionInput.Location = new System.Drawing.Point(419, 227);
+            this.positionInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.positionInput.Name = "positionInput";
+            this.positionInput.Size = new System.Drawing.Size(303, 28);
+            this.positionInput.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(304, 227);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 32);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Position:";
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,5 +203,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox positionInput;
+        private System.Windows.Forms.Label label3;
     }
 }
