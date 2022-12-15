@@ -65,9 +65,9 @@ START WITH 1
 INCREMENT BY 1
 CACHE 10;
 
-drop table patientDetails CASCADE CONSTRAINTS;
---PatientDetails Table
-CREATE TABLE PatientDetails(
+drop table patient CASCADE CONSTRAINTS;
+--patient Table
+CREATE TABLE patient(
     pat_num NUMBER PRIMARY KEY,
     name VARCHAR2(20) NOT NULL,
     phone VARCHAR2(150) NOT NULL,
@@ -111,6 +111,7 @@ CREATE TABLE Appointment (
     doc_ID NUMBER NOT NULL,
     time VARCHAR(50) NOT NULL,
     particular VARCHAR(100),
+    service VARCHAR(15) NOT NULL,
     FOREIGN KEY(doc_email) REFERENCES DOCTOR(email)
 );
 select * from appointment;
@@ -189,26 +190,30 @@ drop table drug CASCADE CONSTRAINTS;
     AMOUNT NUMBER(20),
     INTAKE VARCHAR(20),
     COST NUMBER(20),
-    PAT_NUM NUMBER,
-    FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+    pat_num NUMBER,
+    FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
     );
-
+*/
 drop table service CASCADE CONSTRAINTS;
   CREATE TABLE SERVICE(   
-    SERVE_TYPE VARCHAR(20),
-    UNITCOST NUMBER(20),
-    PAT_NUM NUMBER,
-    PRIMARY KEY(SERVE_TYPE),
-    FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(pat_num)
+    SERVE_TYPE VARCHAR(20) PRIMARY KEY,
+    UNITCOST NUMBER(20)
     );
+    
+    INSERT INTO service VALUES('PEDIATRIC', 120); 
+    INSERT INTO service VALUES('GENERAL', 90); 
+    INSERT INTO service VALUES('SPECIALIST', 400);
+    INSERT INTO service VALUES('LABORATORY', 340); 
+    INSERT INTO service VALUES('THERAPY', 120);
+    INSERT INTO service VALUES('XRAY', 600);
     
   drop table pediatric CASCADE CONSTRAINTS;
         CREATE TABLE PEDIATRIC(
         SERVE_TYPE VARCHAR(20),
         WORKER VARCHAR(20),
-        PAT_NUM NUMBER,
+        pat_num NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+        FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
 
         );
         
@@ -216,51 +221,51 @@ drop table service CASCADE CONSTRAINTS;
         CREATE TABLE GENERAL(
         SERVE_TYPE VARCHAR(20),
         WORKER VARCHAR(20),
-        PAT_NUM NUMBER,
+        pat_num NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+        FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
         
         );
         drop table practice CASCADE CONSTRAINTS;
         CREATE TABLE PRACTICE(
         SERVE_TYPE VARCHAR(20),
         WORKER VARCHAR(20),
-        PAT_NUM NUMBER,
+        pat_num NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+        FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
         );
         drop table x_ray CASCADE CONSTRAINTS;
         CREATE TABLE X_RAY(
         SERVE_TYPE VARCHAR(20),
         WORKER VARCHAR(20),
-        PAT_NUM NUMBER,
+        pat_num NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+        FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
         );
         drop table specialist CASCADE CONSTRAINTS;
         CREATE TABLE SPECIALIST(
         SERVE_TYPE VARCHAR(20),
         WORKER VARCHAR(20),
-        PAT_NUM NUMBER,
+        pat_num NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+        FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
         );
         drop table LABORATORY CASCADE CONSTRAINTS;
         CREATE TABLE LABORATORY(
         SERVE_TYPE VARCHAR(20),
         WORKER VARCHAR(20),
-        PAT_NUM NUMBER,
+        pat_num NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+        FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
         );
         
         drop table therapy CASCADE CONSTRAINTS;
         CREATE TABLE THERAPY(
         SERVE_TYPE VARCHAR(20),
         WORKER VARCHAR(20),
-        PAT_NUM NUMBER,
+        pat_num NUMBER,
         FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-        FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+        FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
         );
         
   drop table invoice CASCADE CONSTRAINTS;
@@ -268,10 +273,10 @@ CREATE TABLE INVOICE(
 INVOICEID NUMBER,
 SERVE_TYPE VARCHAR(20),
 COST NUMBER(20),
-PAT_NUM NUMBER,
+pat_num NUMBER,
 PRIMARY KEY(INVOICEID),
 FOREIGN KEY(SERVE_TYPE) REFERENCES SERVICE(SERVE_TYPE),
-FOREIGN KEY(PAT_NUM) REFERENCES PatientDetails(PAT_NUM)
+FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
 );
 drop table treatment CASCADE CONSTRAINTS;
 CREATE TABLE TREATMENT(
@@ -280,17 +285,17 @@ FOREIGN KEY(INVOICEID) REFERENCES INVOICE(INVOICEID));
 
  
 --Correct
-INSERT INTO patientDetails VALUES (pat_num.nextval, 'Jonathan Grant', 'St. James', '17-JAN-2005', 'Banana', 'B');
-INSERT INTO patientDetails VALUES (pat_num.nextval, 'Josiah Lawrence', 'Port of Spain', '19-Jul-2002', null, 'A');
-INSERT INTO patientDetails VALUES (pat_num.nextval, 'Shannon Singh', 'Port of Spain', '29-Sep-1984', null, 'A');
-INSERT INTO patientdetails values(pat_num.nextval, 'Aaron Hazzard', 'POS', '23/12/2002', 'Cats', 'A');
-INSERT INTO patientdetails values(pat_num.nextval, 'Raushawn Mitchel', 'St james', '1/2/2003', 'Peanuts', 'B');
+INSERT INTO patient VALUES (pat_num.nextval, 'Jonathan Grant', 'St. James', '17-JAN-2005', 'Banana', 'B');
+INSERT INTO patient VALUES (pat_num.nextval, 'Josiah Lawrence', 'Port of Spain', '19-Jul-2002', null, 'A');
+INSERT INTO patient VALUES (pat_num.nextval, 'Shannon Singh', 'Port of Spain', '29-Sep-1984', null, 'A');
+INSERT INTO patient values(pat_num.nextval, 'Aaron Hazzard', 'POS', '23/12/2002', 'Cats', 'A');
+INSERT INTO patient values(pat_num.nextval, 'Raushawn Mitchel', 'St james', '1/2/2003', 'Peanuts', 'B');
 
-INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (appID.nextval, 1,  '1-JAN-2022',  'Sick');
-INSERT INTO Appointment (APPID, PAT_NUM,TIME, PARTICULAR) VALUES (appID.nextval, 2,'2-JAN-2022', 'Ingury');
-INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (appID.nextval, 3,  '5-JUL-2022', 'Chest pain');
-INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (appID.nextval, 4,  '15-JUL-2022', 'Cough');
-INSERT INTO Appointment (APPID, PAT_NUM, TIME, PARTICULAR) VALUES (appID.nextval, 5,  '15-JUL-2022', 'Visit');
+INSERT INTO Appointment (APPID, pat_num, TIME, PARTICULAR) VALUES (appID.nextval, 1,  '1-JAN-2022',  'Sick');
+INSERT INTO Appointment (APPID, pat_num,TIME, PARTICULAR) VALUES (appID.nextval, 2,'2-JAN-2022', 'Ingury');
+INSERT INTO Appointment (APPID, pat_num, TIME, PARTICULAR) VALUES (appID.nextval, 3,  '5-JUL-2022', 'Chest pain');
+INSERT INTO Appointment (APPID, pat_num, TIME, PARTICULAR) VALUES (appID.nextval, 4,  '15-JUL-2022', 'Cough');
+INSERT INTO Appointment (APPID, pat_num, TIME, PARTICULAR) VALUES (appID.nextval, 5,  '15-JUL-2022', 'Visit');
 
 
 INSERT INTO staff (STAFFID, NAME, TYPE, ADDRESS, DEPARTMENT, APPID) VALUES (100, 'Donald', 'Doctor', 'Cocorite', 'HR', 10);

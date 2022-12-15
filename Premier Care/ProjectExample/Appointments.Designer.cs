@@ -56,12 +56,16 @@
             this.label12 = new System.Windows.Forms.Label();
             this.timeInput = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.serviceInput = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.groupBox1.Controls.Add(this.serviceInput);
+            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.timeInput);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.particularInput);
@@ -365,6 +369,25 @@
             this.label13.TabIndex = 26;
             this.label13.Text = "Time:";
             // 
+            // serviceInput
+            // 
+            this.serviceInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serviceInput.Location = new System.Drawing.Point(804, 403);
+            this.serviceInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.serviceInput.Name = "serviceInput";
+            this.serviceInput.Size = new System.Drawing.Size(303, 28);
+            this.serviceInput.TabIndex = 29;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(699, 399);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(95, 32);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Service:";
+            // 
             // Appointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -410,5 +433,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox timeInput;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox serviceInput;
+        private System.Windows.Forms.Label label14;
     }
 }
