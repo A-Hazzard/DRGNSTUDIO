@@ -109,10 +109,10 @@ CREATE TABLE Appointment (
     doc_position  VARCHAR(20) NOT NULL,
     doc_ID NUMBER NOT NULL,
     time VARCHAR(50) NOT NULL,
-    particular VARCHAR(100)
-    --FOREIGN KEY(pat_num) REFERENCES PatientDetails(pat_num)
+    particular VARCHAR(100),
+    FOREIGN KEY(doc_email) REFERENCES DOCTOR(email)
 );
-desc appointment;
+select * from appointment;
 drop table doctor CASCADE CONSTRAINTS;
 --Doctor Table <<SUB CLASS OF STAFF>>
 CREATE TABLE DOCTOR(
