@@ -8,7 +8,7 @@ drop sequence xray_tech_ID;
 drop sequence lab_tech_ID;
 drop sequence csrID;
 drop sequence therapist;
-
+drop sequence csrID;
 
 CREATE SEQUENCE pat_num
 MINVALUE 1
@@ -136,16 +136,7 @@ CREATE TABLE NURSE(
     position VARCHAR2(20) NOT NULL, 
     FOREIGN KEY(email) REFERENCES STAFF(email)
 );
-drop table technician CASCADE CONSTRAINTS;
---Technician Table <<SUB CLASS OF STAFF AND SUPER CLASS OF LAB AND X-RAY>> 
-CREATE TABLE Technician(
-     tech_ID NUMBER NOT NULL,
-         Name VARCHAR2(30) NOT NULL,
 
-Email VARCHAR2(50) NOT NULL PRIMARY KEY,
-position VARCHAR2(20) NOT NULL, 
-FOREIGN KEY(email) REFERENCES STAFF(email)
-);
 drop table lab CASCADE CONSTRAINTS;
 CREATE TABLE Lab(
       lab_tech_ID NUMBER NOT NULL,
@@ -188,14 +179,15 @@ FOREIGN KEY(email) REFERENCES STAFF(email)
 
 drop table drug CASCADE CONSTRAINTS;
 --RAUSHAWN CODE
-/*CREATE TABLE DRUG(
+CREATE TABLE DRUG(
     AMOUNT NUMBER(20),
     INTAKE VARCHAR(20),
     COST NUMBER(20),
     pat_num NUMBER,
+    pat_name VARCHAR(20) NOT NULL,
     FOREIGN KEY(pat_num) REFERENCES patient(pat_num)
     );
-*/
+
 drop table service CASCADE CONSTRAINTS;
   CREATE TABLE SERVICE(   
     SERVE_TYPE VARCHAR(20) PRIMARY KEY,
