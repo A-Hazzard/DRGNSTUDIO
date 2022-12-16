@@ -1,0 +1,195 @@
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.exe.config
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.exe
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.pdb
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\EntityFramework.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Buffers.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Memory.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.AccessControl.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.Permissions.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Text.Json.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.ValueTuple.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\EntityFramework.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Buffers.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Memory.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.AccessControl.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.Permissions.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Text.Json.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.ValueTuple.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.AssemblyReference.cache
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Form1.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Login.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Properties.Resources.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Registration.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.GenerateResource.cache
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.CoreCompileInputs.cache
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.exe
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.pdb
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.PatientDetails.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.exe.config
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.exe
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.pdb
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\EntityFramework.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Buffers.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Memory.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.AccessControl.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.Permissions.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Text.Json.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.ValueTuple.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\EntityFramework.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Buffers.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Memory.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.AccessControl.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.Permissions.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Text.Json.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\System.ValueTuple.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.AssemblyReference.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Form1.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Information.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Login.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.PatientDetails.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Properties.Resources.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Registration.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.GenerateResource.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.CoreCompileInputs.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.exe
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.pdb
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\ProjectExample.exe.config
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\ProjectExample.exe
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\ProjectExample.pdb
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\EntityFramework.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Buffers.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Memory.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.AccessControl.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.Permissions.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Text.Json.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.ValueTuple.dll
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\EntityFramework.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Buffers.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Memory.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.AccessControl.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.Permissions.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Text.Json.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.ValueTuple.xml
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.AssemblyReference.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Form1.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Information.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Login.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.PatientDetails.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Properties.Resources.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Registration.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.GenerateResource.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.CoreCompileInputs.cache
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.exe
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.pdb
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\ProjectExample.exe.config
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\ProjectExample.exe
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\ProjectExample.pdb
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\EntityFramework.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Buffers.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Memory.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.AccessControl.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.Permissions.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Text.Json.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.ValueTuple.dll
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\EntityFramework.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Buffers.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Memory.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.AccessControl.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.Permissions.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Text.Json.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\bin\Debug\System.ValueTuple.xml
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.AssemblyReference.cache
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Form1.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Information.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Login.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.PatientDetails.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Properties.Resources.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.Registration.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.GenerateResource.cache
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.CoreCompileInputs.cache
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.exe
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.pdb
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Staff.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.medicine.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.treatmentHistory.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.invoice.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.patientLogin.resources
