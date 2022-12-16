@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Appointments));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.passwordInput = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -67,12 +68,15 @@
             this.nameInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Show)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.groupBox1.BackgroundImage = global::ProjectExample.Properties.Resources.HD_wallpaper_blurred_pink_background_ultra_aero_colorful_pink_background_blurred_simple_blurry_minimalism_cloth_hotpink;
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.passwordInput);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label16);
@@ -112,19 +116,29 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(856, 632);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(904, 632);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProjectExample.Properties.Resources.download__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(675, 476);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 151);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
             // 
             // passwordInput
             // 
             this.passwordInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordInput.Location = new System.Drawing.Point(155, 331);
-            this.passwordInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passwordInput.Margin = new System.Windows.Forms.Padding(2);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.Size = new System.Drawing.Size(177, 24);
             this.passwordInput.TabIndex = 36;
@@ -155,7 +169,7 @@
             // 
             this.serviceFeeInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.serviceFeeInput.Location = new System.Drawing.Point(603, 405);
-            this.serviceFeeInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.serviceFeeInput.Margin = new System.Windows.Forms.Padding(2);
             this.serviceFeeInput.Name = "serviceFeeInput";
             this.serviceFeeInput.Size = new System.Drawing.Size(228, 24);
             this.serviceFeeInput.TabIndex = 33;
@@ -165,7 +179,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F);
-            this.label15.Location = new System.Drawing.Point(319, 548);
+            this.label15.Location = new System.Drawing.Point(309, 514);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(206, 37);
@@ -176,8 +190,8 @@
             // 
             this.serviceView.BackColor = System.Drawing.Color.PaleVioletRed;
             this.serviceView.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.serviceView.Location = new System.Drawing.Point(325, 502);
-            this.serviceView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.serviceView.Location = new System.Drawing.Point(90, 464);
+            this.serviceView.Margin = new System.Windows.Forms.Padding(2);
             this.serviceView.Name = "serviceView";
             this.serviceView.Size = new System.Drawing.Size(80, 44);
             this.serviceView.TabIndex = 31;
@@ -191,7 +205,7 @@
             this.Show.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Show.ColumnHeadersHeight = 29;
             this.Show.Location = new System.Drawing.Point(43, 386);
-            this.Show.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Show.Margin = new System.Windows.Forms.Padding(2);
             this.Show.Name = "Show";
             this.Show.RowHeadersWidth = 51;
             this.Show.RowTemplate.Height = 24;
@@ -203,7 +217,7 @@
             // 
             this.serviceInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.serviceInput.Location = new System.Drawing.Point(603, 327);
-            this.serviceInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.serviceInput.Margin = new System.Windows.Forms.Padding(2);
             this.serviceInput.Name = "serviceInput";
             this.serviceInput.Size = new System.Drawing.Size(228, 24);
             this.serviceInput.TabIndex = 29;
@@ -223,7 +237,7 @@
             // 
             this.timeInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeInput.Location = new System.Drawing.Point(603, 370);
-            this.timeInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.timeInput.Margin = new System.Windows.Forms.Padding(2);
             this.timeInput.Name = "timeInput";
             this.timeInput.Size = new System.Drawing.Size(228, 24);
             this.timeInput.TabIndex = 27;
@@ -243,7 +257,7 @@
             // 
             this.particularInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.particularInput.Location = new System.Drawing.Point(155, 296);
-            this.particularInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.particularInput.Margin = new System.Windows.Forms.Padding(2);
             this.particularInput.Name = "particularInput";
             this.particularInput.Size = new System.Drawing.Size(177, 24);
             this.particularInput.TabIndex = 25;
@@ -263,7 +277,7 @@
             // 
             this.doc_idInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doc_idInput.Location = new System.Drawing.Point(603, 223);
-            this.doc_idInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.doc_idInput.Margin = new System.Windows.Forms.Padding(2);
             this.doc_idInput.Name = "doc_idInput";
             this.doc_idInput.Size = new System.Drawing.Size(228, 24);
             this.doc_idInput.TabIndex = 23;
@@ -283,7 +297,7 @@
             // 
             this.bloodtypeInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bloodtypeInput.Location = new System.Drawing.Point(155, 264);
-            this.bloodtypeInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bloodtypeInput.Margin = new System.Windows.Forms.Padding(2);
             this.bloodtypeInput.Name = "bloodtypeInput";
             this.bloodtypeInput.Size = new System.Drawing.Size(177, 24);
             this.bloodtypeInput.TabIndex = 21;
@@ -303,7 +317,7 @@
             // 
             this.allergiesInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.allergiesInput.Location = new System.Drawing.Point(155, 228);
-            this.allergiesInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.allergiesInput.Margin = new System.Windows.Forms.Padding(2);
             this.allergiesInput.Name = "allergiesInput";
             this.allergiesInput.Size = new System.Drawing.Size(177, 24);
             this.allergiesInput.TabIndex = 19;
@@ -323,7 +337,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F);
-            this.label8.Location = new System.Drawing.Point(600, 67);
+            this.label8.Location = new System.Drawing.Point(653, 64);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 37);
@@ -334,7 +348,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F);
-            this.label7.Location = new System.Drawing.Point(172, 67);
+            this.label7.Location = new System.Drawing.Point(167, 76);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 37);
@@ -345,7 +359,7 @@
             // 
             this.doc_positionInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doc_positionInput.Location = new System.Drawing.Point(603, 183);
-            this.doc_positionInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.doc_positionInput.Margin = new System.Windows.Forms.Padding(2);
             this.doc_positionInput.Name = "doc_positionInput";
             this.doc_positionInput.Size = new System.Drawing.Size(228, 24);
             this.doc_positionInput.TabIndex = 15;
@@ -365,7 +379,7 @@
             // 
             this.phoneInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneInput.Location = new System.Drawing.Point(155, 193);
-            this.phoneInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneInput.Margin = new System.Windows.Forms.Padding(2);
             this.phoneInput.Name = "phoneInput";
             this.phoneInput.Size = new System.Drawing.Size(177, 24);
             this.phoneInput.TabIndex = 15;
@@ -384,15 +398,17 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.button1.BackgroundImage = global::ProjectExample.Properties.Resources.download;
             this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::ProjectExample.Properties.Resources.person;
+            this.button1.Image = global::ProjectExample.Properties.Resources._216240_home_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(679, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(746, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 35);
+            this.button1.Size = new System.Drawing.Size(109, 51);
             this.button1.TabIndex = 13;
             this.button1.Text = "Home";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -411,7 +427,7 @@
             // 
             this.doc_emailInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doc_emailInput.Location = new System.Drawing.Point(603, 149);
-            this.doc_emailInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.doc_emailInput.Margin = new System.Windows.Forms.Padding(2);
             this.doc_emailInput.Name = "doc_emailInput";
             this.doc_emailInput.Size = new System.Drawing.Size(228, 24);
             this.doc_emailInput.TabIndex = 7;
@@ -421,7 +437,7 @@
             this.button2.BackColor = System.Drawing.Color.PaleVioletRed;
             this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(603, 431);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(227, 44);
             this.button2.TabIndex = 2;
@@ -444,7 +460,7 @@
             // 
             this.dobInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dobInput.Location = new System.Drawing.Point(154, 154);
-            this.dobInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dobInput.Margin = new System.Windows.Forms.Padding(2);
             this.dobInput.Name = "dobInput";
             this.dobInput.Size = new System.Drawing.Size(178, 24);
             this.dobInput.TabIndex = 7;
@@ -453,7 +469,7 @@
             // 
             this.doc_nameInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doc_nameInput.Location = new System.Drawing.Point(603, 115);
-            this.doc_nameInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.doc_nameInput.Margin = new System.Windows.Forms.Padding(2);
             this.doc_nameInput.Name = "doc_nameInput";
             this.doc_nameInput.Size = new System.Drawing.Size(228, 24);
             this.doc_nameInput.TabIndex = 5;
@@ -484,7 +500,7 @@
             // 
             this.nameInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameInput.Location = new System.Drawing.Point(154, 115);
-            this.nameInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameInput.Margin = new System.Windows.Forms.Padding(2);
             this.nameInput.Name = "nameInput";
             this.nameInput.Size = new System.Drawing.Size(177, 24);
             this.nameInput.TabIndex = 5;
@@ -504,14 +520,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 632);
+            this.ClientSize = new System.Drawing.Size(904, 632);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Appointments";
             this.Text = "Appointments";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Show)).EndInit();
             this.ResumeLayout(false);
 
@@ -556,5 +573,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox passwordInput;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

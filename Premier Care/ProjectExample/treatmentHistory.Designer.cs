@@ -35,14 +35,14 @@
             // 
             // showTreatments
             // 
-            this.showTreatments.BackgroundColor = System.Drawing.Color.White;
+            this.showTreatments.BackgroundColor = System.Drawing.Color.PaleVioletRed;
             this.showTreatments.ColumnHeadersHeight = 29;
             this.showTreatments.Location = new System.Drawing.Point(-3, -1);
-            this.showTreatments.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showTreatments.Margin = new System.Windows.Forms.Padding(2);
             this.showTreatments.Name = "showTreatments";
             this.showTreatments.RowHeadersWidth = 51;
             this.showTreatments.RowTemplate.Height = 24;
-            this.showTreatments.Size = new System.Drawing.Size(494, 119);
+            this.showTreatments.Size = new System.Drawing.Size(487, 130);
             this.showTreatments.TabIndex = 18;
             this.showTreatments.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showPatients_CellContentClick);
             // 
@@ -54,7 +54,7 @@
             this.ClientSize = new System.Drawing.Size(485, 128);
             this.Controls.Add(this.showTreatments);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "treatmentHistory";
             this.Text = "treatmentHistory";
             ((System.ComponentModel.ISupportInitialize)(this.showTreatments)).EndInit();

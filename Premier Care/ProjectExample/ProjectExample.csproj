@@ -263,6 +263,60 @@
   <ItemGroup>
     <None Include="Resources\6079702_bed_clinic_healthcare_hospital_patient_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-858504476-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4822.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-wallpaper-blurred-pink-background-ultra-aero-colorful-pink-background-blurred-simple-blurry-minimalism-cloth-hotpink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_144822260_Hd6NpySsxX5KrXj5W5BuOQlEdo9Hl2Kt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216240_home_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6673743_health_hospital_injection_medical_medicine_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-up-medical-pills-blur-background-medical-pills-blur-background-175597477.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pills-3209654.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-up-medical-pills-blur-background-medical-pills-blur-background-1755974771.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pills-32096541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6673743_health_hospital_injection_medical_medicine_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nursing Shortage JV TT 16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200x-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -65,5 +65,10 @@ namespace ProjectExample
             Login staffLogin = new Login();
             staffLogin.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

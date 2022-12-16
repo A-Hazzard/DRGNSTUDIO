@@ -42,7 +42,6 @@
             this.LabTechnicians = new System.Windows.Forms.Label();
             this.showTherapist = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
-            this.showCsr = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.medicineBtn = new System.Windows.Forms.Button();
             this.appointbtn = new System.Windows.Forms.Button();
@@ -50,6 +49,7 @@
             this.loginBtn = new System.Windows.Forms.Button();
             this.registry = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.showCsr = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShowMembers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showDoctors)).BeginInit();
@@ -63,10 +63,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 8);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(9, 6);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(92, 92);
+            this.pictureBox2.Size = new System.Drawing.Size(103, 96);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
@@ -76,11 +76,12 @@
             this.ShowMembers.BackgroundColor = System.Drawing.Color.PaleVioletRed;
             this.ShowMembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ShowMembers.ColumnHeadersHeight = 29;
-            this.ShowMembers.Location = new System.Drawing.Point(31, 219);
+            this.ShowMembers.Location = new System.Drawing.Point(23, 178);
+            this.ShowMembers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ShowMembers.Name = "ShowMembers";
             this.ShowMembers.RowHeadersWidth = 51;
             this.ShowMembers.RowTemplate.Height = 24;
-            this.ShowMembers.Size = new System.Drawing.Size(474, 214);
+            this.ShowMembers.Size = new System.Drawing.Size(356, 174);
             this.ShowMembers.TabIndex = 15;
             this.ShowMembers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -88,9 +89,10 @@
             // 
             this.welcomeText.AutoSize = true;
             this.welcomeText.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeText.Location = new System.Drawing.Point(21, 142);
+            this.welcomeText.Location = new System.Drawing.Point(16, 115);
+            this.welcomeText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.welcomeText.Name = "welcomeText";
-            this.welcomeText.Size = new System.Drawing.Size(308, 60);
+            this.welcomeText.Size = new System.Drawing.Size(246, 47);
             this.welcomeText.TabIndex = 16;
             this.welcomeText.Text = "Staff Members";
             // 
@@ -99,11 +101,12 @@
             this.showDoctors.BackgroundColor = System.Drawing.Color.PaleVioletRed;
             this.showDoctors.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showDoctors.ColumnHeadersHeight = 29;
-            this.showDoctors.Location = new System.Drawing.Point(546, 219);
+            this.showDoctors.Location = new System.Drawing.Point(410, 178);
+            this.showDoctors.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showDoctors.Name = "showDoctors";
             this.showDoctors.RowHeadersWidth = 51;
             this.showDoctors.RowTemplate.Height = 24;
-            this.showDoctors.Size = new System.Drawing.Size(474, 214);
+            this.showDoctors.Size = new System.Drawing.Size(356, 174);
             this.showDoctors.TabIndex = 15;
             this.showDoctors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -111,9 +114,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(536, 142);
+            this.label1.Location = new System.Drawing.Point(402, 115);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 60);
+            this.label1.Size = new System.Drawing.Size(142, 47);
             this.label1.TabIndex = 16;
             this.label1.Text = "Doctors";
             // 
@@ -122,11 +126,12 @@
             this.showNurses.BackgroundColor = System.Drawing.Color.PaleVioletRed;
             this.showNurses.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showNurses.ColumnHeadersHeight = 29;
-            this.showNurses.Location = new System.Drawing.Point(31, 500);
+            this.showNurses.Location = new System.Drawing.Point(23, 440);
+            this.showNurses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showNurses.Name = "showNurses";
             this.showNurses.RowHeadersWidth = 51;
             this.showNurses.RowTemplate.Height = 24;
-            this.showNurses.Size = new System.Drawing.Size(474, 275);
+            this.showNurses.Size = new System.Drawing.Size(356, 223);
             this.showNurses.TabIndex = 15;
             this.showNurses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -134,9 +139,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 423);
+            this.label2.Location = new System.Drawing.Point(25, 382);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 60);
+            this.label2.Size = new System.Drawing.Size(126, 47);
             this.label2.TabIndex = 16;
             this.label2.Text = "Nurses";
             // 
@@ -145,11 +151,12 @@
             this.showXRayTechnicians.BackgroundColor = System.Drawing.Color.PaleVioletRed;
             this.showXRayTechnicians.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showXRayTechnicians.ColumnHeadersHeight = 29;
-            this.showXRayTechnicians.Location = new System.Drawing.Point(546, 500);
+            this.showXRayTechnicians.Location = new System.Drawing.Point(410, 440);
+            this.showXRayTechnicians.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showXRayTechnicians.Name = "showXRayTechnicians";
             this.showXRayTechnicians.RowHeadersWidth = 51;
             this.showXRayTechnicians.RowTemplate.Height = 24;
-            this.showXRayTechnicians.Size = new System.Drawing.Size(474, 275);
+            this.showXRayTechnicians.Size = new System.Drawing.Size(356, 223);
             this.showXRayTechnicians.TabIndex = 15;
             this.showXRayTechnicians.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -157,9 +164,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(536, 423);
+            this.label3.Location = new System.Drawing.Point(402, 382);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(375, 60);
+            this.label3.Size = new System.Drawing.Size(298, 47);
             this.label3.TabIndex = 16;
             this.label3.Text = "X-RAY Technicians";
             // 
@@ -168,11 +176,12 @@
             this.showLabTechnicians.BackgroundColor = System.Drawing.Color.PaleVioletRed;
             this.showLabTechnicians.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showLabTechnicians.ColumnHeadersHeight = 29;
-            this.showLabTechnicians.Location = new System.Drawing.Point(1026, 505);
+            this.showLabTechnicians.Location = new System.Drawing.Point(780, 440);
+            this.showLabTechnicians.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showLabTechnicians.Name = "showLabTechnicians";
             this.showLabTechnicians.RowHeadersWidth = 51;
             this.showLabTechnicians.RowTemplate.Height = 24;
-            this.showLabTechnicians.Size = new System.Drawing.Size(474, 275);
+            this.showLabTechnicians.Size = new System.Drawing.Size(356, 223);
             this.showLabTechnicians.TabIndex = 15;
             this.showLabTechnicians.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -180,9 +189,10 @@
             // 
             this.LabTechnicians.AutoSize = true;
             this.LabTechnicians.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabTechnicians.Location = new System.Drawing.Point(1016, 428);
+            this.LabTechnicians.Location = new System.Drawing.Point(762, 382);
+            this.LabTechnicians.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabTechnicians.Name = "LabTechnicians";
-            this.LabTechnicians.Size = new System.Drawing.Size(325, 60);
+            this.LabTechnicians.Size = new System.Drawing.Size(258, 47);
             this.LabTechnicians.TabIndex = 16;
             this.LabTechnicians.Text = "Lab Technicians";
             // 
@@ -191,11 +201,12 @@
             this.showTherapist.BackgroundColor = System.Drawing.Color.PaleVioletRed;
             this.showTherapist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showTherapist.ColumnHeadersHeight = 29;
-            this.showTherapist.Location = new System.Drawing.Point(1026, 219);
+            this.showTherapist.Location = new System.Drawing.Point(770, 178);
+            this.showTherapist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showTherapist.Name = "showTherapist";
             this.showTherapist.RowHeadersWidth = 51;
             this.showTherapist.RowTemplate.Height = 24;
-            this.showTherapist.Size = new System.Drawing.Size(474, 214);
+            this.showTherapist.Size = new System.Drawing.Size(356, 174);
             this.showTherapist.TabIndex = 15;
             this.showTherapist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -203,32 +214,21 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1016, 142);
+            this.label5.Location = new System.Drawing.Point(762, 115);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(204, 60);
+            this.label5.Size = new System.Drawing.Size(162, 47);
             this.label5.TabIndex = 16;
             this.label5.Text = "Therapist";
-            // 
-            // showCsr
-            // 
-            this.showCsr.BackgroundColor = System.Drawing.Color.PaleVioletRed;
-            this.showCsr.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.showCsr.ColumnHeadersHeight = 29;
-            this.showCsr.Location = new System.Drawing.Point(21, 699);
-            this.showCsr.Name = "showCsr";
-            this.showCsr.RowHeadersWidth = 51;
-            this.showCsr.RowTemplate.Height = 24;
-            this.showCsr.Size = new System.Drawing.Size(474, 275);
-            this.showCsr.TabIndex = 15;
-            this.showCsr.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 622);
+            this.label4.Location = new System.Drawing.Point(1170, 261);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 60);
+            this.label4.Size = new System.Drawing.Size(97, 47);
             this.label4.TabIndex = 16;
             this.label4.Text = "CSRs";
             // 
@@ -239,10 +239,10 @@
             this.medicineBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.medicineBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
             this.medicineBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.medicineBtn.Location = new System.Drawing.Point(1221, 11);
-            this.medicineBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.medicineBtn.Location = new System.Drawing.Point(1358, 9);
+            this.medicineBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.medicineBtn.Name = "medicineBtn";
-            this.medicineBtn.Size = new System.Drawing.Size(157, 70);
+            this.medicineBtn.Size = new System.Drawing.Size(118, 57);
             this.medicineBtn.TabIndex = 21;
             this.medicineBtn.Text = "Medicine";
             this.medicineBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -256,10 +256,10 @@
             this.appointbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.appointbtn.Image = global::ProjectExample.Properties.Resources._4172165_appointment_booking_form_reservation_document_icon;
             this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.appointbtn.Location = new System.Drawing.Point(344, 11);
-            this.appointbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.appointbtn.Location = new System.Drawing.Point(554, 11);
+            this.appointbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.appointbtn.Name = "appointbtn";
-            this.appointbtn.Size = new System.Drawing.Size(173, 70);
+            this.appointbtn.Size = new System.Drawing.Size(146, 57);
             this.appointbtn.TabIndex = 20;
             this.appointbtn.Text = "    Appoitments";
             this.appointbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -273,10 +273,10 @@
             this.infobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.infobtn.Image = global::ProjectExample.Properties.Resources._2202278_detailed_i_info_information_more_icon;
             this.infobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infobtn.Location = new System.Drawing.Point(523, 14);
-            this.infobtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.infobtn.Location = new System.Drawing.Point(726, 11);
+            this.infobtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.infobtn.Name = "infobtn";
-            this.infobtn.Size = new System.Drawing.Size(188, 70);
+            this.infobtn.Size = new System.Drawing.Size(159, 57);
             this.infobtn.TabIndex = 19;
             this.infobtn.Text = "Staff Members";
             this.infobtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -290,10 +290,10 @@
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.loginBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
             this.loginBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loginBtn.Location = new System.Drawing.Point(1087, 11);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.loginBtn.Location = new System.Drawing.Point(1233, 11);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(128, 70);
+            this.loginBtn.Size = new System.Drawing.Size(104, 57);
             this.loginBtn.TabIndex = 18;
             this.loginBtn.Text = "Logout";
             this.loginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -308,10 +308,10 @@
             this.registry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.registry.Image = global::ProjectExample.Properties.Resources._7830628_login_icon;
             this.registry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.registry.Location = new System.Drawing.Point(732, 14);
-            this.registry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.registry.Location = new System.Drawing.Point(906, 11);
+            this.registry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.registry.Name = "registry";
-            this.registry.Size = new System.Drawing.Size(176, 70);
+            this.registry.Size = new System.Drawing.Size(144, 57);
             this.registry.TabIndex = 17;
             this.registry.Text = "   Registration";
             this.registry.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -324,21 +324,36 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.button1.Image = global::ProjectExample.Properties.Resources.person;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(915, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(1077, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 70);
+            this.button1.Size = new System.Drawing.Size(130, 57);
             this.button1.TabIndex = 22;
             this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // showCsr
+            // 
+            this.showCsr.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.showCsr.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showCsr.ColumnHeadersHeight = 29;
+            this.showCsr.Location = new System.Drawing.Point(1169, 325);
+            this.showCsr.Margin = new System.Windows.Forms.Padding(2);
+            this.showCsr.Name = "showCsr";
+            this.showCsr.RowHeadersWidth = 51;
+            this.showCsr.RowTemplate.Height = 24;
+            this.showCsr.Size = new System.Drawing.Size(356, 223);
+            this.showCsr.TabIndex = 15;
+            this.showCsr.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // Staff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.ClientSize = new System.Drawing.Size(1527, 1038);
+            this.BackgroundImage = global::ProjectExample.Properties.Resources.HD_wallpaper_blurred_pink_background_ultra_aero_colorful_pink_background_blurred_simple_blurry_minimalism_cloth_hotpink;
+            this.ClientSize = new System.Drawing.Size(1538, 699);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.medicineBtn);
             this.Controls.Add(this.appointbtn);
@@ -360,6 +375,7 @@
             this.Controls.Add(this.showDoctors);
             this.Controls.Add(this.ShowMembers);
             this.Controls.Add(this.pictureBox2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Staff";
             this.Text = "Staff";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -389,7 +405,6 @@
         private System.Windows.Forms.Label LabTechnicians;
         private System.Windows.Forms.DataGridView showTherapist;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView showCsr;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button medicineBtn;
         private System.Windows.Forms.Button appointbtn;
@@ -397,5 +412,6 @@
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.Button registry;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView showCsr;
     }
 }
