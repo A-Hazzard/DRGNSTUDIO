@@ -61,9 +61,13 @@ namespace ProjectExample
         {
 
             OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO treatment VALUES('"+ nameInput.Text + "', " + patientIDInput.Text + ", '" + drugInput.Text + "', " + drugIntakeInput.Text + ", " + feeInput.Text + ")", con);
+            OracleDataAdapter oda1 = new OracleDataAdapter("INSERT INTO invoice VALUES('"+ nameInput.Text + "', '" + drugInput.Text + "', " + drugIntakeInput.Text + ", " + feeInput.Text + ")", con);
 
             DataTable dt = new DataTable();
+            DataTable dt1 = new DataTable();
+
             oda.Fill(dt);
+            oda1.Fill(dt1);
 
             MessageBox.Show("Drug given");
         }
@@ -72,6 +76,20 @@ namespace ProjectExample
         {
             treatmentHistory history = new treatmentHistory();
             history.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Form1 home = new Form1();
+
+            home.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

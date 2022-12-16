@@ -36,22 +36,27 @@ namespace ProjectExample
             Form1 home = new Form1();
 
             con.Open();
+
+            
+                //Check to see if credentials match the db email and password
+                OracleCommand command = new OracleCommand("Select * from admin where email = '" + emailInput.Text + "' AND password = '" + passwordInput.Text + "'", con);
+                OracleDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    MessageBox.Show("Logged in");
+                    this.Hide();
+                    home.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Email/Password");
+                }
+            
+          
+
+
            
-            //Check to see if credentials match the db email and password
-            OracleCommand command = new OracleCommand("Select * from admin where email = '" + emailInput.Text + "' AND password = '" + passwordInput.Text + "'", con);
-
-            OracleDataReader reader = command.ExecuteReader();
-
-            if (reader.Read())
-            {
-                MessageBox.Show("Logged in");
-                this.Hide();
-                home.Show();
-            }
-            else
-            {
-                MessageBox.Show("Invalid Email/Password");
-            }
 
             con.Close();
    
@@ -77,6 +82,13 @@ namespace ProjectExample
             Registration signup = new Registration();
             this.Hide();
             signup.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            patientLogin pLogin = new patientLogin();
+            pLogin.Show();
         }
     }
     

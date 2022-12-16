@@ -191,3 +191,5 @@ C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectEx
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Staff.resources
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.medicine.resources
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.treatmentHistory.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.invoice.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.patientLogin.resources

@@ -73,7 +73,8 @@ CREATE TABLE patient(
     phone VARCHAR2(150) NOT NULL,
     DOB VARCHAR2(20) NOT NULL,
     allergies VARCHAR2(100),
-    bloodType VARCHAR2(100) NOT NULL
+    bloodType VARCHAR2(100) NOT NULL,
+    password VARCHAR2(50) NOT NULL
 );
 /*
 CREATE TABLE invoice(
@@ -189,6 +190,13 @@ CREATE TABLE treatment(
     drug VARCHAR2(20) NOT NULL,
     dailyIntake NUMBER(6) NOT NULL,
     FEE NUMBER(38) NOT NULL
+    );
+    
+    CREATE TABLE invoice(
+        pat_name VARCHAR2(20) NOT NULL,
+        drug VARCHAR2(20) NOT NULL,
+        dailyIntake NUMBER(6) NOT NULL,
+        FEE NUMBER(38) NOT NULL
     );
 select * from treatment;
 INSERT INTO DRUG VALUES('Panadol', 5);

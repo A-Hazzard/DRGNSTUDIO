@@ -1,6 +1,6 @@
 ﻿namespace ProjectExample
 {
-    partial class Login
+    partial class patientLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(patientLogin));
             this.loginBtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cancelbtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.welcomeBackText = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.passwordInput = new System.Windows.Forms.TextBox();
-            this.emailInput = new System.Windows.Forms.TextBox();
+            this.idInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cancelbtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,7 +47,7 @@
             // 
             this.loginBtn.BackColor = System.Drawing.Color.PaleVioletRed;
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.Location = new System.Drawing.Point(445, 291);
+            this.loginBtn.Location = new System.Drawing.Point(445, 289);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(313, 55);
@@ -66,50 +66,26 @@
             this.groupBox1.Controls.Add(this.loginBtn);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.passwordInput);
-            this.groupBox1.Controls.Add(this.emailInput);
+            this.groupBox1.Controls.Add(this.idInput);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(-132, -53);
+            this.groupBox1.Location = new System.Drawing.Point(-132, -54);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Size = new System.Drawing.Size(1065, 558);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            // 
-            // cancelbtn
-            // 
-            this.cancelbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelbtn.Location = new System.Drawing.Point(445, 366);
-            this.cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cancelbtn.Name = "cancelbtn";
-            this.cancelbtn.Size = new System.Drawing.Size(313, 55);
-            this.cancelbtn.TabIndex = 13;
-            this.cancelbtn.Text = "Exit";
-            this.cancelbtn.UseVisualStyleBackColor = false;
-            this.cancelbtn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(132, 52);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // welcomeBackText
             // 
             this.welcomeBackText.AutoSize = true;
             this.welcomeBackText.Font = new System.Drawing.Font("Yu Gothic UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeBackText.Location = new System.Drawing.Point(497, 85);
+            this.welcomeBackText.Location = new System.Drawing.Point(451, 85);
             this.welcomeBackText.Name = "welcomeBackText";
-            this.welcomeBackText.Size = new System.Drawing.Size(225, 62);
+            this.welcomeBackText.Size = new System.Drawing.Size(307, 62);
             this.welcomeBackText.TabIndex = 10;
-            this.welcomeBackText.Text = "Welcome";
+            this.welcomeBackText.Text = "Patient Login";
             // 
             // label3
             // 
@@ -129,50 +105,71 @@
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.Size = new System.Drawing.Size(313, 28);
             this.passwordInput.TabIndex = 8;
-            this.passwordInput.TextChanged += new System.EventHandler(this.passwordInput_TextChanged);
             // 
-            // emailInput
+            // idInput
             // 
-            this.emailInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailInput.Location = new System.Drawing.Point(445, 175);
-            this.emailInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.emailInput.Name = "emailInput";
-            this.emailInput.Size = new System.Drawing.Size(313, 28);
-            this.emailInput.TabIndex = 7;
+            this.idInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idInput.Location = new System.Drawing.Point(445, 175);
+            this.idInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.idInput.Name = "idInput";
+            this.idInput.Size = new System.Drawing.Size(313, 28);
+            this.idInput.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(377, 185);
+            this.label2.Location = new System.Drawing.Point(397, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 19);
+            this.label2.Size = new System.Drawing.Size(33, 19);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Email:";
+            this.label2.Text = "ID:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(132, 52);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(157, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cancelbtn
+            // 
+            this.cancelbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelbtn.Location = new System.Drawing.Point(445, 371);
+            this.cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cancelbtn.Name = "cancelbtn";
+            this.cancelbtn.Size = new System.Drawing.Size(313, 55);
+            this.cancelbtn.TabIndex = 14;
+            this.cancelbtn.Text = "Exit";
+            this.cancelbtn.UseVisualStyleBackColor = false;
+            this.cancelbtn.Click += new System.EventHandler(this.cancelbtn_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(144, 510);
+            this.button1.Location = new System.Drawing.Point(144, 498);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 30);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Patient Login";
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Staff Login";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Login
+            // patientLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 498);
+            this.ClientSize = new System.Drawing.Size(924, 498);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Login";
-            this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
+            this.Name = "patientLogin";
+            this.Text = "patientLogin";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -188,7 +185,7 @@
         private System.Windows.Forms.Label welcomeBackText;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox passwordInput;
-        private System.Windows.Forms.TextBox emailInput;
+        private System.Windows.Forms.TextBox idInput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cancelbtn;
         private System.Windows.Forms.Button button1;
