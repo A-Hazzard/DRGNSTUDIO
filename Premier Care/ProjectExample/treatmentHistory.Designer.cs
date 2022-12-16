@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(treatmentHistory));
             this.showTreatments = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.showTreatments)).BeginInit();
             this.SuspendLayout();
@@ -36,21 +37,24 @@
             // 
             this.showTreatments.BackgroundColor = System.Drawing.Color.White;
             this.showTreatments.ColumnHeadersHeight = 29;
-            this.showTreatments.Location = new System.Drawing.Point(-4, -1);
+            this.showTreatments.Location = new System.Drawing.Point(-3, -1);
+            this.showTreatments.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showTreatments.Name = "showTreatments";
             this.showTreatments.RowHeadersWidth = 51;
             this.showTreatments.RowTemplate.Height = 24;
-            this.showTreatments.Size = new System.Drawing.Size(658, 146);
+            this.showTreatments.Size = new System.Drawing.Size(494, 119);
             this.showTreatments.TabIndex = 18;
             this.showTreatments.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showPatients_CellContentClick);
             // 
             // treatmentHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(647, 157);
+            this.ClientSize = new System.Drawing.Size(485, 128);
             this.Controls.Add(this.showTreatments);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "treatmentHistory";
             this.Text = "treatmentHistory";
             ((System.ComponentModel.ISupportInitialize)(this.showTreatments)).EndInit();

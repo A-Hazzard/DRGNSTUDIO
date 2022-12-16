@@ -39,10 +39,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 95);
+            this.pictureBox1.Size = new System.Drawing.Size(120, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -51,9 +51,10 @@
             // 
             this.welcomeBackText.AutoSize = true;
             this.welcomeBackText.Font = new System.Drawing.Font("Yu Gothic UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeBackText.Location = new System.Drawing.Point(369, 44);
+            this.welcomeBackText.Location = new System.Drawing.Point(277, 36);
+            this.welcomeBackText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.welcomeBackText.Name = "welcomeBackText";
-            this.welcomeBackText.Size = new System.Drawing.Size(199, 62);
+            this.welcomeBackText.Size = new System.Drawing.Size(159, 50);
             this.welcomeBackText.TabIndex = 13;
             this.welcomeBackText.Text = "Invoices";
             // 
@@ -62,24 +63,26 @@
             this.showInvoices.BackgroundColor = System.Drawing.Color.PaleVioletRed;
             this.showInvoices.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showInvoices.ColumnHeadersHeight = 29;
-            this.showInvoices.Location = new System.Drawing.Point(150, 173);
+            this.showInvoices.Location = new System.Drawing.Point(112, 141);
+            this.showInvoices.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showInvoices.Name = "showInvoices";
             this.showInvoices.RowHeadersWidth = 51;
             this.showInvoices.RowTemplate.Height = 24;
-            this.showInvoices.Size = new System.Drawing.Size(604, 146);
+            this.showInvoices.Size = new System.Drawing.Size(453, 119);
             this.showInvoices.TabIndex = 17;
             // 
             // invoice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.ClientSize = new System.Drawing.Size(917, 493);
+            this.ClientSize = new System.Drawing.Size(688, 401);
             this.Controls.Add(this.showInvoices);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.welcomeBackText);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "invoice";
-            this.Text = "invoice";
+            this.Text = "Invoice";
             this.Load += new System.EventHandler(this.invoice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showInvoices)).EndInit();
