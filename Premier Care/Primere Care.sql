@@ -113,8 +113,8 @@ CREATE TABLE Appointment (
     time VARCHAR(50) NOT NULL,
     particular VARCHAR(100),
     service VARCHAR(15) NOT NULL,
-    fee NUMBER(120) NOT NULL,
-        FOREIGN KEY(service) REFERENCES service(serve_type)
+    fee NUMBER(38) NOT NULL,
+    FOREIGN KEY(service) REFERENCES service(serve_type),
     FOREIGN KEY(doc_email) REFERENCES DOCTOR(email)
 );
 select * from appointment;
