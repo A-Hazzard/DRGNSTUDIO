@@ -1,4 +1,4 @@
---select * from USER_SEQUENCES;
+select * from USER_SEQUENCES;
 drop sequence pat_num;
 drop sequence appId;
 drop sequence staffID;
