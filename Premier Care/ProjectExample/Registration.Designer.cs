@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.welcomeText = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.emailInput = new System.Windows.Forms.TextBox();
@@ -40,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.positionInput = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +66,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1064, 631);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 
@@ -80,18 +81,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 387);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1058, 242);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
             // welcomeText
             // 
             this.welcomeText.AutoSize = true;
@@ -101,6 +90,7 @@
             this.welcomeText.Size = new System.Drawing.Size(478, 60);
             this.welcomeText.TabIndex = 10;
             this.welcomeText.Text = "Register Staff Members";
+            this.welcomeText.Click += new System.EventHandler(this.welcomeText_Click);
             // 
             // button2
             // 
@@ -123,6 +113,7 @@
             this.emailInput.Name = "emailInput";
             this.emailInput.Size = new System.Drawing.Size(303, 28);
             this.emailInput.TabIndex = 7;
+            this.emailInput.TextChanged += new System.EventHandler(this.emailInput_TextChanged);
             // 
             // label2
             // 
@@ -133,6 +124,7 @@
             this.label2.Size = new System.Drawing.Size(76, 32);
             this.label2.TabIndex = 6;
             this.label2.Text = "Email:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // nameInput
             // 
@@ -163,6 +155,7 @@
             this.positionInput.Name = "positionInput";
             this.positionInput.Size = new System.Drawing.Size(303, 28);
             this.positionInput.TabIndex = 15;
+            this.positionInput.TextChanged += new System.EventHandler(this.positionInput_TextChanged);
             // 
             // label3
             // 
@@ -173,6 +166,20 @@
             this.label3.Size = new System.Drawing.Size(104, 32);
             this.label3.TabIndex = 14;
             this.label3.Text = "Position:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 387);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1058, 242);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Registration
             // 

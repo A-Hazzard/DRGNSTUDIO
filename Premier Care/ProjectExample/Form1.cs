@@ -18,7 +18,7 @@ namespace ProjectExample
         Registration reg = new Registration();
         Login loginForm = new Login();
         PatientDetails patientDetail = new PatientDetails();
-        
+        medicine medicinePage = new medicine();
 
 
         public Form1()
@@ -77,6 +77,13 @@ namespace ProjectExample
         {
             this.Hide();
             appoint.Show();
+        }
+
+        private void medicineBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            medicinePage.Show();
         }
     }
 }

@@ -129,6 +129,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medicine.Designer.cs">
+      <DependentUpon>medicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="PatientDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,12 @@
     <Compile Include="Staff.Designer.cs">
       <DependentUpon>Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="treatmentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="treatmentHistory.Designer.cs">
+      <DependentUpon>treatmentHistory.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Appointments.resx">
       <DependentUpon>Appointments.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medicine.resx">
+      <DependentUpon>medicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientDetails.resx">
       <DependentUpon>PatientDetails.cs</DependentUpon>
@@ -176,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="treatmentHistory.resx">
+      <DependentUpon>treatmentHistory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>

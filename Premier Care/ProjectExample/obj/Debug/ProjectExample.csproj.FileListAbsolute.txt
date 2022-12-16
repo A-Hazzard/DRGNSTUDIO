@@ -189,3 +189,5 @@ C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care - BACKUP\ProjectExample\obj\Debug\ProjectExample.pdb
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Staff.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.medicine.resources
+C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.treatmentHistory.resources

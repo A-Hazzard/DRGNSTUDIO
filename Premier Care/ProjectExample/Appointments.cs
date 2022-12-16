@@ -57,9 +57,13 @@ namespace ProjectExample
         private void button2_Click(object sender, EventArgs e)
         {
             OracleDataAdapter oda = new OracleDataAdapter("INSERT INTO appointment VALUES(appID.nextval, pat_num.nextval, '" + nameInput.Text + "', '" + dobInput.Text + "', '" + phoneInput.Text + "', '" + allergiesInput.Text + "','" + bloodtypeInput.Text + "', '" + doc_nameInput.Text+ "' ,'" + doc_emailInput.Text+ "','" + doc_positionInput.Text+ "'," + doc_idInput.Text + ", '" + timeInput.Text + "', '" + particularInput.Text + "', '" + serviceInput.Text.ToUpper() + "', " + serviceFeeInput.Text + ")", con);
+            OracleDataAdapter oda1 = new OracleDataAdapter("INSERT INTO patient VALUES(pat_num.nextval, '" + nameInput.Text + "', '" + phoneInput.Text  + "', '" + dobInput.Text+ "', '" + allergiesInput.Text + "','" + bloodtypeInput.Text + "')", con);
 
             DataTable dt = new DataTable();
+            DataTable dt1 = new DataTable();
+
             oda.Fill(dt);
+            oda1.Fill(dt1);
 
             MessageBox.Show("Appointment made for " + nameInput.Text + " and Dr. " + doc_nameInput.Text);
         }
