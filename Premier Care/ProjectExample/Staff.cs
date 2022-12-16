@@ -15,7 +15,6 @@ namespace ProjectExample
     public partial class Staff : Form
     {
         OracleConnection con = new OracleConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
-
         public Staff()
         {
             InitializeComponent();
@@ -64,6 +63,52 @@ namespace ProjectExample
 
         }
 
-     
+        private void medicineBtn_Click(object sender, EventArgs e)
+        {
+            medicine medpage = new medicine();
+
+            this.Hide();
+            medpage.Show();
+        }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login logout = new Login();
+
+            logout.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 home = new Form1();
+
+            home.Show();
+        }
+
+        private void registry_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Registration reg = new Registration();
+
+            reg.Show();
+        }
+
+        private void infobtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Staff staffPage = new Staff();
+
+            staffPage.Show();
+        }
+
+        private void appointbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Appointments appoint = new Appointments();
+
+            appoint.Show();
+        }
     }
 }

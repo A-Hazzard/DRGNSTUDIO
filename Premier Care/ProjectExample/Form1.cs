@@ -13,20 +13,11 @@ namespace ProjectExample
 {
     public partial class Form1 : Form
     {
-        Appointments appoint = new Appointments();
-        Staff staffMembers = new Staff();
-        Registration reg = new Registration();
-        Login loginForm = new Login();
-        PatientDetails patientDetail = new PatientDetails();
-        medicine medicinePage = new medicine();
-
-
+  
         public Form1()
         {
             InitializeComponent();
-            
-       
-          
+             
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,6 +28,8 @@ namespace ProjectExample
         private void registry_Click(object sender, EventArgs e)
         {
             // MessageBox.Show("Registration Form");
+            Registration reg = new Registration();
+
             this.Hide();
             reg.Show();
         }
@@ -58,23 +51,25 @@ namespace ProjectExample
         private void loginBtn_Click(object sender, EventArgs e)//Changed to logout button
         {
             this.Hide();
+            Login loginForm = new Login();
+
             loginForm.Show();
         }
 
         private void infobtn_Click(object sender, EventArgs e)
         {
+            Staff staffMembers = new Staff();
+
             this.Hide();
             staffMembers.Show();
         }
 
-        private void patientDetails_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            patientDetail.Show();
-        }
+      
 
         private void appointbtn_Click(object sender, EventArgs e)
         {
+            Appointments appoint = new Appointments();
+
             this.Hide();
             appoint.Show();
         }
@@ -82,6 +77,8 @@ namespace ProjectExample
         private void medicineBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            medicine medicinePage = new medicine();
+
 
             medicinePage.Show();
         }

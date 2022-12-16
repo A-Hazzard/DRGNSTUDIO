@@ -29,12 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff));
-            this.appointbtn = new System.Windows.Forms.Button();
-            this.patientDetails = new System.Windows.Forms.Button();
-            this.infobtn = new System.Windows.Forms.Button();
-            this.loginBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.registry = new System.Windows.Forms.Button();
             this.ShowMembers = new System.Windows.Forms.DataGridView();
             this.welcomeText = new System.Windows.Forms.Label();
             this.showDoctors = new System.Windows.Forms.DataGridView();
@@ -49,6 +44,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.showCsr = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
+            this.medicineBtn = new System.Windows.Forms.Button();
+            this.appointbtn = new System.Windows.Forms.Button();
+            this.infobtn = new System.Windows.Forms.Button();
+            this.loginBtn = new System.Windows.Forms.Button();
+            this.registry = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShowMembers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showDoctors)).BeginInit();
@@ -59,90 +60,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.showCsr)).BeginInit();
             this.SuspendLayout();
             // 
-            // appointbtn
-            // 
-            this.appointbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.appointbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.appointbtn.Image = global::ProjectExample.Properties.Resources._4172165_appointment_booking_form_reservation_document_icon;
-            this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.appointbtn.Location = new System.Drawing.Point(113, 13);
-            this.appointbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.appointbtn.Name = "appointbtn";
-            this.appointbtn.Size = new System.Drawing.Size(233, 70);
-            this.appointbtn.TabIndex = 14;
-            this.appointbtn.Text = "    Appoitments";
-            this.appointbtn.UseVisualStyleBackColor = false;
-            // 
-            // patientDetails
-            // 
-            this.patientDetails.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.patientDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.patientDetails.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patientDetails.Image = global::ProjectExample.Properties.Resources._6079702_bed_clinic_healthcare_hospital_patient_icon;
-            this.patientDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.patientDetails.Location = new System.Drawing.Point(352, 11);
-            this.patientDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.patientDetails.Name = "patientDetails";
-            this.patientDetails.Size = new System.Drawing.Size(276, 70);
-            this.patientDetails.TabIndex = 13;
-            this.patientDetails.Text = "     Patient Details";
-            this.patientDetails.UseVisualStyleBackColor = false;
-            // 
-            // infobtn
-            // 
-            this.infobtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.infobtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.infobtn.Image = global::ProjectExample.Properties.Resources._2202278_detailed_i_info_information_more_icon;
-            this.infobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infobtn.Location = new System.Drawing.Point(633, 12);
-            this.infobtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.infobtn.Name = "infobtn";
-            this.infobtn.Size = new System.Drawing.Size(179, 70);
-            this.infobtn.TabIndex = 12;
-            this.infobtn.Text = "Staff Members";
-            this.infobtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.infobtn.UseVisualStyleBackColor = false;
-            // 
-            // loginBtn
-            // 
-            this.loginBtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
-            this.loginBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loginBtn.Location = new System.Drawing.Point(1052, 13);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(233, 70);
-            this.loginBtn.TabIndex = 11;
-            this.loginBtn.Text = "Logout";
-            this.loginBtn.UseVisualStyleBackColor = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1, 11);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 8);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(92, 92);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            // 
-            // registry
-            // 
-            this.registry.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.registry.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.registry.FlatAppearance.BorderSize = 0;
-            this.registry.Image = global::ProjectExample.Properties.Resources._7830628_login_icon;
-            this.registry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.registry.Location = new System.Drawing.Point(818, 13);
-            this.registry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.registry.Name = "registry";
-            this.registry.Size = new System.Drawing.Size(228, 70);
-            this.registry.TabIndex = 9;
-            this.registry.Text = "   Registration";
-            this.registry.UseVisualStyleBackColor = false;
             // 
             // ShowMembers
             // 
@@ -305,12 +232,119 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "CSRs";
             // 
+            // medicineBtn
+            // 
+            this.medicineBtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.medicineBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.medicineBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.medicineBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
+            this.medicineBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.medicineBtn.Location = new System.Drawing.Point(1221, 11);
+            this.medicineBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.medicineBtn.Name = "medicineBtn";
+            this.medicineBtn.Size = new System.Drawing.Size(157, 70);
+            this.medicineBtn.TabIndex = 21;
+            this.medicineBtn.Text = "Medicine";
+            this.medicineBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.medicineBtn.UseVisualStyleBackColor = false;
+            this.medicineBtn.Click += new System.EventHandler(this.medicineBtn_Click);
+            // 
+            // appointbtn
+            // 
+            this.appointbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.appointbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.appointbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.appointbtn.Image = global::ProjectExample.Properties.Resources._4172165_appointment_booking_form_reservation_document_icon;
+            this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.appointbtn.Location = new System.Drawing.Point(344, 11);
+            this.appointbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.appointbtn.Name = "appointbtn";
+            this.appointbtn.Size = new System.Drawing.Size(173, 70);
+            this.appointbtn.TabIndex = 20;
+            this.appointbtn.Text = "    Appoitments";
+            this.appointbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.appointbtn.UseVisualStyleBackColor = false;
+            this.appointbtn.Click += new System.EventHandler(this.appointbtn_Click);
+            // 
+            // infobtn
+            // 
+            this.infobtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.infobtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.infobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.infobtn.Image = global::ProjectExample.Properties.Resources._2202278_detailed_i_info_information_more_icon;
+            this.infobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.infobtn.Location = new System.Drawing.Point(523, 14);
+            this.infobtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.infobtn.Name = "infobtn";
+            this.infobtn.Size = new System.Drawing.Size(188, 70);
+            this.infobtn.TabIndex = 19;
+            this.infobtn.Text = "Staff Members";
+            this.infobtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.infobtn.UseVisualStyleBackColor = false;
+            this.infobtn.Click += new System.EventHandler(this.infobtn_Click);
+            // 
+            // loginBtn
+            // 
+            this.loginBtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.loginBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
+            this.loginBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.loginBtn.Location = new System.Drawing.Point(1087, 11);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(128, 70);
+            this.loginBtn.TabIndex = 18;
+            this.loginBtn.Text = "Logout";
+            this.loginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            // 
+            // registry
+            // 
+            this.registry.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.registry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.registry.FlatAppearance.BorderSize = 0;
+            this.registry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.registry.Image = global::ProjectExample.Properties.Resources._7830628_login_icon;
+            this.registry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.registry.Location = new System.Drawing.Point(732, 14);
+            this.registry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.registry.Name = "registry";
+            this.registry.Size = new System.Drawing.Size(176, 70);
+            this.registry.TabIndex = 17;
+            this.registry.Text = "   Registration";
+            this.registry.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.registry.UseVisualStyleBackColor = false;
+            this.registry.Click += new System.EventHandler(this.registry_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.button1.Image = global::ProjectExample.Properties.Resources.person;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(915, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(166, 70);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleVioletRed;
             this.ClientSize = new System.Drawing.Size(1527, 1038);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.medicineBtn);
+            this.Controls.Add(this.appointbtn);
+            this.Controls.Add(this.infobtn);
+            this.Controls.Add(this.loginBtn);
+            this.Controls.Add(this.registry);
             this.Controls.Add(this.LabTechnicians);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -325,12 +359,7 @@
             this.Controls.Add(this.showTherapist);
             this.Controls.Add(this.showDoctors);
             this.Controls.Add(this.ShowMembers);
-            this.Controls.Add(this.appointbtn);
-            this.Controls.Add(this.patientDetails);
-            this.Controls.Add(this.infobtn);
-            this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.registry);
             this.Name = "Staff";
             this.Text = "Staff";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -347,13 +376,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button appointbtn;
-        private System.Windows.Forms.Button patientDetails;
-        private System.Windows.Forms.Button infobtn;
-        private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button registry;
         private System.Windows.Forms.DataGridView ShowMembers;
         private System.Windows.Forms.Label welcomeText;
         private System.Windows.Forms.DataGridView showDoctors;
@@ -368,5 +391,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView showCsr;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button medicineBtn;
+        private System.Windows.Forms.Button appointbtn;
+        private System.Windows.Forms.Button infobtn;
+        private System.Windows.Forms.Button loginBtn;
+        private System.Windows.Forms.Button registry;
+        private System.Windows.Forms.Button button1;
     }
 }

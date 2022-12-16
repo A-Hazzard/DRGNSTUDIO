@@ -43,7 +43,6 @@ C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectEx
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.exe
 C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.pdb
-C:\Users\aaron\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.PatientDetails.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.exe.config
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.exe
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\bin\Debug\ProjectExample.pdb
