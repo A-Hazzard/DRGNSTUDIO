@@ -64,7 +64,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(9, 6);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(103, 96);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -77,7 +77,7 @@
             this.ShowMembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ShowMembers.ColumnHeadersHeight = 29;
             this.ShowMembers.Location = new System.Drawing.Point(23, 178);
-            this.ShowMembers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ShowMembers.Margin = new System.Windows.Forms.Padding(2);
             this.ShowMembers.Name = "ShowMembers";
             this.ShowMembers.RowHeadersWidth = 51;
             this.ShowMembers.RowTemplate.Height = 24;
@@ -102,7 +102,7 @@
             this.showDoctors.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showDoctors.ColumnHeadersHeight = 29;
             this.showDoctors.Location = new System.Drawing.Point(410, 178);
-            this.showDoctors.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showDoctors.Margin = new System.Windows.Forms.Padding(2);
             this.showDoctors.Name = "showDoctors";
             this.showDoctors.RowHeadersWidth = 51;
             this.showDoctors.RowTemplate.Height = 24;
@@ -127,7 +127,7 @@
             this.showNurses.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showNurses.ColumnHeadersHeight = 29;
             this.showNurses.Location = new System.Drawing.Point(23, 440);
-            this.showNurses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showNurses.Margin = new System.Windows.Forms.Padding(2);
             this.showNurses.Name = "showNurses";
             this.showNurses.RowHeadersWidth = 51;
             this.showNurses.RowTemplate.Height = 24;
@@ -152,7 +152,7 @@
             this.showXRayTechnicians.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showXRayTechnicians.ColumnHeadersHeight = 29;
             this.showXRayTechnicians.Location = new System.Drawing.Point(410, 440);
-            this.showXRayTechnicians.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showXRayTechnicians.Margin = new System.Windows.Forms.Padding(2);
             this.showXRayTechnicians.Name = "showXRayTechnicians";
             this.showXRayTechnicians.RowHeadersWidth = 51;
             this.showXRayTechnicians.RowTemplate.Height = 24;
@@ -177,7 +177,7 @@
             this.showLabTechnicians.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showLabTechnicians.ColumnHeadersHeight = 29;
             this.showLabTechnicians.Location = new System.Drawing.Point(780, 440);
-            this.showLabTechnicians.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showLabTechnicians.Margin = new System.Windows.Forms.Padding(2);
             this.showLabTechnicians.Name = "showLabTechnicians";
             this.showLabTechnicians.RowHeadersWidth = 51;
             this.showLabTechnicians.RowTemplate.Height = 24;
@@ -202,7 +202,7 @@
             this.showTherapist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showTherapist.ColumnHeadersHeight = 29;
             this.showTherapist.Location = new System.Drawing.Point(770, 178);
-            this.showTherapist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showTherapist.Margin = new System.Windows.Forms.Padding(2);
             this.showTherapist.Name = "showTherapist";
             this.showTherapist.RowHeadersWidth = 51;
             this.showTherapist.RowTemplate.Height = 24;
@@ -240,7 +240,7 @@
             this.medicineBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
             this.medicineBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.medicineBtn.Location = new System.Drawing.Point(1358, 9);
-            this.medicineBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.medicineBtn.Margin = new System.Windows.Forms.Padding(2);
             this.medicineBtn.Name = "medicineBtn";
             this.medicineBtn.Size = new System.Drawing.Size(118, 57);
             this.medicineBtn.TabIndex = 21;
@@ -257,7 +257,7 @@
             this.appointbtn.Image = global::ProjectExample.Properties.Resources._4172165_appointment_booking_form_reservation_document_icon;
             this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.appointbtn.Location = new System.Drawing.Point(554, 11);
-            this.appointbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.appointbtn.Margin = new System.Windows.Forms.Padding(2);
             this.appointbtn.Name = "appointbtn";
             this.appointbtn.Size = new System.Drawing.Size(146, 57);
             this.appointbtn.TabIndex = 20;
@@ -274,7 +274,7 @@
             this.infobtn.Image = global::ProjectExample.Properties.Resources._2202278_detailed_i_info_information_more_icon;
             this.infobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.infobtn.Location = new System.Drawing.Point(726, 11);
-            this.infobtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.infobtn.Margin = new System.Windows.Forms.Padding(2);
             this.infobtn.Name = "infobtn";
             this.infobtn.Size = new System.Drawing.Size(159, 57);
             this.infobtn.TabIndex = 19;
@@ -291,7 +291,7 @@
             this.loginBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
             this.loginBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.loginBtn.Location = new System.Drawing.Point(1233, 11);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(104, 57);
             this.loginBtn.TabIndex = 18;
@@ -309,7 +309,7 @@
             this.registry.Image = global::ProjectExample.Properties.Resources._7830628_login_icon;
             this.registry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.registry.Location = new System.Drawing.Point(906, 11);
-            this.registry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.registry.Margin = new System.Windows.Forms.Padding(2);
             this.registry.Name = "registry";
             this.registry.Size = new System.Drawing.Size(144, 57);
             this.registry.TabIndex = 17;
@@ -325,7 +325,7 @@
             this.button1.Image = global::ProjectExample.Properties.Resources.person;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(1077, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 57);
             this.button1.TabIndex = 22;
@@ -375,7 +375,8 @@
             this.Controls.Add(this.showDoctors);
             this.Controls.Add(this.ShowMembers);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Staff";
             this.Text = "Staff";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

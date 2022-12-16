@@ -94,6 +94,7 @@
             this.Controls.Add(this.showInvoices);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.welcomeBackText);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "invoice";
             this.Text = "Invoice";
