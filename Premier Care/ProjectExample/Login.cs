@@ -37,7 +37,7 @@ namespace ProjectExample
         {
             Form1 home = new Form1();
 
-           /* con.Open();
+           con.Open();
 
             
                 //Check to see if credentials match the db email and password
@@ -54,17 +54,7 @@ namespace ProjectExample
                 {
                     MessageBox.Show("Invalid Email/Password");
                 }
-            */
-
-            if(emailInput.Text == "care@gmail.com" && passwordInput.Text == "care123")
-            {
-                this.Hide();
-                home.Show();
-            }
-            else
-            {
-                MessageBox.Show("Invalid Email/Password");
-            }
+            
 
 
 

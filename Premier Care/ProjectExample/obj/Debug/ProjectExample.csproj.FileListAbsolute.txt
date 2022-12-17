@@ -80,9 +80,7 @@ C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.AssemblyReference.cache
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.SuggestedBindingRedirects.cache
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Form1.resources
-C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Information.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Login.resources
-C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.PatientDetails.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Properties.Resources.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Registration.resources
 C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.GenerateResource.cache
@@ -247,3 +245,11 @@ C:\Users\there\Desktop\GITHUB\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\P
 C:\Users\there\Desktop\GITHUB\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.csproj.CopyComplete
 C:\Users\there\Desktop\GITHUB\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.exe
 C:\Users\there\Desktop\GITHUB\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.pdb
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Appointments.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.forgotpassword.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.invoice.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.medicine.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.passwordPage.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.patientLogin.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.Staff.resources
+C:\Users\raush\OneDrive\Documents\GitHub\DRGNSTUDIO\Premier Care\ProjectExample\obj\Debug\ProjectExample.treatmentHistory.resources
