@@ -62,9 +62,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1461, 567);
+            this.panel1.Size = new System.Drawing.Size(1096, 461);
             this.panel1.TabIndex = 0;
             // 
             // button1
@@ -72,12 +72,12 @@
             this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Image = global::ProjectExample.Properties.Resources._7830628_login_icon;
+            this.button1.Image = global::ProjectExample.Properties.Resources.person;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(839, 16);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(632, 13);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 70);
+            this.button1.Size = new System.Drawing.Size(162, 57);
             this.button1.TabIndex = 10;
             this.button1.Text = "Change Password";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -89,12 +89,12 @@
             this.medicineBtn.BackColor = System.Drawing.Color.PaleVioletRed;
             this.medicineBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.medicineBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medicineBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
+            this.medicineBtn.Image = global::ProjectExample.Properties.Resources._6673743_health_hospital_injection_medical_medicine_icon1;
             this.medicineBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.medicineBtn.Location = new System.Drawing.Point(1264, 14);
-            this.medicineBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.medicineBtn.Location = new System.Drawing.Point(948, 11);
+            this.medicineBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.medicineBtn.Name = "medicineBtn";
-            this.medicineBtn.Size = new System.Drawing.Size(185, 70);
+            this.medicineBtn.Size = new System.Drawing.Size(139, 57);
             this.medicineBtn.TabIndex = 9;
             this.medicineBtn.Text = "Medicine";
             this.medicineBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -107,10 +107,10 @@
             this.appointbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.appointbtn.Image = global::ProjectExample.Properties.Resources._4172165_appointment_booking_form_reservation_document_icon;
             this.appointbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.appointbtn.Location = new System.Drawing.Point(217, 11);
-            this.appointbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.appointbtn.Location = new System.Drawing.Point(163, 9);
+            this.appointbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.appointbtn.Name = "appointbtn";
-            this.appointbtn.Size = new System.Drawing.Size(197, 70);
+            this.appointbtn.Size = new System.Drawing.Size(148, 57);
             this.appointbtn.TabIndex = 8;
             this.appointbtn.Text = "    Appointments";
             this.appointbtn.UseVisualStyleBackColor = false;
@@ -122,10 +122,10 @@
             this.infobtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.infobtn.Image = global::ProjectExample.Properties.Resources._2202278_detailed_i_info_information_more_icon;
             this.infobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infobtn.Location = new System.Drawing.Point(420, 11);
-            this.infobtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.infobtn.Location = new System.Drawing.Point(315, 9);
+            this.infobtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.infobtn.Name = "infobtn";
-            this.infobtn.Size = new System.Drawing.Size(211, 70);
+            this.infobtn.Size = new System.Drawing.Size(158, 57);
             this.infobtn.TabIndex = 6;
             this.infobtn.Text = "Staff Members";
             this.infobtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -137,9 +137,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(645, 322);
+            this.label2.Location = new System.Drawing.Point(484, 262);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(363, 54);
+            this.label2.Size = new System.Drawing.Size(295, 45);
             this.label2.TabIndex = 5;
             this.label2.Text = "Premier Care Clinic";
             // 
@@ -148,9 +149,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(725, 401);
+            this.label1.Location = new System.Drawing.Point(544, 326);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 74);
+            this.label1.Size = new System.Drawing.Size(250, 60);
             this.label1.TabIndex = 4;
             this.label1.Text = "When you need answers,\r\nyou know where to go.\r\n";
             // 
@@ -161,10 +163,10 @@
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.Image = global::ProjectExample.Properties.Resources._9165684_login_arrow_icon;
             this.loginBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loginBtn.Location = new System.Drawing.Point(1076, 16);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.loginBtn.Location = new System.Drawing.Point(806, 13);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(182, 70);
+            this.loginBtn.Size = new System.Drawing.Size(136, 57);
             this.loginBtn.TabIndex = 3;
             this.loginBtn.Text = "Logout";
             this.loginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -175,9 +177,9 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(92, 92);
+            this.pictureBox2.Size = new System.Drawing.Size(69, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -186,10 +188,10 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 103);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 84);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1461, 464);
+            this.pictureBox1.Size = new System.Drawing.Size(1096, 377);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -201,10 +203,10 @@
             this.registry.FlatAppearance.BorderSize = 0;
             this.registry.Image = global::ProjectExample.Properties.Resources._7830628_login_icon;
             this.registry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.registry.Location = new System.Drawing.Point(637, 14);
-            this.registry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.registry.Location = new System.Drawing.Point(478, 11);
+            this.registry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.registry.Name = "registry";
-            this.registry.Size = new System.Drawing.Size(196, 70);
+            this.registry.Size = new System.Drawing.Size(147, 57);
             this.registry.TabIndex = 0;
             this.registry.Text = "   Registration";
             this.registry.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -213,12 +215,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1461, 567);
+            this.ClientSize = new System.Drawing.Size(1096, 461);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Form1_Load);
