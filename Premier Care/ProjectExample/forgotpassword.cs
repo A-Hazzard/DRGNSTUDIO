@@ -89,7 +89,10 @@ namespace ProjectExample
 
         private void cancelbtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            Login login = new Login();
+            login.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

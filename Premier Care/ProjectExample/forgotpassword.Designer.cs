@@ -68,7 +68,7 @@
             this.cancelbtn.Name = "cancelbtn";
             this.cancelbtn.Size = new System.Drawing.Size(313, 55);
             this.cancelbtn.TabIndex = 23;
-            this.cancelbtn.Text = "Exit";
+            this.cancelbtn.Text = "Back to Login";
             this.cancelbtn.UseVisualStyleBackColor = false;
             this.cancelbtn.Click += new System.EventHandler(this.cancelbtn_Click);
             // 
