@@ -21,8 +21,25 @@ namespace ProjectExample
         public patientLogin()
         {
             InitializeComponent();
+            FormClosing += closeForm;
+
         }
 
+        private void closeForm(object sender, FormClosingEventArgs e)
+        {
+            // Set the Cancel property to false to exit the program
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+
+
+        }
         private void loginBtn_Click(object sender, EventArgs e)
         {
             invoice invoiceHome = new invoice();
@@ -67,6 +84,11 @@ namespace ProjectExample
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

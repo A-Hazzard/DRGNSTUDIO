@@ -18,6 +18,8 @@ namespace ProjectExample
         public Appointments()
         {
             InitializeComponent();
+            FormClosing += closeForm;
+
             con.Open();
 
             /*when clicked will load the datain table table in the datagrid.
@@ -32,9 +34,25 @@ namespace ProjectExample
             con.Close();
         }
 
-   
+        private void closeForm(object sender, FormClosingEventArgs e)
+        {
+            // Set the Cancel property to false to exit the program
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Form1 home = new Form1();
+                home.Show();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
 
-   
+
+        }
+
+
 
         private void Show_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -90,6 +108,11 @@ namespace ProjectExample
         }
 
         private void serviceFeeInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Appointments_Load(object sender, EventArgs e)
         {
 
         }

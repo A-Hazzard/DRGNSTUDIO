@@ -60,21 +60,23 @@
             this.groupBox1.Controls.Add(this.idInput);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(-99, -44);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(-132, -54);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(799, 453);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1065, 558);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackgroundImage = global::ProjectExample.Properties.Resources.HD_wallpaper_blurred_pink_background_ultra_aero_colorful_pink_background_blurred_simple_blurry_minimalism_cloth_hotpink;
             this.pictureBox7.Image = global::ProjectExample.Properties.Resources.Nursing_Shortage_JV_TT_16;
-            this.pictureBox7.Location = new System.Drawing.Point(575, 150);
+            this.pictureBox7.Location = new System.Drawing.Point(767, 185);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(209, 163);
+            this.pictureBox7.Size = new System.Drawing.Size(279, 201);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 21;
             this.pictureBox7.TabStop = false;
@@ -85,10 +87,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::ProjectExample.Properties.Resources._7830628_login_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(110, 380);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(147, 468);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 58);
+            this.button1.Size = new System.Drawing.Size(207, 71);
             this.button1.TabIndex = 15;
             this.button1.Text = "Staff Login";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -99,10 +101,10 @@
             // 
             this.cancelbtn.BackColor = System.Drawing.Color.PaleVioletRed;
             this.cancelbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelbtn.Location = new System.Drawing.Point(334, 301);
-            this.cancelbtn.Margin = new System.Windows.Forms.Padding(2);
+            this.cancelbtn.Location = new System.Drawing.Point(445, 370);
+            this.cancelbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancelbtn.Name = "cancelbtn";
-            this.cancelbtn.Size = new System.Drawing.Size(235, 45);
+            this.cancelbtn.Size = new System.Drawing.Size(313, 55);
             this.cancelbtn.TabIndex = 14;
             this.cancelbtn.Text = "Exit";
             this.cancelbtn.UseVisualStyleBackColor = false;
@@ -111,10 +113,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(110, 55);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(147, 68);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(157, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -124,10 +126,9 @@
             // 
             this.welcomeBackText.AutoSize = true;
             this.welcomeBackText.Font = new System.Drawing.Font("Yu Gothic UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeBackText.Location = new System.Drawing.Point(338, 69);
-            this.welcomeBackText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.welcomeBackText.Location = new System.Drawing.Point(451, 85);
             this.welcomeBackText.Name = "welcomeBackText";
-            this.welcomeBackText.Size = new System.Drawing.Size(244, 50);
+            this.welcomeBackText.Size = new System.Drawing.Size(307, 62);
             this.welcomeBackText.TabIndex = 10;
             this.welcomeBackText.Text = "Patient Login";
             // 
@@ -135,10 +136,10 @@
             // 
             this.loginBtn.BackColor = System.Drawing.Color.PaleVioletRed;
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.Location = new System.Drawing.Point(334, 235);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.loginBtn.Location = new System.Drawing.Point(445, 289);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(235, 45);
+            this.loginBtn.Size = new System.Drawing.Size(313, 55);
             this.loginBtn.TabIndex = 2;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = false;
@@ -148,51 +149,49 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(250, 191);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(333, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 21);
+            this.label3.Size = new System.Drawing.Size(98, 28);
             this.label3.TabIndex = 9;
             this.label3.Text = "Password:";
             // 
             // passwordInput
             // 
             this.passwordInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordInput.Location = new System.Drawing.Point(334, 188);
-            this.passwordInput.Margin = new System.Windows.Forms.Padding(2);
+            this.passwordInput.Location = new System.Drawing.Point(445, 231);
+            this.passwordInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.PasswordChar = '*';
-            this.passwordInput.Size = new System.Drawing.Size(236, 24);
+            this.passwordInput.Size = new System.Drawing.Size(313, 28);
             this.passwordInput.TabIndex = 8;
             // 
             // idInput
             // 
             this.idInput.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idInput.Location = new System.Drawing.Point(334, 142);
-            this.idInput.Margin = new System.Windows.Forms.Padding(2);
+            this.idInput.Location = new System.Drawing.Point(445, 175);
+            this.idInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idInput.Name = "idInput";
-            this.idInput.Size = new System.Drawing.Size(236, 24);
+            this.idInput.Size = new System.Drawing.Size(313, 28);
             this.idInput.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(292, 142);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(389, 175);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 21);
+            this.label2.Size = new System.Drawing.Size(35, 28);
             this.label2.TabIndex = 6;
             this.label2.Text = "ID:";
             // 
             // patientLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 405);
+            this.ClientSize = new System.Drawing.Size(924, 498);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "patientLogin";
             this.Text = "patientLogin";
             this.groupBox1.ResumeLayout(false);

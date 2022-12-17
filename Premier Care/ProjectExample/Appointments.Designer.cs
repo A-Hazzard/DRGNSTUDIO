@@ -128,7 +128,7 @@
             // 
             this.pictureBox1.Image = global::ProjectExample.Properties.Resources.download__3_;
             this.pictureBox1.Location = new System.Drawing.Point(900, 586);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(289, 186);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -509,6 +509,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Appointments";
             this.Text = "Appointments";
+            this.Load += new System.EventHandler(this.Appointments_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

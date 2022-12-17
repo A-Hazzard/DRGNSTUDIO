@@ -19,6 +19,8 @@ namespace ProjectExample
         {
             InitializeComponent();
             con.Open();
+            FormClosing += closeForm;
+
 
             /*when clicked will load the datain table table in the datagrid.
              First an object of the DataAdapter class will allow you to fetch the records*/
@@ -57,7 +59,23 @@ namespace ProjectExample
             con.Close();
 
         }
+        private void closeForm(object sender, FormClosingEventArgs e)
+        {
+            // Set the Cancel property to false to exit the program
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Form1 home = new Form1();
+                home.Show();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
 
+
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -109,6 +127,11 @@ namespace ProjectExample
             Appointments appoint = new Appointments();
 
             appoint.Show();
+        }
+
+        private void Staff_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

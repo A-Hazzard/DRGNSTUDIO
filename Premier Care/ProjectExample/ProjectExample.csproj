@@ -147,6 +147,12 @@
     <Compile Include="medicine.Designer.cs">
       <DependentUpon>medicine.cs</DependentUpon>
     </Compile>
+    <Compile Include="passwordPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passwordPage.Designer.cs">
+      <DependentUpon>passwordPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="patientLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="medicine.resx">
       <DependentUpon>medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passwordPage.resx">
+      <DependentUpon>passwordPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="patientLogin.resx">
       <DependentUpon>patientLogin.cs</DependentUpon>

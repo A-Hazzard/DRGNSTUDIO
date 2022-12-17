@@ -22,14 +22,15 @@ namespace ProjectExample
         {
 
 
-            FormClosing += MyForm_FormClosing;
+            FormClosing += closeForm;
             InitializeComponent();
         }
-        private void MyForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void closeForm(object sender, FormClosingEventArgs e)
         {
             // Set the Cancel property to false to exit the program
             e.Cancel = false;
         }
+
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
@@ -44,7 +45,7 @@ namespace ProjectExample
 
                 if (reader.Read())
                 {
-                    MessageBox.Show("Logged in");
+                    //MessageBox.Show("Logged in");
                     this.Hide();
                     home.Show();
                 }
@@ -89,6 +90,19 @@ namespace ProjectExample
             this.Hide();
             patientLogin pLogin = new patientLogin();
             pLogin.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            forgotpassword fGot = new forgotpassword();
+
+            fGot.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
     
