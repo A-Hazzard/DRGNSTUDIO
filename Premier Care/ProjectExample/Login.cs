@@ -28,7 +28,8 @@ namespace ProjectExample
         private void closeForm(object sender, FormClosingEventArgs e)
         {
             // Set the Cancel property to false to exit the program
-            e.Cancel = false;
+            Environment.Exit(0);
+
         }
 
 

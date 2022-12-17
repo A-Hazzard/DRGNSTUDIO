@@ -99,17 +99,20 @@ namespace ProjectExample
             DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                this.Close();
+                Environment.Exit(0);
+
             }
             else
             {
                 e.Cancel = true;
             }
         }
-      
-           
 
-
-
+        private void cancelbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 home = new Form1();
+            home.Show();
+        }
     }
 }

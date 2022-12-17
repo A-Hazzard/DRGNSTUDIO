@@ -40,7 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -173,19 +172,6 @@
             this.label1.Text = "Email:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(966, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 43);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // forgotpassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -193,7 +179,6 @@
             this.BackColor = System.Drawing.Color.PaleVioletRed;
             this.BackgroundImage = global::ProjectExample.Properties.Resources.HD_wallpaper_blurred_pink_background_ultra_aero_colorful_pink_background_blurred_simple_blurry_minimalism_cloth_hotpink;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.email);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
@@ -230,6 +215,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
     }
 }

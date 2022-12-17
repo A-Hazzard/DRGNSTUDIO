@@ -45,9 +45,8 @@ namespace ProjectExample
             DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                this.Hide();
-                Form1 home = new Form1();
-                home.Show();
+                Environment.Exit(0);
+
             }
             else
             {
@@ -95,6 +94,7 @@ namespace ProjectExample
         {
             treatmentHistory history = new treatmentHistory();
             history.Show();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

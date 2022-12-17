@@ -38,8 +38,7 @@ namespace ProjectExample
             if (result == DialogResult.Yes)
             {
                 this.Hide();
-                Form1 home = new Form1();
-                home.Show();
+            
             }
             else
             {

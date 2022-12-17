@@ -37,7 +37,6 @@
             this.adminsecuritykey = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,8 +49,9 @@
             this.cancelbtn.Name = "cancelbtn";
             this.cancelbtn.Size = new System.Drawing.Size(313, 55);
             this.cancelbtn.TabIndex = 35;
-            this.cancelbtn.Text = "Exit";
+            this.cancelbtn.Text = "Back to Home Page";
             this.cancelbtn.UseVisualStyleBackColor = false;
+            this.cancelbtn.Click += new System.EventHandler(this.cancelbtn_Click);
             // 
             // pictureBox1
             // 
@@ -129,26 +129,12 @@
             this.label2.TabIndex = 29;
             this.label2.Text = "New Password :";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(958, 44);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 43);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // passwordPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectExample.Properties.Resources.HD_wallpaper_blurred_pink_background_ultra_aero_colorful_pink_background_blurred_simple_blurry_minimalism_cloth_hotpink;
             this.ClientSize = new System.Drawing.Size(1055, 569);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.cancelbtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.welcomeBackText);
@@ -175,6 +161,5 @@
         private System.Windows.Forms.TextBox adminsecuritykey;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
     }
 }

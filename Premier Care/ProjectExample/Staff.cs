@@ -65,9 +65,8 @@ namespace ProjectExample
             DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                this.Hide();
-                Form1 home = new Form1();
-                home.Show();
+                Environment.Exit(0);
+
             }
             else
             {
@@ -132,6 +131,49 @@ namespace ProjectExample
         private void Staff_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void medicineBtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            medicine medic = new medicine();
+            medic.Show();
+        }
+
+        private void loginBtn_Click_1(object sender, EventArgs e)
+        {
+            Login logout = new Login();
+            this.Hide();
+            logout.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            passwordPage pwd = new passwordPage();
+            this.Hide();
+            pwd.Show();
+        }
+
+        private void registry_Click_1(object sender, EventArgs e)
+        {
+            Registration reg = new Registration();
+            this.Hide();
+            reg.Show();
+        }
+
+        private void infobtn_Click_1(object sender, EventArgs e)
+        {
+            Staff staff = new Staff();
+            this.Hide();
+            staff.Show();
+        }
+
+        private void appointbtn_Click_1(object sender, EventArgs e)
+        {
+            Appointments appoint = new Appointments();
+            this.Hide();
+
+            appoint.Show();
         }
     }
 }

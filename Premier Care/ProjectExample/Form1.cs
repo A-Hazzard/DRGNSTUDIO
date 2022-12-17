@@ -50,9 +50,8 @@ namespace ProjectExample
             DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                this.Hide();
-                Login login = new Login();
-                login.Show();
+                    Environment.Exit(0);
+
             }
             else
             {
@@ -61,18 +60,7 @@ namespace ProjectExample
            
 
         }
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                Environment.Exit(0);
-            }
-            else
-            {
-                e.Cancel = true;
-            }
-        }
+      
 
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -120,6 +108,11 @@ namespace ProjectExample
             this.Hide();
             passwordPage passwordpg = new passwordPage();
             passwordpg.Show();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

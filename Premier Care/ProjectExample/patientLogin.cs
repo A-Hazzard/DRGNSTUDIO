@@ -31,7 +31,8 @@ namespace ProjectExample
             DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                Application.Exit();
+                Environment.Exit(0);
+
             }
             else
             {
