@@ -18,6 +18,8 @@
   width: 45%;
   display: inline-block;
   margin: 10%;
+  position: relative;
+  z-index: 1;
 }
 .Home .frontCover .cta .cta-header {
   font-size: 58px;
