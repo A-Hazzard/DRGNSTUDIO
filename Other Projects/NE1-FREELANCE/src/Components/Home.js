@@ -3,6 +3,9 @@ import $ from 'jquery';
 import HomeNavBar from './HomeNavBar';
 import bubbles from '../media/bubbles.png'
 import backgroundImg from '../media/backgroundImg.png';
+
+import SignupForm from './SignUpForm';
+
 const Home = () => {
         // Add an event listener for the change event
         $("selectJob").on('change', function() {
@@ -21,7 +24,7 @@ const Home = () => {
     return ( 
         <div className="Home">
             <HomeNavBar/>
-            <div className="frontCover">
+           { /*<div className="frontCover">
             <img src={bubbles} alt="bubbles" className="bubbles"/>
             <img src={backgroundImg} alt="" className="backgroundImg"/>
                 <div className="cta">
@@ -48,7 +51,9 @@ const Home = () => {
                         <button type="submit" className="search-btn">Search</button>
                     </div>
                 </div>
-            </div>
+            </div>*/
+           }
+            <SignupForm />
         </div>
     );
 }
